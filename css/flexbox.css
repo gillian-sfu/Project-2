@@ -1,0 +1,316 @@
+
+/*WEBSITE GRID STRUCTURE--------------*/
+
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+/*
+  Referenced: https://www.youtube.com/watch?v=JJSoEo8JSnc
+  Used this tutorial to learn out how to create flexbox website grid
+*/
+
+.container-1 div, .container-2 div, .container-3 div, .container-4 div,
+.container-5 div, .container-6 div, .container-7 div, .container-8 div,
+.container-9 div, .container-10 div, .container-11 div {
+
+	background-color: lightgrey;
+	padding:10px;
+	margin:5px;
+
+}
+
+.container-1 {
+	display:flex;	
+}
+
+.container-1-box{
+	flex:1;
+	height:150px;
+}
+
+.container-2 {
+	display:flex;
+	justify-content: center;
+}
+
+.container-2-box {
+	width:80%;
+	height: 500px;
+}
+
+
+.container-3 {
+	display:flex;
+	justify-content: center;
+}
+
+.container-3-boxes {
+	width: 26%;
+	height:400px;
+
+}
+
+.container-4{
+	display: flex;
+}
+
+.container-4-box {
+	flex:1;
+	height:100px;
+}
+
+.container-5{
+	display:flex;
+}
+
+.container-5-box{
+	flex:1;
+	height:150px;
+}
+
+/* 
+    Referenced: https://cssgr.id/
+    Used this grid generator to figure out how to create a sidebar grid structure for the product page website grid
+ */
+
+.container-6{
+	display:grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.container-6-box1{
+	grid-row:span 2/auto;
+	height:800px;
+	
+}
+
+.container-7 {
+	display:flex;	
+}
+
+.container-7-box{
+	flex:1;
+	height:100px;
+}
+
+.container-8 {
+	display:flex;	
+}
+
+.container-8-box{
+	flex:1;
+	height:150px;
+}
+
+.container-9{
+  display:flex;
+}
+
+.container-9-box1{
+  width: 60%;
+  height:550px;
+}
+
+.container-9-box2{
+  flex: 1;
+  height:550px;
+}
+
+.container-10{
+  display: flex;
+  flex-direction:column;
+}
+
+.container-10-boxes{
+
+  height:300px;
+}
+
+.container-11{
+  display:flex;
+}
+
+.container-11-box{
+  flex:1;
+  height:100px;
+}
+
+
+
+/*COLOUR PALETTE ----------------*/
+.palette-box div {
+  width: 200px;
+  height: 150px;
+  margin: 10px;
+  border: 1px solid lightgrey;
+  text-align: center;
+}
+
+.palette-box {
+	display:flex;
+}
+
+.palette-box-b1 {
+	background: #E6FBFB
+}
+
+
+.palette-box-b2{
+  background: #66B2B2;
+}
+
+.palette-box-b3 {
+  background: #008080;
+}
+
+.palette-box-b4 {
+  background: #006666;
+  color:white;
+}
+
+.palette-box-b5 {
+	background: #004C4C;
+	color:white;
+}
+
+
+
+/*PRODUCT LISTING ---------------- */
+/*
+  Referenced: Week 3 Lecture Code 
+  Used lecture code for grid structure
+*/
+
+.box{
+	display: flex;
+}
+
+.box-item-image {
+	flex: 3 1 400px;	
+	
+}
+
+.box-item-text {
+	flex: 1 1 18em;
+	padding: 0 1rem;
+	line-height: 12px;
+}
+
+.title {
+	font-size: 35px;
+}
+
+.price {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.review {
+	font-weight: 600;
+	padding-bottom: 40px;
+}
+
+.description {	
+  	font-size: 14px;
+  	font-weight: 300;
+  	line-height: 25px;
+  	padding-bottom: 30px;
+}
+
+/*
+  Referenced: https://www.w3schools.com/howto/howto_css_dropdown.asp
+  Used this source to code drop down button
+*/
+.dropbtn {
+  color: black;
+  padding: 10px;
+  width: 380px;
+  font-size: 16px;
+  border: 2px solid grey;
+  text-align: left;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 380px;
+  z-index: 1;
+  border: 1px solid lightgrey;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #B2D8D8;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/*
+  Referenced Lecture Week 2 + 3 Code Example for buttons
+*/
+
+.cart-button-nav {
+  margin-top: 95px;
+  display: inline-block;
+  padding: 0.6em 0.75em;
+  float:right;
+  width: 150px;
+  color: white;
+  background-color: #008080;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+  border: 2px solid #008080;  
+}
+
+.cart-button-nav:hover, .cart-button-nav:focus {
+  background-color: white;
+  color: #008080;
+  border-color: #008080
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
