@@ -21,7 +21,7 @@
 }
 
 .container-1 {
-	display:flex;	
+	display:flex;
 }
 
 .container-1-box{
@@ -69,7 +69,7 @@
 	height:150px;
 }
 
-/* 
+/*
     Referenced: https://cssgr.id/
     Used this grid generator to figure out how to create a sidebar grid structure for the product page website grid
  */
@@ -82,11 +82,11 @@
 .container-6-box1{
 	grid-row:span 2/auto;
 	height:800px;
-	
+
 }
 
 .container-7 {
-	display:flex;	
+	display:flex;
 }
 
 .container-7-box{
@@ -95,7 +95,7 @@
 }
 
 .container-8 {
-	display:flex;	
+	display:flex;
 }
 
 .container-8-box{
@@ -143,42 +143,16 @@
   width: 200px;
   height: 150px;
   margin: 10px;
-  border: 1px solid lightgrey;
-  text-align: center;
 }
 
 .palette-box {
 	display:flex;
+	flex-wrap: wrap;
 }
-
-.palette-box-b1 {
-	background: #E6FBFB
-}
-
-
-.palette-box-b2{
-  background: #66B2B2;
-}
-
-.palette-box-b3 {
-  background: #008080;
-}
-
-.palette-box-b4 {
-  background: #006666;
-  color:white;
-}
-
-.palette-box-b5 {
-	background: #004C4C;
-	color:white;
-}
-
-
 
 /*PRODUCT LISTING ---------------- */
 /*
-  Referenced: Week 3 Lecture Code 
+  Referenced: Week 3 Lecture Code
   Used lecture code for grid structure
 */
 
@@ -187,8 +161,8 @@
 }
 
 .box-item-image {
-	flex: 3 1 400px;	
-	
+	flex: 3 1 400px;
+
 }
 
 .box-item-text {
@@ -211,7 +185,7 @@
 	padding-bottom: 40px;
 }
 
-.description {	
+.description {
   	font-size: 14px;
   	font-weight: 300;
   	line-height: 25px;
@@ -278,7 +252,7 @@
   text-decoration: none;
   -webkit-transition: background-color 0.2s ease-out;
   transition: background-color 0.2s ease-out;
-  border: 2px solid #008080;  
+  border: 2px solid #008080;
 }
 
 .cart-button-nav:hover, .cart-button-nav:focus {
@@ -286,31 +260,3 @@
   color: #008080;
   border-color: #008080
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

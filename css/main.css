@@ -1,6 +1,6 @@
 /*
-  STYLE GUIDE STYLING 
-  Default styling for the style guide 
+  STYLE GUIDE STYLING
+  Default styling for the style guide
 */
 body {
   font-family: Muli, sans-serif;
@@ -10,7 +10,7 @@ body {
 section:not([id]) {
   margin: 1em 0;
   padding: 0.5em 0;
-  border-top: 2px solid #afafaf;
+  border-top: 2px dotted #afafaf;
   line-height: 25px;
 }
 
@@ -30,14 +30,14 @@ section code {
 }
 
 /*
-  WIREFLOW PAGE STYLING 
+  WIREFLOW PAGE STYLING
 */
 
 .wireflow-list {
   line-height: 30px;
 }
 
-/* 
+/*
   Branding Elements -------------------
 */
 
@@ -67,7 +67,7 @@ section code {
 }
 
 
-/* 
+/*
   INTERACTIVE ELEMENTS -------------------
 */
 
@@ -76,7 +76,7 @@ section code {
 */
 
 /*
-  Referenced: Lecture Week 2 code example 
+  Referenced: Lecture Week 2 code example
 */
 
 .button-nav {
@@ -91,7 +91,36 @@ section code {
   text-decoration: none;
   -webkit-transition: background-color 0.2s ease-out;
   transition: background-color 0.2s ease-out;
-  border: 2px solid #008080;  
+  border: 2px solid #008080;
+}
+
+.palette-text{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.palette-box-b1 {
+	background: #E6FBFB
+}
+
+.palette-box-b2{
+  background: #66B2B2;
+}
+
+.palette-box-b3 {
+  background: #008080;
+	color: white;
+}
+
+.palette-box-b4 {
+  background: #006666;
+  color:white;
+}
+
+.palette-box-b5 {
+	background: #004C4C;
+	color:white;
 }
 
 .button-nav:hover, .button-nav:focus {
@@ -100,18 +129,18 @@ section code {
   border-color: #008080
 }
 
-/* 
+/*
   IN-TEXT LINK --------------------
 */
 
-/* 
-  Referenced Week 2 lecture Code 
+/*
+  Referenced Week 2 lecture Code
 */
 .link-style{
   color: black;
 }
- 
-.link-style:hover, .link-style:active, .link-style:focus {   
+
+.link-style:hover, .link-style:active, .link-style:focus {
   color: #66b2b2
 
 }
@@ -140,7 +169,7 @@ section code {
 
 .submit{
   background-color: #008080 ;
-   
+
 }
 
 .reset {
@@ -152,14 +181,14 @@ section code {
 
 .submit:hover, .submit:focus {
   background-color: #109b97;
- 
+
 }
 
 .reset:hover, .reset:focus {
   background-color: #8b8e8e ;
   color: white;
 
- 
+
 }
 
 /*
@@ -171,7 +200,7 @@ section code {
   Used this to learn how to create text input field and label
 */
 
-input { 
+input {
   width: 40%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -186,7 +215,7 @@ input:focus {
 
 
 
-/* 
+/*
   TEXT ELEMENTS -------------------
 */
 
@@ -223,7 +252,7 @@ ol, ul, .num-list {
 
 
 
-/* 
+/*
   COMBINED ELEMENTS -------------------
 */
 
@@ -241,12 +270,12 @@ ol, ul, .num-list {
   display: inline-block;
   color: rgb(48,48,48);
   /*padding-top: 15px;*/
-  text-decoration: none; 
+  text-decoration: none;
   position: relative;
   font-size: 20px;
   margin-right: 50px;
   padding-top:15px;
- 
+
 }
 
 .main-nav::before {
@@ -255,7 +284,7 @@ ol, ul, .num-list {
   height: 2px;
   width: 100%;
   position:absolute;
- 
+
   bottom: -8px;
   width: 0%;
 
@@ -264,18 +293,14 @@ ol, ul, .num-list {
 
 }
 
-.main-nav:hover::before { 
+.main-nav:hover::before {
   width: 100%;
   background-color: #66b2b2;
 
-  
+
 }
 
 .main-nav:hover, .main-nav:active, .main-nav:focus{
   color: #66b2b2
-  
+
 }
-
-
-
-
