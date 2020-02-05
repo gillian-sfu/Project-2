@@ -168,8 +168,7 @@ section code {
 
 .reset {
 
-   background-color: #727272;
-
+   background-color: black;
 
 }
 
@@ -284,13 +283,11 @@ ol, ul, .num-list {
 
   transition: 0.2s ease-out;
 
-
 }
 
 .main-nav:hover::before {
   width: 100%;
   background-color: #66b2b2;
-
 
 }
 
@@ -299,6 +296,7 @@ ol, ul, .num-list {
 
 }
 
+<<<<<<< HEAD
 
 /* 
   SITEMAP  -------------------- 
@@ -311,3 +309,45 @@ ol, ul, .num-list {
 
 
 
+=======
+.box{
+	position: relative;
+
+}
+
+.cart-button-nav a{
+	position: absolute;
+
+	bottom: 0.5rem;
+	padding: 0 0.25;
+}
+
+img{
+  height:auto;
+  width: 85%;
+}
+
+.title {
+	font-size: 35px;
+	line-height: 1em;
+}
+
+.price {
+	font-weight: bold;
+	font-size: 18px;
+  line-height: 1em;
+}
+
+.review {
+	font-weight: 600;
+	padding-bottom: 40px;
+  line-height: 1em;
+}
+
+.description {
+  	font-size: 14px;
+  	font-weight: 300;
+  	line-height: 25px;
+  	padding-bottom: 30px;
+}
+>>>>>>> master
