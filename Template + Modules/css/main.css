@@ -3,4 +3,10 @@
 body {
   font-family: Muli, sans-serif;
   padding:0.5em;
+  
+}
+
+.logo {
+	text-align: center;
+	font-size: 3em;
 }

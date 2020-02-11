@@ -9,20 +9,31 @@
 /*
   Referenced: https://www.youtube.com/watch?v=JJSoEo8JSnc
   Used this tutorial to learn out how to create flexbox website grid
-*/
+  */
 
 
-/*Template ----*/
-.header-container div {
-background-color:grey;	
-}
+  /*Template ----*/
+  .header-container div, .sale-promotion-container div{
+  	margin-bottom: 1.5em;
+  	background-color: lightgrey;	
+  }
 
 
-.header-container {
+  .header-container {
+  	display:flex;
+  }
+
+  .header-box {
+  	flex:1;
+  	height:10em;
+  }
+
+.sale-promotion-container {
 	display:flex;
+	justify-content: center;
 }
 
-.header-container-box {
-	flex:1;
-	height:10em;
+.sale-promotion-box {
+	width:80%;
+	height: 30em;
 }
