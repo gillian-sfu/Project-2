@@ -76,7 +76,25 @@ body {
 }
 
 /*PRODUCT LISTING*/
-.product-thumbs{
-  height:20em;
-  width: auto;
+.product-image{
+    margin-bottom: 1em;
+}
+.product-description-holder{
+
+  line-height: 0.75em;
+}
+.name-of-product{
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 1em;
+
+}
+
+.add-to-cart-icon {
+  float: right;
+}
+.product-price{
+  font-size: 1em;
 }
