@@ -1,0 +1,49 @@
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+/*
+  Referenced: https://www.youtube.com/watch?v=JJSoEo8JSnc
+  Used this tutorial to learn out how to create flexbox website grid
+*/
+
+
+/*Styleguide ---- */
+.container-1 div, .container-2 div, .container-3 div, .container-4 div,
+.container-5 div, .container-6 div, .container-7 div, .container-8 div,
+.container-9 div, .container-10 div, .container-11 div {
+
+	
+	padding:10px;
+	margin:5px;
+	background-color: lightgrey;
+
+}
+
+/*Template ----*/
+.header-container div {
+	padding:1em;
+	margin:1em;
+	background-color: lightgrey;
+	
+}
+
+
+.container-1, .header-container {
+	display:flex;
+}
+
+.container-1-box{
+	flex:1;
+	height:100px;
+}
+
+.header-container-box {
+	flex:1;
+	height:10em;
+}
+
+.container-2 {
+	display:flex;
+	justify-content: center;
+}

@@ -10,15 +10,20 @@
   Used this tutorial to learn out how to create flexbox website grid
 */
 
+
+
 .container-1 div, .container-2 div, .container-3 div, .container-4 div,
 .container-5 div, .container-6 div, .container-7 div, .container-8 div,
 .container-9 div, .container-10 div, .container-11 div {
 
-	background-color: lightgrey;
+	
 	padding:10px;
 	margin:5px;
+	background-color: lightgrey;
 
 }
+
+
 
 .container-1 {
 	display:flex;
@@ -26,7 +31,7 @@
 
 .container-1-box{
 	flex:1;
-	height:150px;
+	height:100px;
 }
 
 .container-2 {
