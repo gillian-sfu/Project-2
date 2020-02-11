@@ -15,7 +15,7 @@
   /*Template ----*/
   .header-container div, .sale-promotion-container div{
   	margin-bottom: 1.5em;
-  	background-color: lightgrey;	
+  	background-color:lightgrey;	
   }
 
 
@@ -36,4 +36,7 @@
 .sale-promotion-box {
 	width:80%;
 	height: 30em;
+	background-color:lightgrey;
 }
+
+

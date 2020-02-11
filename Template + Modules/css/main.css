@@ -3,10 +3,80 @@
 body {
   font-family: Muli, sans-serif;
   padding:0.5em;
+  margin:2em;
   
 }
+
+/* --------- HEADER ----------- */
 
 .logo {
 	text-align: center;
 	font-size: 3em;
 }
+
+/* MAIN NAVIGATION */
+
+/*
+  Referenced: https://www.youtube.com/watch?v=FEmysQARWFU and Lecture Code Examples
+  Learned how to underline nav when cursor hovers over nav buttons
+*/
+
+.main-nav{
+  display: inline-block;
+  color: rgb(48,48,48);
+  text-decoration: none;
+  position: relative;
+  font-size: 1.3em;
+  margin-right: 3.5em;
+  /*padding-top:0.5em;*/
+
+}
+
+.main-nav-2 {
+  display: inline-block;
+  color: rgb(48,48,48);
+  text-decoration: none;
+  position: relative;
+  font-size: 1.3em;
+  float:right;
+  margin-left: 3.5em;
+  /*padding-top:0.5em;*/
+  
+}
+
+
+.main-nav::before, .main-nav-2::before {
+  content: '';
+  display: block;
+  height: 0.1em;
+  width: 100%;
+  position:absolute;
+
+  bottom: -0.5em;
+  width: 0%;
+
+  transition: 0.2s ease-out;
+}
+
+
+.main-nav:hover::before, .main-nav-2:hover::before {
+  width: 100%;
+  background-color: #66b2b2;
+
+}
+
+.main-nav:hover, .main-nav:active, .main-nav:focus{
+  color: #66b2b2
+
+}
+
+.main-nav-2:hover, .main-nav-2:active, .main-nav-2:focus{
+  color: #66b2b2
+
+}
+
+
+
+
+
+
