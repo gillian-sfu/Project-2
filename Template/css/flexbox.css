@@ -37,12 +37,24 @@
 	width:80%;
 	height: 30em;
 	background-color:lightgrey;
+
 }
 
 /*Product Listing ---*/
 .product-cardholder{
 	display: flex;
+	flex-direction: column;
 }
+
+/*lab 5*/
 .product-description-holder{
-	display: block;
+	position: relative;
+}
+
+.add-to-cart-icon {
+  display:block;
+	position: absolute;
+	right: 0;
+	top:1.5em;
+
 }
