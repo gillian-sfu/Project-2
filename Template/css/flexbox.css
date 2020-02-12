@@ -34,18 +34,18 @@
 	display:flex;
 	justify-content: center;
 
-  position: relative;
-  text-align: center;
-  color: black;
 }
 
 
 .sale-promotion-box {
   width:80%;
   height: 30em;
-
-
   background-color:lightgrey;
+
+   position: relative;
+  text-align: center;
+  color: black;
+  
 }
 
 
@@ -53,8 +53,9 @@
   How to center text over image
 */
 .shop-our-sale {
-  position: absolute;
-  top: 50%;
+  position:absolute;
+  
+  top: 8em;
   left: 50%;
   transform: translate(-50%, -50%);
   font-weight: 700;

@@ -108,6 +108,8 @@ div{
   -webkit-transition: background-color 0.2s ease-out;
   transition: background-color 0.2s ease-out;
   border: 0.125em solid #008080;
+  font-size:0.5em;
+
 
 }
 
