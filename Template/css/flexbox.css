@@ -76,6 +76,13 @@ How to center text over image
 
 }
 
+.image-text-container {
+  text-align: center;
+  
+}
+
+
+
 .footer-container {
 	display: flex;
 }
