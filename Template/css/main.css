@@ -11,6 +11,11 @@ div{
   display: block;
 }
 
+.product-heading{
+  font-size: 2em;
+  margin-left: 6em;
+}
+
 /* --------- HEADER ----------- */
 
 .logo {
