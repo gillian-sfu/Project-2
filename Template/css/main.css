@@ -103,7 +103,6 @@ div{
   margin-bottom: 1em;
 }
 .product-description-holder{
-
   line-height: 0.75em;
 }
 .name-of-product{
@@ -114,10 +113,10 @@ div{
   line-height: 1em;
 }
 
-
 .product-price{
   font-size: 1em;
 }
 .product-cardholder{
   width: 282px;
+  margin: 2em;
 }
