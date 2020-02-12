@@ -7,6 +7,10 @@ body {
 
 }
 
+div{
+  display: block;
+}
+
 /* --------- HEADER ----------- */
 
 .logo {
@@ -73,9 +77,9 @@ body {
 
 .main-nav-2:hover, .main-nav-2:active, .main-nav-2:focus{
   color: #66b2b2
-
 }
 
+<<<<<<< HEAD
 /*--------------HOMEPAGE -------------*/
 
 .sale-image-homepage {
@@ -91,8 +95,14 @@ body {
 
 
 /*-------------PRODUCT LISTING ----------*/
+=======
+/*PRODUCT LISTING*/
+.product-cardholder{
+  width: 282px;
+}
+>>>>>>> master
 .product-image{
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 .product-description-holder{
 
@@ -107,9 +117,7 @@ body {
 
 }
 
-.add-to-cart-icon {
-  float: right;
-}
+
 .product-price{
   font-size: 1em;
 }
