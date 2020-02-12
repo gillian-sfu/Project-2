@@ -3,88 +3,200 @@
 
 
 *, *::after, *::before {
-	box-sizing: border-box;
+box-sizing: border-box;
 }
 
 /*
-  Referenced: https://www.youtube.com/watch?v=JJSoEo8JSnc
-  Used this tutorial to learn out how to create flexbox website grid
-  */
+Referenced: https://www.youtube.com/watch?v=JJSoEo8JSnc
+Used this tutorial to learn out how to create flexbox website grid
+*/
 
 
-  /*Header ----*/
-  .header-container div, .sale-promotion-container div {
-  	margin-bottom: 1.5em;
+/*Header ----*/
+.header-container div, .sale-promotion-container div {
+margin-bottom: 1.5em;
 
 
-  }
+}
 
-  .header-container {
-  	display:flex;
-  }
+.header-container {
+display:flex;
+}
 
-  .header-box {
-  	flex:1;
-  	height:10em;
-  }
+.header-box {
+flex:1;
+height:10em;
+}
 
 
 /*HOMEPAGE --- */
 .sale-promotion-container {
-	display:flex;
-	justify-content: center;
+display:flex;
+justify-content: center;
 
 }
 
 
 .sale-promotion-box {
-  width:80%;
-  height: 30em;
-  background-color:lightgrey;
+width:80%;
+height: 30em;
+background-color:lightgrey;
 
-  position: relative;
-  text-align: center;
-  color: black;
-  
+position: relative;
+text-align: center;
+color: black;
+
 }
 
 
 /*Reference: https://www.w3schools.com/howto/howto_css_image_text.asp
-  How to center text over image
+How to center text over image
 */
 .shop-our-sale {
-  position:absolute;
-  
-  top: 8em;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-weight: 600;
-  font-size: 2.5em;
+position:absolute;
+
+top: 8em;
+left: 50%;
+transform: translate(-50%, -50%);
+font-weight: 600;
+font-size: 2.5em;
 }
 
 
 
 /*Product Listing ---*/
 .product-list, .product-heading{
-	display:flex;
+display:flex;
 }
 
 .product-list{
-	flex-direction: row;
-	justify-content: center;
+flex-direction: row;
+justify-content: center;
 }
 .product-cardholder{
-	flex-direction: column;
+flex-direction: column;
 }
 
-/*lab 5*/
+/*referred to lab 5*/
 .product-description-holder{
-	position: relative;
+position: relative;
 }
 
 .add-to-cart-icon {
-	position: absolute;
-	right: 0;
-	top:1.5em;
+position: absolute;
+right: 0;
+top:1.5em;
 
+}
+
+/* INDIVIDUAL PRODUCT PAGE */
+
+/*Referenced: https://www.w3schools.com/howto/howto_css_dropdown.asp
+Used this source to code drop down button
+*/
+.dropbtn {
+color: black;
+padding: 10px;
+width: 20em;
+font-size: 16px;
+border: 2px solid grey;
+text-align: left;
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: white;
+width: 380px;
+z-index: 1;
+border: 1px solid lightgrey;
+}
+
+
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown-content a:hover {
+background-color: #B2D8D8;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+/*
+Referenced Lecture Week 2 + 3 Code Example for buttons
+*/
+
+.cart-button-nav {
+margin-top: 7em;
+display: inline-block;
+padding: 0.6em 0.75em;
+float:right;
+width: 150px;
+color: white;
+background-color: #008080;
+font-weight: 600;
+text-align: center;
+text-decoration: none;
+-webkit-transition: background-color 0.2s ease-out;
+transition: background-color 0.2s ease-out;
+border: 2px solid #008080;
+position: relative;
+}
+
+.cart-button-nav:hover, .cart-button-nav:focus, .cart-button-nav:active {
+background-color: white;
+color: #008080;
+border-color: #008080
+}
+
+/*https://stackoverflow.com/questions/40600728/trying-to-align-text-under-an-image-using-flexbox*/
+
+@media (max-width: 990px){
+
+	.box{
+		flex-direction: column;
+	}
+	.box-item-image{
+		min-width:700px;
+	}
+
+	.cart-button-nav{
+		float:left;
+		margin-top: 2em;
+	}
+}
+
+
+@media (max-width: 767px) {
+	.box-item-image{
+		min-width:500px;
+	}
+}
+
+
+@media (max-width: 479px){
+
+	.box-item-image{
+		min-width:400px;
+	}
+
+	.box-item-text{
+		order: 2;
+		flex:0 0 100%;
+	}
+
+	.container-6-boxes{
+		width:100%;
+	}
 }
