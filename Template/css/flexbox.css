@@ -49,8 +49,12 @@
 
 
 /*Product Listing ---*/
+.product-list{
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+}
 .product-cardholder{
-	display: flex;
 	flex-direction: column;
 }
 
