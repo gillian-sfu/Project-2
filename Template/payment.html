@@ -5,7 +5,7 @@
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Sign In</title>
+	<title>Payment</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
 
@@ -41,43 +41,37 @@
 
 		</header>
 
-	<h2 class="sign-in">Sign in</h2>
+	<h2 class="create-an-account">Payment Information</h2>
 
 	<!-- Referenced: https://www.w3schools.com/howto/howto_css_login_form.asp -->
 	<form>
+		<div class="create-account-container">
 
-		<div class="sign-in-container">
-			<label for="Email"><b>Email</b></label>
 
-			<input type="text" placeholder="Enter Email" name="Email" required>
+			<label for="Name"><b>Name + Last Name</b></label>
+			<input type="text" placeholder="Enter First and Last Name" name="Name" required>
 
-			<label for="psw"><b>Password</b></label>
+			<label for="CreditCard"><b>Credit Card Number</b></label>
+			<input type="text" placeholder="Enter Credit Card Number" name="CreditCard" required>
 
-			<input type="password" placeholder="Enter Password" name="psw" required>
 
-			<a class="password" href="#">Forgot password?</a>
+			<label for="Expiry"><b>Expiry Date</b></label>
 
-			<label>
-				<input type="checkbox" checked="checked" name="remember"> Remember me
-			</label>
+			<input type="text" placeholder="Enter MM/YY" name="expiry" required>
 
-			<div class="submit-button">
+			<label for="CVV"><b>CVV</b></label>
 
-				<!-- referred to https://stackoverflow.com/questions/16052454/submit-button-doesnt-work/16052974-->
-				<a href="Homepage.html"><button class="login" type="submit" value="submit">Login</button></a> </br>
+			<input type="text" placeholder="Enter CVV" name="CVV" required>
 
-				<a class="create-account" href="create-account.html">Create Account</a>
+
+			<div class="create-account-button">
+
+				<a href="confirmation.html"><button class="create-button">Confirm Order</button></a> </br>
 
 			</div>
 
 		</div>
+
 	</form>
-
-	<!---- FOOTER ----->
-	<div class="footer-container">
-		<div class="footer-box"> Footer</div>
-	</div>
-
-</body>
 
 </html

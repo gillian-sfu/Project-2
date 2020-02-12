@@ -16,9 +16,6 @@ Used this tutorial to learn out how to create flexbox website grid
 .header-container div, .sale-promotion-container div, .image-card-container div, .footer-container {
 	/*margin-bottom: 1.5em;*/
 	margin:0.8em;
-
-
-
 }
 
 .header-container {
@@ -27,7 +24,7 @@ Used this tutorial to learn out how to create flexbox website grid
 
 .header-box {
 	flex:1;
-	height:10em;
+	height:12em;
 }
 
 
@@ -151,7 +148,7 @@ Used lecture code for grid structure
 
 .basket-description{
 padding: 0 1em;
-  
+
 
 }
 
