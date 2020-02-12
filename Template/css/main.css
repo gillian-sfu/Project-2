@@ -11,9 +11,15 @@ div{
   display: block;
 }
 
-.product-heading{
+.page-heading{
   font-size: 2em;
   margin-left: 6em;
+}
+
+.line {
+  margin: 4em 0;
+  padding: 0.5em 0;
+  border-bottom: 1px solid #008080; /*https://www.w3schools.com/cssref/pr_border-top.asp*/
 }
 
 /* --------- HEADER ----------- */
@@ -124,9 +130,11 @@ div{
   font-size: 1.5em;
 }
 
+/*-------------ABOUT PAGE ----------*/
 
-
-
+.about-text-section{
+  margin: 0 6em;
+}
 
 /*-------------PRODUCT LISTING ----------*/
 
@@ -273,7 +281,7 @@ Referenced Lecture Week 2 + 3 Code Example for buttons
 
 /* ----------- SIGN IN + CREATE ACCOUNT PAGE ------- */
 
-/* 
+/*
   Referenced: Referenced: https://www.w3schools.com/howto/howto_css_login_form.asp
 */
 
@@ -301,7 +309,7 @@ input[type=text], input[type=password] {
 
 .login, .create-button{
 
-  width: 30%; 
+  width: 30%;
   padding: 0.5em 1.25em;
   margin: 2px 0;
   border: none;
