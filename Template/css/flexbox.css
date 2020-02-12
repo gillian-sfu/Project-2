@@ -42,7 +42,7 @@
   height: 30em;
   background-color:lightgrey;
 
-   position: relative;
+  position: relative;
   text-align: center;
   color: black;
   
@@ -58,7 +58,7 @@
   top: 8em;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 2.5em;
 }
 
