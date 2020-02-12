@@ -307,7 +307,7 @@ input[type=text], input[type=password] {
   text-align:center;
 }
 
-.login, .create-button{
+.login, .create-button, .checkout{
 
   width: 30%;
   padding: 0.5em 1.25em;
@@ -328,7 +328,7 @@ input[type=text], input[type=password] {
 }
 
 
-.login:hover, .login:focus {
+.login:hover, .login:focus, .login:active, .checkout:hover, .checkout:focus, .checkout:active {
   background-color: white;
   color: #008080;
   border-color: #008080
@@ -376,13 +376,14 @@ input[type=text], input[type=password] {
   text-decoration: none;
 }
 
+/*-----------MY CART ---------------*/
+.basket-item{
+  margin-left: 6em;
 
+}
+.basket-description{
+  display: inline-block;
+  text-align: center;
+  margin-left: 2em;
 
-
-
-
-
-
-
-
-
+}
