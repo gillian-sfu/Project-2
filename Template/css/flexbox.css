@@ -3,7 +3,7 @@
 
 
 *, *::after, *::before {
-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /*
@@ -12,41 +12,41 @@ Used this tutorial to learn out how to create flexbox website grid
 */
 
 
-  /*Header ----*/
-  .header-container div, .sale-promotion-container div, .image-card-container div, .footer-container {
-  	/*margin-bottom: 1.5em;*/
-    margin:0.8em;
+/*Header ----*/
+.header-container div, .sale-promotion-container div, .image-card-container div, .footer-container {
+	/*margin-bottom: 1.5em;*/
+	margin:0.8em;
 
 
 
 }
 
 .header-container {
-display:flex;
+	display:flex;
 }
 
 .header-box {
-flex:1;
-height:10em;
+	flex:1;
+	height:10em;
 }
 
 
 /*HOMEPAGE --- */
 .sale-promotion-container {
-display:flex;
-justify-content: center;
+	display:flex;
+	justify-content: center;
 
 }
 
 
 .sale-promotion-box {
-width:80%;
-height: 30em;
-background-color:lightgrey;
+	width:80%;
+	height: 30em;
+	background-color:lightgrey;
 
-position: relative;
-text-align: center;
-color: black;
+	position: relative;
+	text-align: center;
+	color: black;
 
 }
 
@@ -55,139 +55,102 @@ color: black;
 How to center text over image
 */
 .shop-our-sale {
-position:absolute;
+	position:absolute;
 
-top: 8em;
-left: 50%;
-transform: translate(-50%, -50%);
-font-weight: 600;
-font-size: 2.5em;
+	top: 8em;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-weight: 600;
+	font-size: 2.5em;
 }
 
 .image-card-container {
-  display:flex;
-  flex-flow: wrap;
-  justify-content: center;
-  position:relative;
+	display:flex;
+	flex-flow: wrap;
+	justify-content: center;
+	position:relative;
 
 }
 
 .image-card-boxes {
-  width: 39%;
-  height:20em;
-  background-color:lightgrey;
+	width: 39%;
+	height:20em;
+	background-color:lightgrey;
 
 }
 
 .footer-container {
-  display: flex;
+	display: flex;
 }
 
 .footer-box {
-  flex:1;
-  height:8em;
-  background-color:lightgrey;
+	flex:1;
+	height:8em;
+	background-color:lightgrey;
 }
 
 
 
 /*Product Listing ---*/
 .product-list, .product-heading{
-display:flex;
+	display:flex;
 }
 
 .product-list{
-flex-direction: row;
-justify-content: center;
+	flex-direction: row;
+	justify-content: center;
 }
 .product-cardholder{
-flex-direction: column;
+	flex-direction: column;
 }
 
 /*referred to lab 5*/
 .product-description-holder{
-position: relative;
+	position: relative;
 }
 
 .add-to-cart-icon {
-position: absolute;
-right: 0;
-top:1.5em;
+	position: absolute;
+	right: 0;
+	top:1.5em;
 
 }
 
 /* INDIVIDUAL PRODUCT PAGE */
-
-/*Referenced: https://www.w3schools.com/howto/howto_css_dropdown.asp
-Used this source to code drop down button
-*/
-.dropbtn {
-color: black;
-padding: 10px;
-width: 20em;
-font-size: 16px;
-border: 2px solid grey;
-text-align: left;
-}
-
-.dropdown {
-position: relative;
-display: inline-block;
-}
-
-.dropdown-content {
-display: none;
-position: absolute;
-background-color: white;
-width: 380px;
-z-index: 1;
-border: 1px solid lightgrey;
-}
-
-
-.dropdown-content a {
-color: black;
-padding: 12px 16px;
-text-decoration: none;
-display: block;
-}
-
-.dropdown-content a:hover {
-background-color: #B2D8D8;
-}
-
-.dropdown:hover .dropdown-content {
-display: block;
-}
-
 /*
-Referenced Lecture Week 2 + 3 Code Example for buttons
+Referenced: Week 3 Lecture Code
+Used lecture code for grid structure
 */
 
-.cart-button-nav {
-margin-top: 7em;
-display: inline-block;
-padding: 0.6em 0.75em;
-float:right;
-width: 150px;
-color: white;
-background-color: #008080;
-font-weight: 600;
-text-align: center;
-text-decoration: none;
--webkit-transition: background-color 0.2s ease-out;
-transition: background-color 0.2s ease-out;
-border: 2px solid #008080;
-position: relative;
+.box{
+	display: flex;
 }
 
-.cart-button-nav:hover, .cart-button-nav:focus, .cart-button-nav:active {
-background-color: white;
-color: #008080;
-border-color: #008080
+.box-item-image {
+
+	flex-wrap: wrap;
+
 }
+
+.box-item-text{
+	flex: 1 1 18em;
+	padding: 0 1rem;
+	line-height: 12px;
+}
+
+
 
 /*https://stackoverflow.com/questions/40600728/trying-to-align-text-under-an-image-using-flexbox*/
+
+@media (max-width: 1125px) {
+	.title, .price, .review, .description {
+		flex: 1 1 11em;
+		line-height: 1.5em;
+	}
+	.review{
+		padding: 0;
+	}
+}
 
 @media (max-width: 990px){
 
@@ -195,7 +158,7 @@ border-color: #008080
 		flex-direction: column;
 	}
 	.box-item-image{
-		min-width:700px;
+		min-width:500px;
 	}
 
 	.cart-button-nav{
@@ -207,7 +170,7 @@ border-color: #008080
 
 @media (max-width: 767px) {
 	.box-item-image{
-		min-width:500px;
+		min-width:400px;
 	}
 }
 
@@ -215,7 +178,7 @@ border-color: #008080
 @media (max-width: 479px){
 
 	.box-item-image{
-		min-width:40em;
+		min-width:200px;
 	}
 
 	.box-item-text{
