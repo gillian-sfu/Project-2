@@ -307,7 +307,7 @@ input[type=text], input[type=password] {
   text-align:center;
 }
 
-.login, .create-button, .checkout{
+.login, .create-button, .checkout {
 
   width: 30%;
   padding: 0.5em 1.25em;
@@ -324,6 +324,11 @@ input[type=text], input[type=password] {
   border: 0.125em solid #008080;
   margin-top:3em;
   margin-bottom:1.2em;
+
+}
+
+.checkout {
+  width:100%;
 
 }
 
@@ -387,3 +392,5 @@ input[type=text], input[type=password] {
   margin-left: 2em;
 
 }
+
+

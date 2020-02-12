@@ -141,11 +141,17 @@ Used lecture code for grid structure
 
 
 /*YOUR CART PAGE--------------*/
+
+.basket {
+  display:flex;
+}
 .basket-item{
-	display: flex;
+	flex-wrap: wrap;
 }
 
 .basket-description{
+padding: 0 1em;
+  
 
 }
 
