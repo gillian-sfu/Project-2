@@ -50,6 +50,7 @@ div{
   font-size: 1.3em;
   float:right;
   margin-left: 3.5em;
+  /*padding-top:0.5em;*/
 
 }
 
@@ -86,13 +87,6 @@ div{
 
 /*--------------HOMEPAGE -------------*/
 
-.sale-promotion-box {
-	width:80%;
-	height: 30em;
-	background-color:lightgrey;
-  position:relative;
-}
-
 .sale-image-homepage {
   display:block;
   max-width:100%;
@@ -100,6 +94,29 @@ div{
   margin-left: auto;
   margin-right: auto;
   object-fit: cover;
+}
+
+.shop-now-button {
+  display: inline-block;
+  padding: 0.3em 0.75em;
+  width: 9em;
+  color: white;
+  background-color: #008080;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+  border: 0.125em solid #008080;
+  font-size:0.5em;
+
+
+}
+
+.shop-now-button:hover, .shop-now-button:focus {
+  background-color: white;
+  color: #008080;
+  border-color: #008080
 }
 
 
