@@ -79,12 +79,11 @@ div{
   color: #66b2b2
 }
 
-<<<<<<< HEAD
+
 /*--------------HOMEPAGE -------------*/
 
 .sale-image-homepage {
   display:block;
-
   max-width:100%;
   max-height:30em;
   margin-left: auto;
@@ -95,9 +94,15 @@ div{
 
 
 /*-------------PRODUCT LISTING ----------*/
-=======
-/*PRODUCT LISTING*/
 
+/*PRODUCT LISTING*/
+<<<<<<< Updated upstream
+
+=======
+.product-cardholder{
+  width: 282px;
+}
+>>>>>>> Stashed changes
 
 .product-image{
   margin-bottom: 1em;
