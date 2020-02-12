@@ -15,7 +15,7 @@
   /*Header ----*/
   .header-container div, .sale-promotion-container div {
   	margin-bottom: 1.5em;
- 
+
 
   }
 
@@ -33,15 +33,34 @@
 .sale-promotion-container {
 	display:flex;
 	justify-content: center;
+
+  position: relative;
+  text-align: center;
+  color: black;
 }
 
 
+.sale-promotion-box {
+  width:80%;
+  height: 30em;
 
-.sale-heading-image {
-  font-weight: 700;
-  font-size:5em;
+
+  background-color:lightgrey;
+}
+
+
+/*Reference: https://www.w3schools.com/howto/howto_css_image_text.asp
+  How to center text over image
+*/
+.shop-our-sale {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 700;
+  font-size: 2.5em;
 }
+
 
 
 /*Product Listing ---*/
