@@ -5,7 +5,7 @@
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Sign In</title>
+	<title>Create Account</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
 
@@ -39,38 +39,51 @@
 		</div>
 	</header>
 
-	<h2 class="sign-in">Sign in</h2>
+	<h2 class="create-an-account">Create an Account</h2>
+
+	<p class="fill-in">Please fill in this form to create an account.</p>
 
 	<!-- Referenced: https://www.w3schools.com/howto/howto_css_login_form.asp -->
 	<form>
+		<div class="create-account-container">
 
-		<div class="sign-in-container">
+			
+			<label for="Name"><b>Name</b></label>
+			<input type="text" placeholder="Enter Name" name="Name" required>
+
+			<label for="Lastname"><b>Lastname</b></label>
+			<input type="text" placeholder="Enter Lastname" name="Lastname" required>
+
+
 			<label for="Email"><b>Email</b></label>
 			
 			<input type="text" placeholder="Enter Email" name="Email" required>
 
-			<label for="psw"><b>Password</b></label>
+			<label for="password"><b>Password</b></label>
 			
 			<input type="password" placeholder="Enter Password" name="psw" required>
 
-			<a class="password" href="#">Forgot password?</a>
+			<label for="password"><b>Confirm Password</b></label>
+			
+			<input type="password" placeholder="Enter Password" name="psw" required>
+
+			<p>By creating an account you agree to our  <a class ="terms-conditions" href="#"">Terms & Condition</a></p>
 
 			<label>
-				<input type="checkbox" checked="checked" name="remember"> Remember me
+				<input type="checkbox" checked="checked" name="I agree with the terms and conditions"> I have read and agree to the terms and conditions
 			</label>
 
-			<div class="submit-button">
+			<div class="create-account-button">
 
-				<button class="login" ">Login</button> </br>
+				<button class="create-button" ">Create an Account</button> </br>
 
-				<a class="create-account" href="create-account.html">Create Account</a>
+				<a class="login-button" href="sign-in.html">Login</a>
 
 			</div>
-
-
-
 			
 		</div>
+
+
 	</form>
 
 </body>
