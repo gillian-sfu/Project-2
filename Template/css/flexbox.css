@@ -25,6 +25,11 @@ Used this tutorial to learn out how to create flexbox website grid
 .header-box {
 	flex:1;
 	height:12em;
+
+  /*line*/
+  margin: 4em 0;
+  padding: 0.5em 0;
+  border-bottom: 1px solid #008080; /*https://www.w3schools.com/cssref/pr_border-top.asp*/
 }
 
 
@@ -78,7 +83,7 @@ How to center text over image
 
 .image-text-container {
   text-align: center;
-  
+
 }
 
 
@@ -90,7 +95,7 @@ How to center text over image
 .footer-box {
 	flex:1;
 	height:8em;
-	background-color:lightgrey;
+	border-top: 1px solid #008080;
 }
 
 
