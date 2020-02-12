@@ -40,8 +40,11 @@
 }
 
 /*Product Listing ---*/
-.product-list{
+.product-list, .product-heading{
 	display:flex;
+}
+
+.product-list{
 	flex-direction: row;
 	justify-content: center;
 }
