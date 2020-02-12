@@ -38,7 +38,7 @@ div{
   font-size: 1.3em;
   margin-right: 3.5em;
 
-  /*padding-top:0.5em;*/
+
 
 }
 
@@ -50,7 +50,6 @@ div{
   font-size: 1.3em;
   float:right;
   margin-left: 3.5em;
-  /*padding-top:0.5em;*/
 
 }
 
@@ -108,10 +107,7 @@ div{
 .product-cardholder{
   width: 282px;
 }
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
 
 .product-image{
   margin-bottom: 1em;

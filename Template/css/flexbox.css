@@ -13,11 +13,11 @@
 
 
   /*Header ----*/
-  .header-container div, .sale-promotion-container div, .homepage-small-image-container div, .footer-container div {
+  .header-container div, .sale-promotion-container div {
   	margin-bottom: 1.5em;
+ 
 
   }
-
 
   .header-container {
   	display:flex;
@@ -28,27 +28,6 @@
   	height:10em;
   }
 
-.homepage-small-image-container{
-  display:flex;
-  justify-content: center;
-}
-
-.small-image-boxes {
-  width:80%;
-  height: 50em;
-}
-
-..footer-container{
-  display:flex;
-  flex-flow: wrap;
-  justify-content: center;
-}
-
-.footer-box {
-  width: 26%;
-  height:10em;
-
-}
 
 /*HOMEPAGE --- */
 .sale-promotion-container {
