@@ -173,9 +173,9 @@ div{
 	padding: 0 0.25;
 }
 
-img{
+.reponsive-product-image{
   height:auto;
-  width: 85%;
+  width: 55%;
 }
 
 .title {

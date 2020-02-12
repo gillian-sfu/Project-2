@@ -17,7 +17,7 @@ Used this tutorial to learn out how to create flexbox website grid
   	/*margin-bottom: 1.5em;*/
     margin:0.8em;
 
-  
+
 
 }
 
@@ -215,15 +215,11 @@ border-color: #008080
 @media (max-width: 479px){
 
 	.box-item-image{
-		min-width:400px;
+		min-width:40em;
 	}
 
 	.box-item-text{
 		order: 2;
 		flex:0 0 100%;
-	}
-
-	.container-6-boxes{
-		width:100%;
 	}
 }
