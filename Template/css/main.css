@@ -201,3 +201,96 @@ div{
   	line-height: 25px;
   	padding-bottom: 30px;
 }
+
+/* ----------- SIGN IN PAGE ------- */
+
+/* 
+  Referenced: Referenced: https://www.w3schools.com/howto/howto_css_login_form.asp
+*/
+
+.sign-in {
+  text-align: center;
+}
+
+form {
+  border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 1.2em 1.25em;
+  margin: 2em 0;
+  display: inline-block;
+  border: 0.1em solid lightgrey;
+  box-sizing: border-box;
+}
+
+.submit-button {
+  text-align:center;
+}
+
+.login {
+
+  width: 30%; 
+  padding: 0.5em 1.25em;
+  margin: 2px 0;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1.3em;
+  background-color: #008080;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+  border: 0.125em solid #008080;
+  margin-top:3em;
+  margin-bottom:1.2em;
+
+}
+
+
+.login:hover, .login:focus {
+  background-color: white;
+  color: #008080;
+  border-color: #008080
+}
+
+.sign-in-container {
+  padding: 2em;
+}
+
+.password {
+  float: right;
+  color: black;
+}
+
+.password:hover, .password:active, .password:focus {
+  color: #66b2b2
+
+}
+
+.create-account {
+  font-size: 1.2em;
+  color: black;
+}
+
+.create-account:hover, .create-account:active, .create-account:focus {
+  color: #66b2b2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
