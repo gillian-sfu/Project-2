@@ -97,10 +97,8 @@ div{
 /*-------------PRODUCT LISTING ----------*/
 =======
 /*PRODUCT LISTING*/
-.product-cardholder{
-  width: 282px;
-}
->>>>>>> master
+
+
 .product-image{
   margin-bottom: 1em;
 }
@@ -114,10 +112,12 @@ div{
   font-weight: 700;
   font-size: 1em;
   line-height: 1em;
-
 }
 
 
 .product-price{
   font-size: 1em;
+}
+.product-cardholder{
+  width: 282px;
 }
