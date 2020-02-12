@@ -11,9 +11,9 @@ div{
   display: block;
 }
 
-.page-heading{
+.product-heading{
   font-size: 2em;
-  margin-left: 3em;
+  margin-left: 6em;
 }
 
 /* --------- HEADER ----------- */
@@ -110,13 +110,18 @@ div{
   border: 0.125em solid #008080;
   font-size:0.5em;
 
-
 }
 
 .shop-now-button:hover, .shop-now-button:focus {
   background-color: white;
   color: #008080;
   border-color: #008080
+}
+
+.Lorem-Ipsum {
+  position:absolute;
+  font-weight: 600;
+  font-size: 1.5em;
 }
 
 
