@@ -96,14 +96,7 @@ h1, h2{
 
 /*--------------HOMEPAGE -------------*/
 
-.sale-image-homepage {
-  display:block;
-  max-width:auto;
-  max-height:30em;
-  margin-left: auto;
-  margin-right: auto;
-  object-fit: cover;
-}
+
 
 .shop-now-button {
   display: inline-block;
@@ -117,7 +110,7 @@ h1, h2{
   -webkit-transition: background-color 0.2s ease-out;
   transition: background-color 0.2s ease-out;
   border: 0.125em solid #008080;
-  font-size:0.5em;
+  
 
 }
 
@@ -127,10 +120,26 @@ h1, h2{
   border-color: #008080
 }
 
-.Lorem-Ipsum {
-  position:absolute;
+.sale-text-container {
   font-weight: 600;
-  font-size: 1.5em;
+  font-size: 1.3em;
+
+  text-align: center;
+  padding: 11em 0em 0em 0em;
+ 
+
+
+}
+
+.image-text-container {
+
+  text-align: center;
+  padding: 11em 0em 0em 0em;
+  color:white;
+
+
+
+
 }
 
 /*-------------ABOUT PAGE ----------*/
