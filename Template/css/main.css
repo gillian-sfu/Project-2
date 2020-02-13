@@ -2,8 +2,8 @@
 
 body {
   font-family: Muli, sans-serif;
-  padding:0.5em;
-  margin:2em;
+  padding:0.5em 4em 0.5em 4em;
+  margin:0em 2em 2em 2em;
 
 }
 
@@ -29,6 +29,8 @@ h1, h2{
   color: black;
   margin-bottom: 6em;
 }
+
+
 
 /* MAIN NAVIGATION */
 
@@ -69,7 +71,7 @@ h1, h2{
   width: 100%;
   position:absolute;
 
-  bottom: -0.5em;
+  bottom: -0.3em;
   width: 0%;
 
   transition: 0.2s ease-out;
