@@ -1,0 +1,406 @@
+
+
+body {
+  font-family: Muli, sans-serif;
+  padding:0.5em 4em 0.5em 4em;
+  margin:0em 2em 2em 2em;
+
+}
+
+div{
+  display: block;
+}
+
+.page-heading{
+  font-size: 2em;
+  text-align: center;
+}
+
+h1, h2{
+  text-align: center;
+}
+
+/* --------- HEADER ----------- */
+
+.logo {
+	text-align: center;
+	font-size: 1.7em;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 6em;
+}
+
+
+
+/* MAIN NAVIGATION */
+
+/*
+  Referenced: https://www.youtube.com/watch?v=FEmysQARWFU and Lecture Code Examples
+  Learned how to underline nav when cursor hovers over nav buttons
+*/
+
+.main-nav{
+  display: inline-block;
+  color: rgb(48,48,48);
+  text-decoration: none;
+  position: relative;
+  font-size: 1.3em;
+  margin-right: 3.5em;
+
+
+
+}
+
+.main-nav-2 {
+  display: inline-block;
+  color: rgb(48,48,48);
+  text-decoration: none;
+  position: relative;
+  font-size: 1.3em;
+  float:right;
+  margin-left: 3.5em;
+  /*padding-top:0.5em;*/
+
+}
+
+
+.main-nav::before, .main-nav-2::before {
+  content: '';
+  display: block;
+  height: 0.1em;
+  width: 100%;
+  position:absolute;
+
+  bottom: -0.3em;
+  width: 0%;
+
+  transition: 0.2s ease-out;
+}
+
+
+.main-nav:hover::before, .main-nav-2:hover::before {
+  width: 100%;
+  background-color: #66b2b2;
+
+}
+
+.main-nav:hover, .main-nav:active, .main-nav:focus{
+  color: #66b2b2
+
+}
+
+.main-nav-2:hover, .main-nav-2:active, .main-nav-2:focus{
+  color: #66b2b2
+}
+
+
+/*--------------HOMEPAGE -------------*/
+
+
+
+.shop-now-button {
+  display: inline-block;
+  padding: 0.3em 0.75em;
+  width: 9em;
+  color: white;
+  background-color: #008080;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+  border: 0.125em solid #008080;
+  
+
+}
+
+.shop-now-button:hover, .shop-now-button:focus {
+  background-color: white;
+  color: #008080;
+  border-color: #008080
+}
+
+.sale-text-container {
+  font-weight: 600;
+  font-size: 1.3em;
+
+  text-align: center;
+  padding: 11em 0em 0em 0em;
+ 
+
+
+}
+
+.image-text-container {
+
+  text-align: center;
+  padding: 11em 0em 0em 0em;
+  color:white;
+
+
+
+
+}
+
+/*-------------ABOUT PAGE ----------*/
+
+.about-text-section{
+  margin: 0 6em;
+}
+
+/*-------------PRODUCT LISTING ----------*/
+
+/*PRODUCT LISTING*/
+
+
+.product-cardholder{
+  width: 282px;
+}
+
+
+.product-image{
+  margin-bottom: 1em;
+}
+.product-description-holder{
+  line-height: 0.75em;
+}
+.name-of-product{
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 1em;
+}
+
+.product-price{
+  font-size: 1em;
+}
+.product-cardholder{
+  width: 282px;
+  margin: 2em;
+}
+
+/*-----------BLOOD ORANGE PRODUCT PAGE ---------*/
+.box-item-text{
+	position: relative;
+  max-width: 30em;
+}
+
+
+/*Referenced: https://www.w3schools.com/howto/howto_css_dropdown.asp
+Used this source to code drop down button
+*/
+.dropbtn {
+	color: black;
+	padding: 10px;
+	width: 29em;
+	font-size: 16px;
+	border: 2px solid grey;
+	text-align: left;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: white;
+	width: 29em;
+	z-index: 1;
+	border: 1px solid lightgrey;
+}
+
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover, .dropdown-content a:active, .dropdown-content a:focus {
+	background-color: #B2D8D8;
+}
+
+.dropdown:hover .dropdown-content, .dropdown:active .dropdown-content, .dropdown:focus .dropdown-content {
+	display: block;
+}
+
+/*
+Referenced Lecture Week 2 + 3 Code Example for buttons
+*/
+.cart-button-nav{
+	position: absolute;
+  right: 0;
+	bottom: 0.5rem;
+  margin-top: 7em;
+  display: inline-block;
+  padding: 0.6em 0.75em;
+  width: 10em;
+  color: white;
+  background-color: #008080;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+  border: 2px solid #008080;
+}
+
+
+.cart-button-nav:hover, .cart-button-nav:focus, .cart-button-nav:active {
+	background-color: white;
+	color: #008080;
+	border-color: #008080
+}
+
+.box-item-image{
+  /*width: 690.3px;*/
+}
+
+.reponsive-product-image{
+  height:auto;
+  width: 100%;
+}
+
+.title {
+	font-size: 35px;
+	line-height: 1em;
+}
+
+.price {
+	font-weight: bold;
+	font-size: 18px;
+  line-height: 1em;
+}
+
+.review {
+	font-weight: 600;
+	padding-bottom: 40px;
+  line-height: 1em;
+}
+
+.description {
+  	font-size: 14px;
+  	font-weight: 300;
+  	line-height: 25px;
+  	padding-bottom: 30px;
+    max-width: 30em;
+}
+
+/* ----------- SIGN IN + CREATE ACCOUNT PAGE ------- */
+
+/*
+  Referenced: Referenced: https://www.w3schools.com/howto/howto_css_login_form.asp
+*/
+
+.sign-in, .create-an-account {
+  text-align: center;
+}
+
+form {
+  border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 1.2em 1.25em;
+  margin: 2em 0;
+  display: inline-block;
+  border: 0.1em solid lightgrey;
+  box-sizing: border-box;
+}
+
+.submit-button, .create-account-button,.fill-in {
+  text-align:center;
+}
+
+.login, .create-button, .checkout {
+
+  width: 30%;
+  padding: 0.5em 1.25em;
+  margin: 2px 0;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1.3em;
+  background-color: #008080;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+  border: 0.125em solid #008080;
+  margin-top:3em;
+  margin-bottom:1.2em;
+
+}
+
+.checkout {
+  width:100%;
+
+}
+
+
+.login:hover, .login:focus, .login:active, .checkout:hover, .checkout:focus, .checkout:active {
+  background-color: white;
+  color: #008080;
+  border-color: #008080
+}
+
+
+.sign-in-container, .create-account-container {
+  padding: 2em;
+}
+
+.password {
+  float: right;
+  color: black;
+}
+
+.password:hover, .password:active, .password:focus {
+  color: #66b2b2
+
+}
+
+.create-account, .login-button {
+  font-size: 1.2em;
+  color: black;
+}
+
+.create-account:hover, .create-account:active, .create-account:focus {
+  color: #66b2b2
+
+}
+
+/*CREATE ACCOUNT PAGE LINK --------- */
+
+.create-button:hover, .create-button:focus {
+  background-color: white;
+  color: #008080;
+  border-color: #008080
+}
+
+.login-button:hover, .login-button:active, .login-button:focus {
+  color: #66b2b2
+
+}
+
+.terms-conditions {
+  text-decoration: none;
+}
+
+/*-----------MY CART ---------------*/
+.basket-item{
+  margin-left: 6em;
+
+}
+.basket-description{
+  display: inline-block;
+  text-align: center;
+  margin-left: 2em;
+
+}

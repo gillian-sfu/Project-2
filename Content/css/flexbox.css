@@ -1,0 +1,245 @@
+
+/*WEBSITE GRID STRUCTURE--------------*/
+
+
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+/*
+Referenced: https://www.youtube.com/watch?v=JJSoEo8JSnc
+Used this tutorial to learn out how to create flexbox website grid
+*/
+
+
+/*HEADER -----------*/
+.header-container div, .sale-promotion-container div, .image-card-container div, .footer-container div {
+	/*margin-bottom: 1.5em;*/
+	margin:0em 0.8em 1.5em 0.8em;
+  
+
+}
+
+.header-container {
+	display:flex;
+  margin-bottom: 1em;
+}
+
+.header-box {
+	flex:1;
+	height:12em;
+
+  /*line*/
+  margin: 4em 0;
+  padding: 0.5em 0;
+  border-bottom: 1.5px solid lightgrey; /*https://www.w3schools.com/cssref/pr_border-top.asp*/
+}
+
+/*-------------END OF HEADER*/
+
+
+/* HOMEPAGE ---------- */
+
+.sale-promotion-container {
+	display:flex;
+	justify-content: center;
+
+}
+
+
+.sale-promotion-box {
+  background-image: url(../img/tea5.jpg); /* https://www.youtube.com/watch?v=33IinMVJf-M*/
+  background-size:cover;
+	width:80%;
+	height: 30em;
+
+	position: relative;
+	text-align: center;
+	color: black;
+  position:relative;
+  
+
+}
+
+/*Reference: https://www.w3schools.com/howto/howto_css_image_text.asp
+How to center text over image
+*/
+
+.shop-our-sale {
+	position:absolute;
+
+	top: 8em;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-weight: 600;
+	font-size: 2.5em;
+}
+
+.image-card-container {
+	display:flex;
+	flex-flow: wrap;
+	justify-content: center;
+	position:relative;
+
+}
+
+.image-card-box-1 {
+  background-image: url(../img/tea1.jpg);
+  background-size:cover;
+	width: 38.8%;
+	height:20em;
+	background-color:lightgrey;
+
+}
+
+.image-card-box-2 {
+  background-image: url(../img/tea4.jpg);
+  background-size:cover;
+  width: 38.8%;
+  height:20em;
+  background-color:lightgrey;
+
+}
+
+
+
+
+
+/*--------------END OF HOMEPAGE*/
+
+
+/*FOOTER ---------------*/
+
+
+.footer-container {
+	display: flex;
+}
+
+.footer-box {
+	flex:1;
+	height:4em;
+
+  /*line*/
+	border-top: 1px solid #008080;
+}
+
+.footer-text {
+  flex:1;
+
+}
+
+/*-----------END OF FOOTER */
+
+
+/*Product Listing ---*/
+.product-list, .product-heading{
+	display:flex;
+}
+
+.product-list{
+	flex-direction: row;
+	justify-content: center;
+}
+.product-cardholder{
+	flex-direction: column;
+}
+
+/*referred to lab 5*/
+.product-description-holder{
+	position: relative;
+}
+
+.add-to-cart-icon {
+	position: absolute;
+	right: 0;
+	top:1.5em;
+
+}
+
+/* INDIVIDUAL PRODUCT PAGE */
+/*
+Referenced: Week 3 Lecture Code
+Used lecture code for grid structure
+*/
+
+.box{
+	display: flex;
+}
+
+.box-item-image {
+
+	flex-wrap: wrap;
+
+}
+
+.box-item-text{
+	flex: 1 1 18em;
+	padding: 0 1rem;
+	line-height: 12px;
+}
+
+
+
+/*YOUR CART PAGE--------------*/
+
+.basket {
+  display:flex;
+}
+.basket-item{
+	flex-wrap: wrap;
+}
+
+.basket-description{
+padding: 0 1em;
+
+
+}
+
+
+
+/*https://stackoverflow.com/questions/40600728/trying-to-align-text-under-an-image-using-flexbox*/
+
+@media (max-width: 1125px) {
+	.title, .price, .review, .description {
+		flex: 1 1 11em;
+		line-height: 1.5em;
+	}
+	.review{
+		padding: 0;
+	}
+}
+
+@media (max-width: 990px){
+
+	.box{
+		flex-direction: column;
+	}
+	.box-item-image{
+		min-width:500px;
+	}
+
+	.cart-button-nav{
+		float:left;
+		margin-top: 2em;
+	}
+}
+
+
+@media (max-width: 767px) {
+	.box-item-image{
+		min-width:400px;
+	}
+}
+
+
+@media (max-width: 479px){
+
+	.box-item-image{
+		min-width:200px;
+	}
+
+	.box-item-text{
+		order: 2;
+		flex:0 0 100%;
+	}
+}
