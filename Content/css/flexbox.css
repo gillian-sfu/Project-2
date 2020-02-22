@@ -61,7 +61,6 @@ Used this tutorial to learn out how to create flexbox website grid
 	color: black;
 	position:relative;
 
-
 }
 
 /*Reference: https://www.w3schools.com/howto/howto_css_image_text.asp
@@ -80,13 +79,13 @@ How to center text over image
 
 .image-card-container div {
 
-	margin:0em 0em 1.5em 0em;
+	margin:2em 2em 4.5em 2em;
 }
 
 .image-card-container {
 	display:flex;
 	flex-flow: wrap;
-	justify-content: space-between;
+	justify-content: center;
 	position:relative;
 
 }
@@ -95,18 +94,18 @@ How to center text over image
 	background-image: url(../img/tea1.jpg);
 	background-size:cover;
 	display:table;
-	width:49%;
-	height:25em;
+	width:44%;
+	height:35em;
 	
-	
+		
 
 }
 
 .image-card-box-2 {
 	background-image: url(../img/tea4.jpg);
 	background-size:cover;
-	width:49%;
-	height:25em;
+	width:44%;
+	height:35em;
 	
 	
 
