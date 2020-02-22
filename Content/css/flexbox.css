@@ -49,7 +49,6 @@ Used this tutorial to learn out how to create flexbox website grid
 	justify-content: center;
 }
 
-
 .sale-promotion-box {
 	background-image: url(../img/tea5.jpg); /* https://www.youtube.com/watch?v=33IinMVJf-M*/
 	background-size:cover;
@@ -69,7 +68,6 @@ How to center text over image
 
 .shop-our-sale {
 	position:absolute;
-
 	top: 8em;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -87,7 +85,6 @@ How to center text over image
 	flex-flow: wrap;
 	justify-content: center;
 	position:relative;
-
 }
 
 .image-card-box-1 {
@@ -159,7 +156,6 @@ How to center text over image
 	position: absolute;
 	right: 0;
 	top:1.5em;
-
 }
 
 /* INDIVIDUAL PRODUCT PAGE */
@@ -179,8 +175,7 @@ Used lecture code for grid structure
 }
 
 .box-item-text{
-	flex: 1 1 18em;
-	padding: 0 1rem;
+/*	flex: 1 1 18em;*/
 	line-height: 12px;
 }
 
@@ -204,14 +199,33 @@ Used lecture code for grid structure
 
 
 /*https://stackoverflow.com/questions/40600728/trying-to-align-text-under-an-image-using-flexbox*/
+@media(max-width: 1260px) {
+	.dropbtn, .cart-button-nav{
+		bottom:0.5rem;
+	}
+
+	.box-item-text{
+		order: 2;
+		flex:0 0 50%;
+	}
+	body{
+		background-color: red;
+	}
+}
 
 @media (max-width: 1125px) {
 	.title, .price, .review, .description {
-		flex: 1 1 11em;
-		line-height: 1.5em;
+/*		flex: 1 1 11em;
+		line-height: 1.5em;*/
 	}
 	.review{
 		padding: 0;
+	}
+	.product-buttons{
+		bottom:6rem;
+	}
+	body{
+		background-color: blue;
 	}
 }
 
@@ -228,6 +242,9 @@ Used lecture code for grid structure
 		float:left;
 		margin-top: 2em;
 	}
+	body{
+		background-color: green;
+	}
 }
 
 
@@ -235,6 +252,10 @@ Used lecture code for grid structure
 	.box-item-image{
 		min-width:400px;
 	}
+	body{
+		background-color: yellow;
+	}
+
 }
 
 
@@ -247,5 +268,8 @@ Used lecture code for grid structure
 	.box-item-text{
 		order: 2;
 		flex:0 0 100%;
+	}
+	body{
+		background-color: orange;
 	}
 }
