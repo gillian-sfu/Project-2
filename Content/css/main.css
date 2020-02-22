@@ -3,8 +3,8 @@
 body {
   font-family: Muli, sans-serif;
   margin:0;
-  
-  
+
+
   /*padding:0.5em 4em 0.5em 4em; */
   /* margin:0em 2em 2em 2em; */
 
@@ -102,7 +102,7 @@ h1, h2{
   float: left;
 }
 
-/*Referenced 
+/*Referenced
   https://www.youtube.com/watch?v=FEmysQARWFU and Lecture Code Examples
   Used tutorial to learn how to underline nav when cursor hovers over nav buttons
 */
@@ -295,26 +295,13 @@ h1, h2{
 Used this source to code drop down button
 */
 
-.product-buttons{
-  bottom:5rem;
-}
-.dropbtn {
-	color: black;
-	padding: 0.5em 0.75em;
-	width: auto;
-	font-size: 16px;
-	border: 2px solid grey;
-	text-align: left;
-  position:absolute;
-  left:2rem;
-}
 
 /*
 Referenced Lecture Week 2 + 3 Code Example for buttons
 */
 .cart-button-nav{
 	position: absolute;
-  right: 0;
+  bottom:0rem;
   padding: 0.6em 0.75em;
   width: 10em;
   color: white;
@@ -335,7 +322,7 @@ Referenced Lecture Week 2 + 3 Code Example for buttons
 }
 
 .box-item-image{
-  /*width: 690.3px;*/
+  width: 650px;
 }
 
 .reponsive-product-image{
@@ -356,8 +343,14 @@ Referenced Lecture Week 2 + 3 Code Example for buttons
 
 .review {
 	font-weight: 600;
-	padding-bottom: 40px;
   line-height: 1em;
+}
+
+.grams{
+  padding:0.8em;
+  width: 4em;
+  text-align:center;
+  border: 2px solid #f1f1f1;
 }
 
 .description {
