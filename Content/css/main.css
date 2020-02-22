@@ -2,8 +2,9 @@
 
 body {
   font-family: Muli, sans-serif;
-  padding:0.5em 4em 0.5em 4em;
-  margin:0em 2em 2em 2em;
+  
+  /*padding:0.5em 4em 0.5em 4em; */
+  /* margin:0em 2em 2em 2em; */
 
 }
 
@@ -44,8 +45,9 @@ h1, h2{
   color: rgb(48,48,48);
   text-decoration: none;
   position: relative;
-  font-size: 1.3em;
-  margin-right: 3.5em;
+  font-size: 1.2em;
+  /*margin-right: 3.5em;*/
+  margin:0em 1em 0em 3em;
 
 
 
@@ -56,10 +58,12 @@ h1, h2{
   color: rgb(48,48,48);
   text-decoration: none;
   position: relative;
-  font-size: 1.3em;
+  font-size: 1.2em;
   float:right;
-  margin-left: 3.5em;
+  /*margin-left: 3.5em;*/
   /*padding-top:0.5em;*/
+   margin: 0em 3em 0em 1em;
+
 
 }
 
