@@ -95,7 +95,7 @@ How to center text over image
 }
 
 .category-box {
-  	
+
   	border: 0.05em solid #cecece;
   	border-right:none;
   	border-left:none;
@@ -107,9 +107,9 @@ How to center text over image
   font-weight:700;
   font-size: 1em;
   padding-top:2.5em;
-    
-    
-  
+
+
+
 }
 
 .image-card-container div {
@@ -218,13 +218,14 @@ Used lecture code for grid structure
 .basket{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: center;
 }
-.basket-image{
+/* .basket-image{
 	width: 49%;
-}
+} */
 .basket-item{
 	max-width: 100%;
+	width:100%;
 	vertical-align: middle;
 	display: inline-block;
 
@@ -232,7 +233,7 @@ Used lecture code for grid structure
 .basket-description{
 	display: flex;
 	flex-direction: column;
-	width: 49%;
+	width: 25%;
 }
 
 

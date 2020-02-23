@@ -445,8 +445,9 @@ input[type=text], input[type=password] {
 /*-----------MY CART ---------------*/
 
 /* .basket-description{
-display: inline-block;
-text-align: center;
-margin-left: 2em;
-
+  display: inline-block;
+  text-align: center;
+  margin-left: 2em;
+  align-items: flex-start;
+  width:49%;
 } */
