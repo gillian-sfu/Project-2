@@ -118,11 +118,11 @@ a.logo {
   Used tutorial to learn how to underline nav when cursor hovers over nav buttons
 */
 
-.main-nav-option a:hover {
+a.main-nav-option a:hover {
    color: #66b2b2
 }
 
-.main-nav-option a::before {
+a.main-nav-option a::before {
   content: '';
   display: block;
   height: 0.1em;
