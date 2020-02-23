@@ -36,9 +36,9 @@ Used this tutorial to learn out how to create flexbox website grid
 }
 
 .utility-nav{
-  	display: flex;
+  display: flex;
 	width: 33.333%;
-  	justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 
@@ -66,6 +66,7 @@ Used this tutorial to learn out how to create flexbox website grid
 	position: relative;
 	text-align: center;
 	color: black;
+	position:relative;
 
 }
 
@@ -82,35 +83,9 @@ How to center text over image
 	font-size: 2.5em;
 }
 
-.category-text-container div {
-
-	margin:0em 0em 1.5em 0em;
-}
-
-.category-box, .category-container{
-	display:flex;
-
-}
-
-.category-box {
-  	/*border-top: 1px solid #008080*/
-  	border: 0.1em solid lightgrey;
-  	border-right:none;
-  	border-left:none;
-	height:10em;
-
-}
-
-.category-container {
-	text-align: center;
-}
-
-
-
-
 .image-card-container div {
 
-	margin:0em 2em 4.5em 2em;
+	margin:2em 2em 4.5em 2em;
 }
 
 .image-card-container {
@@ -228,7 +203,6 @@ Used lecture code for grid structure
 	padding: 0 1em;
 }
 
-
 /*https://stackoverflow.com/questions/40600728/trying-to-align-text-under-an-image-using-flexbox*/
 @media(max-width: 1260px) {
 	.cart-button-nav{
@@ -278,13 +252,13 @@ Used lecture code for grid structure
 		display: block;
 	}
 	.nav-content{
-	position: relative;
+		position: relative;
     padding-bottom: 3rem;
-    
+    justify-content: center;
 	}
 
 	.main-nav{
-	position: absolute;
+		position: absolute;
     bottom: 0em;
     display: flex;
     width: 100%;
@@ -293,11 +267,7 @@ Used lecture code for grid structure
     justify-content: center;
 	}
 
-	.utility-nav {
-	
-		padding-top:1em;
-		justify-content: center;
-	}
+
 
 
 
