@@ -16,23 +16,31 @@ Used this tutorial to learn out how to create flexbox website grid
 .header-container div, .footer-container div {
 	margin:0em 0em 1.5em 0em;
 }
-
-
-
-.header-container {
-	display:flex;
-
+.logo-area{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-.header-box {
-	flex:1;
-	height:10em;
-
-	/*line*/
-	/*margin: 4em 0; */
-	/* padding: 0.5em 0; */
-	/*border-bottom: 1px solid #008080;*/ /*https://www.w3schools.com/cssref/pr_border-top.asp*/
+.nav-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.main-nav {
+	display: flex;
+	width:33.333%;
+	justify-content: flex-start;
+}
+
+.utility-nav{
+  display: flex;
+	width: 33.333%;
+  justify-content: flex-end;
+}
+
 
 /*-------------END OF HEADER*/
 
@@ -137,14 +145,21 @@ How to center text over image
 /*Product Listing ---*/
 .product-list, .product-heading{
 	display:flex;
+	flex-wrap: wrap;
 }
 
 .product-list{
 	flex-direction: row;
 	justify-content: center;
+	flex-basis: 34%;
 }
 .product-cardholder{
 	flex-direction: column;
+
+}
+.product-price{
+	display: flex;
+	justify-content: space-between;
 }
 
 /*referred to lab 5*/
@@ -223,12 +238,6 @@ Used lecture code for grid structure
 	.box-item-text, .box-item-image{
 		width:100%;
 	}
-	.product-cardholder{
-		width:50%;
-	}
-	.product-image{
-		width:50%;
-	}
 	body{
 		background-color: green;
 	}
@@ -239,6 +248,28 @@ Used lecture code for grid structure
 	body{
 		background-color: yellow;
 	}
+	.product-menu{
+		display: block;
+	}
+	.nav-content{
+		position: relative;
+    padding-bottom: 3rem;
+    justify-content: center;
+	}
+
+	.main-nav{
+		position: absolute;
+    bottom: 0em;
+    display: flex;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    justify-content: center;
+	}
+
+
+
+
 
 }
 

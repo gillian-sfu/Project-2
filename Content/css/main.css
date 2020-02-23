@@ -26,6 +26,16 @@ h1, h2{
 
 /* --------- HEADER ----------- */
 
+/*.logo {
+	text-align: center;
+	font-size: 1.7em;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 6em;
+}*/
+
+
+
 /* MAIN NAVIGATION */
 
 /*
@@ -34,12 +44,34 @@ h1, h2{
   --> Used this tutorial to learn how to put nav on right and left side with the logo in the middle
 */
 
-
-.main-nav  {
-  margin: 0 auto;
+/* https://stackoverflow.com/questions/885691/how-to-make-a-ul-display-in-a-horizontal-row*/
+.nav-content{
+  padding: 2.3em 0em;
 }
 
-.main-nav ul {
+.main-nav-option{
+  list-style: none;
+}
+
+a.main-nav-option {
+  margin-right: 2rem;
+  color: #303030;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+a.logo {
+  font-family: 'lobster';
+  color: rgb(48,48,48);
+  text-decoration: none;
+  font-size: 1.5em;
+
+}
+
+
+
+/*.main-nav ul {
   margin: 0;
   padding:0;
   list-style: none;
@@ -53,7 +85,6 @@ h1, h2{
   float: none;
   display: inline-block;
   margin: 2.5em 2.5em;
-
   position: relative;
 }
 
@@ -70,16 +101,16 @@ h1, h2{
 .main-nav ul li:nth-child(3){
   float: left;
 
-}
+}*/
 
 .user-icon {
-  margin: 2.5em 2.5em;
-  line-height: 8em;
+  margin-left: 2.5em;
 
 }
 
 .fa-user-circle, .fa-shopping-bag{
   font-size:1.5em;
+  color: #303030;
 }
 
 /*Referenced
@@ -87,22 +118,14 @@ h1, h2{
   Used tutorial to learn how to underline nav when cursor hovers over nav buttons
 */
 
-.main-nav a {
-  color: rgb(48,48,48);
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 0.8em;
-
-}
-
-.main-nav a:hover {
+.main-nav-option a:hover {
    color: #66b2b2
 }
 
-.main-nav a::before {
+.main-nav-option a::before {
   content: '';
   display: block;
-  height: 0.15em;
+  height: 0.1em;
   background-color: #66b2b2;
   transition: 0.2s ease-out;
 
@@ -121,12 +144,14 @@ h1, h2{
 }
 
 /*LOGO --------------- */
-#header-container {
+/*#header-container {
   width:100%;
   position:relative;
-}
+}*/
 
-.logo{
+
+
+/*.logo{
   font-family: 'lobster';
   width:113px;
   font-size: 1.5em;
@@ -138,9 +163,7 @@ h1, h2{
   top:1.35em;
   content: :"";
 
-}
-
-/*TOGGLE/HAMBURGER ----- */
+}*/
 
 
 
@@ -221,10 +244,9 @@ h1, h2{
   font-size: 1em;
 }
 .product-cardholder{
-  width:100%;
-  height: auto;
-  max-width: 282px;
-  margin: 2em;
+  width:100%
+  width: 282px;
+  margin: 2em 2.5em;
 }
 
 /*-----------BLOOD ORANGE PRODUCT PAGE ---------*/
