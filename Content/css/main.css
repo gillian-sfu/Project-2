@@ -47,6 +47,7 @@ h1, h2{
 /* https://stackoverflow.com/questions/885691/how-to-make-a-ul-display-in-a-horizontal-row*/
 .nav-content{
   padding: 2.3em 0em;
+
 }
 
 .main-nav-option{
@@ -66,6 +67,7 @@ a.logo {
   color: rgb(48,48,48);
   text-decoration: none;
   font-size: 1.5em;
+
 
 }
 
@@ -118,11 +120,15 @@ a.logo {
   Used tutorial to learn how to underline nav when cursor hovers over nav buttons
 */
 
-.main-nav-option a:hover {
+<<<<<<< Updated upstream
+a.main-nav-option a:hover {
+=======
+.main-nav-option a:hover, .fa-user-circle:hover, .fa-shopping-bag:hover {
+>>>>>>> Stashed changes
    color: #66b2b2
 }
 
-.main-nav-option a::before {
+a.main-nav-option a::before {
   content: '';
   display: block;
   height: 0.1em;
