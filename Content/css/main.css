@@ -74,12 +74,12 @@ h1, h2{
 
 .main-nav ul li:nth-child(2){
   float: left;
-  
+
 }
 
 .main-nav ul li:nth-child(3){
   float: left;
- 
+
 }
 
 .user-icon {
@@ -209,11 +209,6 @@ h1, h2{
 /*PRODUCT LISTING*/
 
 
-.product-cardholder{
-  width: 282px;
-}
-
-
 .product-image{
   margin-bottom: 1em;
 }
@@ -232,19 +227,37 @@ h1, h2{
   font-size: 1em;
 }
 .product-cardholder{
-  width: 282px;
+  width:100%;
+  height: auto;
+  max-width: 282px;
   margin: 2em;
 }
 
 /*-----------BLOOD ORANGE PRODUCT PAGE ---------*/
-.product-buttons{
-  display: inline-block;
+
+.container{
+  width: 100%;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.box-item-image{
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+.box-item-image{
+  width:55%;
 }
 
 .box-item-text{
+  width: 47%;
 	position: relative;
-  max-width: 40em;
   padding: 0 2rem;
+  line-height: 12px;
+
 }
 
 .title{
@@ -282,9 +295,6 @@ Referenced Lecture Week 2 + 3 Code Example for buttons
 	border-color: #008080
 }
 
-.box-item-image{
-  width: 650px;
-}
 
 .reponsive-product-image{
   height:auto;
