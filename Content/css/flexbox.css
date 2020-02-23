@@ -171,14 +171,7 @@ Used lecture code for grid structure
 	justify-content: center;
 }
 
-.box-item-image {
-	flex-wrap: wrap;
-}
 
-.box-item-text{
-/*	flex: 1 1 18em;*/
-	line-height: 12px;
-}
 
 
 
@@ -197,13 +190,8 @@ Used lecture code for grid structure
 
 /*https://stackoverflow.com/questions/40600728/trying-to-align-text-under-an-image-using-flexbox*/
 @media(max-width: 1260px) {
-	.dropbtn, .cart-button-nav{
+	.cart-button-nav{
 		bottom:0.5rem;
-	}
-
-	.box-item-text{
-		order: 2;
-		flex:0 0 50%;
 	}
 	body{
 		background-color: red;
@@ -231,13 +219,15 @@ Used lecture code for grid structure
 	.box{
 		flex-direction: column;
 	}
-	.box-item-image{
-		min-width:400px;
-	}
 
-	.cart-button-nav{
-		float:left;
-		margin-top: 2em;
+	.box-item-text, .box-item-image{
+		width:100%;
+	}
+	.product-cardholder{
+		width:50%;
+	}
+	.product-image{
+		width:50%;
 	}
 	body{
 		background-color: green;
@@ -246,9 +236,6 @@ Used lecture code for grid structure
 
 
 @media (max-width: 767px) {
-	.box-item-image{
-		min-width:200px;
-	}
 	body{
 		background-color: yellow;
 	}
@@ -258,11 +245,8 @@ Used lecture code for grid structure
 
 @media (max-width: 479px){
 
-	.box-item-image{
-		max-width:400px;
-	}
-
 	.box-item-text{
+		width: 100%;
 		order: 2;
 		flex:0 0 100%;
 	}
