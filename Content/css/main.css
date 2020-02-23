@@ -120,11 +120,15 @@ a.logo {
   Used tutorial to learn how to underline nav when cursor hovers over nav buttons
 */
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 a.main-nav-option a:hover {
 =======
 .main-nav-option a:hover, .fa-user-circle:hover, .fa-shopping-bag:hover {
 >>>>>>> Stashed changes
+=======
+a.main-nav-option a:hover {
+>>>>>>> master
    color: #66b2b2
 }
 
