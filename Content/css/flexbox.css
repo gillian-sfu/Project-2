@@ -204,6 +204,9 @@ Referenced: Week 3 Lecture Code
 Used lecture code for grid structure
 */
 
+
+
+
 /*https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container*/
 .box{
 	display: flex;
@@ -211,22 +214,31 @@ Used lecture code for grid structure
 	justify-content: center;
 }
 
-
-
-
-
 /*YOUR CART PAGE--------------*/
-
-.basket {
-	display:flex;
+.basket{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.basket-image{
+	width: 49%;
 }
 .basket-item{
-	flex-wrap: wrap;
+	max-width: 100%;
+	vertical-align: middle;
+	display: inline-block;
+
+}
+.basket-description{
+	display: flex;
+	flex-direction: column;
+	width: 49%;
 }
 
-.basket-description{
-	padding: 0 1em;
-}
+
+
+
+/*MEDIA QUERIES
 
 /*https://stackoverflow.com/questions/40600728/trying-to-align-text-under-an-image-using-flexbox*/
 @media(max-width: 1260px) {
@@ -260,7 +272,7 @@ Used lecture code for grid structure
 		flex-direction: column;
 	}
 
-	.box-item-text, .box-item-image{
+	.box-item-text, .box-item-image, .basket-item, .basket-description{
 		width:100%;
 	}
 	body{

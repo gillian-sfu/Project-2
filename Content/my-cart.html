@@ -5,12 +5,18 @@
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Product Listing</title>
+	<title>My Cart</title>
 
-	<link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
 
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/flexbox.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script> <!--https://www.w3schools.com/icons/fontawesome5_icons_users_people.asp -->
 
 </head>
 
@@ -18,43 +24,53 @@
 
 	<header>
 
-		<div id="header-container">
-			<div class="logo-area">
-				<a class="logo" href="Homepage.html">Spill the tea</a>
-			</div>
-			<div class="main-nav">
-				<ul>
-					<li><a href="product-listing.html">Tea</a></li>
-					<li><a href="teasets.html">Teasets</a></li>
-					<li><a href="sales.html">Sale</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="sign-in.html">Sign In</a></li>
-					<li><a href="my-cart.html">Cart</a></li>
-				</ul>
+		<div class="container">
+			<div class="nav-content">
+
+				<div class="main-nav">
+					<a class="main-nav-option" href="product-listing.html">Tea</a>
+					<a class="main-nav-option" href="teasets.html">Teasets</a>
+					<a class="main-nav-option" href="sales.html">Sale</a>
 				</div>
+
+				<div class="logo-area">
+					<a class="logo" href="Homepage.html">Spill the Tea</a>
+				</div>
+
+				<!--https://www.youtube.com/watch?v=N1VXSl1Bpyw
+				- used this tutorial to learn how to add icons to nav bar -->
+				<div class="utility-nav">
+					<a class="user-icon" href="sign-in.html"> <i class="fas fa-user-circle"></i></a>
+					<a class="user-icon" href="my-cart.html"> <i class="fas fa-shopping-bag"></i></a>
+				</div>
+
+				<!--<li><a href="sign-in.html">Sign In</a></li>
+				<li><a href="my-cart.html">Cart</a></li> -->
 			</div>
+		</div>
+	</header>
 
-		</header>
+	<h2 class="page-heading">My Cart</h2>
 
-		<h2 class="page-heading">My Cart</h2>
-
+	<div class="container">
 		<div class="basket">
-		<div class="basket-item">
-			<a href="product-blueberry-blast.html">
-				<img src="img/blueberrytea-thumb.jpg" alt="thumbnail of blueberry tea">
-			</a>
+			<div class="basket-image">
+				<a href="product-blueberry-blast.html">
+					<img class="basket-item" src="img/blueberrytea-thumb.jpg" alt="thumbnail of blueberry tea">
+				</a>
 
-			<div class="basket-description">
-				<a class="name-of-product" href="product-blueberry-blast.html">Blueberry Blast</a>
-				<p>Quantity: 1</p>
-				<p>Price: $14.99</p>
+				<div class="basket-description">
+					<a class="name-of-product" href="product-blueberry-blast.html">Blueberry Blast</a>
+					<p>Quantity: 1</p>
+					<p>Price: $14.99</p>
 
-				<a href="shipping.html"><button class="checkout">Checkout</button></a>
+					<a href="shipping.html"><button class="checkout">Checkout</button></a>
+
+				</div>
 
 			</div>
 
 		</div>
-
 	</div>
 
 	<!---- FOOTER ----->
@@ -63,6 +79,6 @@
 	</div>
 
 
-	</body>
+</body>
 
-	</html>
+</html>
