@@ -83,15 +83,44 @@ How to center text over image
 	font-size: 2.5em;
 }
 
+.category-text-container div {
+
+	margin:0em 0em 1.5em 0em;
+}
+
+.category-box, .category-container{
+	display:flex;
+	justify-content: center;
+
+}
+
+.category-box {
+  	
+  	border: 0.05em solid #cecece;
+  	border-right:none;
+  	border-left:none;
+	height:10em;
+
+}
+
+.category-container {
+  font-weight:700;
+  font-size: 1em;
+  padding-top:2.5em;
+    
+    
+  
+}
+
 .image-card-container div {
 
-	margin:2em 2em 4.5em 2em;
+	margin:0em 0em 3em 0em;
 }
 
 .image-card-container {
 	display:flex;
 	flex-flow: wrap;
-	justify-content: center;
+	justify-content: space-between;
 	position:relative;
 }
 
@@ -99,20 +128,16 @@ How to center text over image
 	background-image: url(../img/tea1.jpg);
 	background-size:cover;
 	display:table;
-	width:44%;
-	height:35em;
-
-
-
+	width:48.5%;
+	height:30em;
 }
 
 .image-card-box-2 {
 	background-image: url(../img/tea4.jpg);
 	background-size:cover;
-	width:44%;
-	height:35em;
-
-
+	display:table;
+	width:48.5%;
+	height:30em;
 
 }
 
