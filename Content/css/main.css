@@ -560,7 +560,13 @@ input[type=text], input[type=password] {
 .total{
 
 }
-
+.left-align{
+  width:25%;
+  margin-inline-start:0;
+}
 .tax-dollar {
   text-align:right;
+  width:25%;
+  margin:0;
+  margin-inline-start:none;
 }
