@@ -279,6 +279,33 @@ content: :"";
   text-align: left;
 }
 
+.checked {
+  color: #008080;
+}
+
+
+/*INTEXT LINKS------- */
+
+.write-review{
+  color: black;
+}
+
+.write-review:hover, .write-review:active, .write-review:focus {
+  color: #66b2b2
+}
+
+.review{
+  color: black;
+  text-decoration: none;
+}
+
+.review:hover, .review:active, .review:focus {
+  color: #66b2b2
+}
+
+.breaker {
+  display:inline;
+}
 
 /*Referenced: https://www.w3schools.com/howto/howto_css_dropdown.asp
 Used this source to code drop down button

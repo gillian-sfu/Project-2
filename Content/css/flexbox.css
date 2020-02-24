@@ -13,7 +13,7 @@ Used this tutorial to learn out how to create flexbox website grid
 
 
 /*HEADER -----------*/
-.header-container div, .footer-container div {
+.header-container div {
 	margin:0em 0em 1.5em 0em;
 }
 
@@ -124,8 +124,9 @@ How to center text over image
 }
 
 .image-card-box-1 {
-	background-image: url(../img/tea1.jpg);
+	background-image: url(../img/tea1.jpg)  ;
 	background-size:cover;
+
 	display:table;
 	width:48.5%;
 	height:30em;
@@ -145,12 +146,17 @@ How to center text over image
 
 /*FOOTER ---------------*/
 
+.footer-container div {
+	margin-top:1em;
+	margin-bottom: 1em;
+}
 
 .footer-container {
 	display: flex;
 }
 
 .footer-box {
+
 	flex:1;
 	height:4em;
 
@@ -196,6 +202,72 @@ How to center text over image
 	right: 0;
 	top:1.5em;
 }
+
+/*REVIEW UNDER PRODUCTS ------------ */
+
+.reviews {
+	margin-top:2.5em;
+}
+
+.review-container div {
+	border: 1px solid lightgrey;
+	border-left:none;
+	border-right:none;
+	border-bottom:none;
+	margin-top:0em;
+	
+	
+}
+
+.review-container {
+	display:flex;
+
+	
+}
+
+.review-box-username {
+	display:block;
+	width:20%
+
+}
+
+.review-box-comment {
+	display:block;
+	width:80%;
+
+}
+
+.review-username {
+	text-align:left;
+	font-size:1.2em;
+	margin-top:1em;
+	color:#008080;
+}
+
+.review-location {
+	text-align:left;
+	font-size:0.8em;
+	margin-top:1.5em;
+}
+.review-comments-title {
+	margin-top:1em;
+	text-align:left;
+}
+
+.review-comments {
+	font-weight:300;
+	font-size:1em;
+}
+
+.write-review {
+	display:flex;
+	justify-content: flex-end;
+	margin-bottom:0.2em;
+}
+
+
+
+
 
 /* INDIVIDUAL PRODUCT PAGE */
 /*
@@ -340,10 +412,6 @@ Used lecture code for grid structure
     justify-content: center;
 	}
 
-
-
-
-
 }
 
 
@@ -358,3 +426,19 @@ Used lecture code for grid structure
 		background-color: orange;
 	}
 }
+
+@media (max-width: 990px){
+	.image-card-container{
+		flex-direction:column;
+	}
+
+	.image-card-box-1, .image-card-box-2 {
+		width:100%;
+	}
+
+	}
+}
+
+
+
+
