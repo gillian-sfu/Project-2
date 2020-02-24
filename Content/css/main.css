@@ -24,6 +24,7 @@ h1, h2{
 }
 
 
+
 /* --------- HEADER ----------- */
 
 /*.logo {
@@ -314,7 +315,7 @@ Used this source to code drop down button
 /*
 Referenced Lecture Week 2 + 3 Code Example for buttons
 */
-.cart-button-nav, .checkout{
+.cart-button-nav {
   position: absolute;
   bottom:0rem;
   padding: 0.6em 0.75em;
@@ -322,6 +323,21 @@ Referenced Lecture Week 2 + 3 Code Example for buttons
   color: white;
   background-color: #008080;
   font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+  border: 2px solid #008080;
+}
+
+.checkout{
+  bottom:0rem;
+  padding: 0.6em 0.75em;
+  width: 10em;
+  color: white;
+  background-color: #008080;
+  font-weight: 600;
+  font-size: 1em;
   text-align: center;
   text-decoration: none;
   -webkit-transition: background-color 0.2s ease-out;
@@ -471,10 +487,19 @@ input[type=text], input[type=password] {
 
 /*-----------MY CART ---------------*/
 
-/* .basket-description{
-  display: inline-block;
-  text-align: center;
-  margin-left: 2em;
-  align-items: flex-start;
-  width:49%;
-} */
+.cart-text{
+  margin:2em;
+  padding:1em;
+  width:100%;
+}
+
+.order-summary{
+  background-color: lightgrey;
+}
+.total{
+
+}
+
+.tax-dollar {
+  text-align:right;
+}

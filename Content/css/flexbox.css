@@ -16,12 +16,6 @@ Used this tutorial to learn out how to create flexbox website grid
 .header-container div {
 	margin:0em 0em 1.5em 0em;
 }
-.logo-area{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
 
 .nav-content{
   display: flex;
@@ -34,6 +28,13 @@ Used this tutorial to learn out how to create flexbox website grid
 	width:33.333%;
 	justify-content: flex-start;
 }
+.logo-area{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 
 .utility-nav{
   display: flex;
@@ -107,8 +108,6 @@ How to center text over image
   font-weight:700;
   font-size: 1em;
   padding-top:2.5em;
-
-
 
 }
 
@@ -287,26 +286,53 @@ Used lecture code for grid structure
 }
 
 /*YOUR CART PAGE--------------*/
+.basket div {
+	border: 1px solid lightgrey;
+}
+
+
 .basket{
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
 }
-/* .basket-image{
-	width: 49%;
-} */
-.basket-item{
-	max-width: 100%;
-	width:100%;
-	vertical-align: middle;
-	display: inline-block;
 
+.basket-image {
+	display:table;
+	width:20%;
+}
+
+.basket-description {
+	display:table;
+	width:60%;
+	display: flex;
+	flex-direction: row;
+}
+
+.order-summary {
+	display:table;
+	width:20%;
+	display: flex;
+	justify-content: center;
+
+}
+.subsum {
+  display: block;
+}
+
+/* .basket-image {
+	display: flex;
+	justify-content: flex-start;
 }
 .basket-description{
 	display: flex;
-	flex-direction: column;
-	width: 25%;
+	flex-direction: row;
 }
+
+
+.order-summary{
+  display: flex;
+	width: 25%;
+  justify-content: flex-end;
+} */
 
 
 
@@ -345,8 +371,17 @@ Used lecture code for grid structure
 		flex-direction: column;
 	}
 
-	.box-item-text, .box-item-image, .basket-item, .basket-description{
+	.box-item-text, .box-item-image, .basket-description{
 		width:100%;
+	}
+	.basket{
+		display: block;
+	}
+	.basket-description {
+		flex-direction: column;
+	}
+	.cart-text{
+		margin:0;
 	}
 	body{
 		background-color: green;
