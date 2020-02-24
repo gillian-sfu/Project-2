@@ -124,7 +124,7 @@ How to center text over image
 }
 
 .image-card-box-1 {
-	background-image: url(../img/tea1.jpg)  ;
+	background-image: url(../img/tea1.jpg)   ;
 	background-size:cover;
 
 	display:table;
