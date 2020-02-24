@@ -97,9 +97,9 @@ How to center text over image
 
 .category-box {
 
-  	border: 0.05em solid #cecece;
-  	border-right:none;
-  	border-left:none;
+  border: 0.05em solid #cecece;
+  border-right:none;
+  border-left:none;
 	height:10em;
 
 }
@@ -172,7 +172,7 @@ How to center text over image
 /*-----------END OF FOOTER */
 
 
-/*Product Listing ---*/
+/*PRODUCT LISTING ---*/
 .product-list, .product-heading{
 	display:flex;
 	flex-wrap: wrap;
@@ -215,14 +215,14 @@ How to center text over image
 	border-right:none;
 	border-bottom:none;
 	margin-top:0em;
-	
-	
+
+
 }
 
 .review-container {
 	display:flex;
 
-	
+
 }
 
 .review-box-username {
@@ -286,53 +286,48 @@ Used lecture code for grid structure
 }
 
 /*YOUR CART PAGE--------------*/
-.basket div {
-	border: 1px solid lightgrey;
-}
-
 
 .basket{
-	display: flex;
-}
-
-.basket-image {
-	display:table;
-	width:20%;
-}
-
-.basket-description {
-	display:table;
-	width:60%;
-	display: flex;
+	display:flex;
+	flex-wrap: wrap;
 	flex-direction: row;
-}
-
-.order-summary {
-	display:table;
-	width:20%;
-	display: flex;
-	justify-content: center;
-
-}
-.subsum {
-  display: block;
-}
-
-/* .basket-image {
-	display: flex;
-	justify-content: flex-start;
+	justify-content: space-between;
+	flex-basis: 34%;
 }
 .basket-description{
 	display: flex;
-	flex-direction: row;
+	width:45%;
+	justify-content: flex-start;
 }
-
-
+.cart-text{
+  padding:1em;
+  width:100%;
+}
 .order-summary{
+  background-color: lightgrey;
+	width: 17em;
+}
+.order-textinside {
+	padding: 1em;
+}
+.checkout{
+	margin-top: 1.9em;
+  padding: 0.6em 0.75em;
+  width: 100%;
+  color: white;
+  background-color: #008080;
+  font-weight: 600;
+  font-size: 1em;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+  border: 2px solid #008080;
+}
+.subsum {
   display: flex;
-	width: 25%;
-  justify-content: flex-end;
-} */
+  justify-content: space-between;
+}
 
 
 
@@ -360,6 +355,9 @@ Used lecture code for grid structure
 	.product-buttons{
 		bottom:6rem;
 	}
+	.basket-description {
+		width:auto;
+	}
 	body{
 		background-color: blue;
 	}
@@ -374,14 +372,25 @@ Used lecture code for grid structure
 	.box-item-text, .box-item-image, .basket-description{
 		width:100%;
 	}
-	.basket{
-		display: block;
-	}
+
 	.basket-description {
 		flex-direction: column;
+		width:25%;
+	}
+	.order-summary{
+		width:30%;
 	}
 	.cart-text{
 		margin:0;
+	}
+
+	.image-card-container{
+		flex-direction:column;
+	}
+
+	.image-card-box-1, .image-card-box-2 {
+		width:100%;
+
 	}
 	body{
 		background-color: green;
@@ -411,7 +420,22 @@ Used lecture code for grid structure
     padding-bottom: 1rem;
     justify-content: center;
 	}
-
+	.main-nav-option{
+		padding:
+	}
+	.basket {
+		justify-content: flex-start;
+	}
+	.basket-description {
+		width:35%;
+		margin-left: 1em;
+	}
+	.order-summary{
+		width: 100%;
+	}
+	.checkout {
+		margin:0;
+	}
 }
 
 
@@ -422,23 +446,24 @@ Used lecture code for grid structure
 		order: 2;
 		flex:0 0 100%;
 	}
+	.basket{
+		display: block;
+	}
+	.basket-description {
+		width:100%;
+		margin: 1em 0;
+	}
+	.basket-item {
+		width:100%;
+	}
+	.cart-text{
+		padding: 0.5em 0;
+		text-align: center;
+	}
+	.order-summary {
+		width: 100%;
+	}
 	body{
 		background-color: orange;
 	}
 }
-
-@media (max-width: 990px){
-	.image-card-container{
-		flex-direction:column;
-	}
-
-	.image-card-box-1, .image-card-box-2 {
-		width:100%;
-	}
-
-	}
-}
-
-
-
-

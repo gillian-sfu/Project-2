@@ -390,21 +390,6 @@ Referenced Lecture Week 2 + 3 Code Example for buttons
   border: 2px solid #008080;
 }
 
-.checkout{
-  bottom:0rem;
-  padding: 0.6em 0.75em;
-  width: 10em;
-  color: white;
-  background-color: #008080;
-  font-weight: 600;
-  font-size: 1em;
-  text-align: center;
-  text-decoration: none;
-  -webkit-transition: background-color 0.2s ease-out;
-  transition: background-color 0.2s ease-out;
-  border: 2px solid #008080;
-}
-
 
 .cart-button-nav:hover, .cart-button-nav:focus, .cart-button-nav:active,
 .checkout:hover, .checkout:focus, .checkout:active {
@@ -548,25 +533,6 @@ input[type=text], input[type=password] {
 
 /*-----------MY CART ---------------*/
 
-.cart-text{
-  margin:2em;
-  padding:1em;
-  width:100%;
-}
-
-.order-summary{
-  background-color: lightgrey;
-}
-.total{
-
-}
-.left-align{
-  width:25%;
-  margin-inline-start:0;
-}
-.tax-dollar {
-  text-align:right;
-  width:25%;
-  margin:0;
-  margin-inline-start:none;
+span{
+  padding: 0.3em 0;
 }
