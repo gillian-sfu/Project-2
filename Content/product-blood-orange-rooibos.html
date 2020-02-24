@@ -38,34 +38,41 @@
 				</div>
 
 				<!--https://www.youtube.com/watch?v=N1VXSl1Bpyw
-				- used this tutorial to learn how to add icons to nav bar -->
-				<div class="utility-nav">
-					<a class="user-icon" href="sign-in.html"> <i class="fas fa-user-circle"></i></a>
-					<a class="user-icon" href="my-cart.html"> <i class="fas fa-shopping-bag"></i></a>
-				</div>
+					- used this tutorial to learn how to add icons to nav bar -->
+					<div class="utility-nav">
+						<a class="user-icon" href="sign-in.html"> <i class="fas fa-user-circle"></i></a>
+						<a class="user-icon" href="my-cart.html"> <i class="fas fa-shopping-bag"></i></a>
+					</div>
 
 				<!--<li><a href="sign-in.html">Sign In</a></li>
-				<li><a href="my-cart.html">Cart</a></li> -->
+					<li><a href="my-cart.html">Cart</a></li> -->
+				</div>
 			</div>
-		</div>
-	</header>
+		</header>
 
-	<div class="container">
-		<div class="box">
+		<div class="container">
+			<div class="box">
 
-			<div class="box-item-image">
-				<img src="img/blood-orange-product.jpg" alt="Blood Orange Rooibos" class="reponsive-product-image">
-			</div>
+				<div class="box-item-image">
+					<img src="img/blood-orange-product.jpg" alt="Blood Orange Rooibos" class="reponsive-product-image">
+				</div>
 
-			<div class="box-item-text">
+				<div class="box-item-text">
 
-				<h2 class="title">Blood Orange Rooibos</h2>
-				<p class="price"> $14.99 | In Stock</p>
-				<p class="review"> Review | Write a Review </p>
-				<p class="grams">50g</p>
-				<p class="description">The blood orange is a culinary favorite, with its deep vibrant color and sweet, tangy flavor.
-					A perfect ingredient for a refreshing herbal blend! Our Blood Orange tea pairs blood orange peels with hibiscus
-					flowers and rose hips for a naturally sweet, caffeine-free flavor. Rich, hearty and tangy, with a good balance of
+					<h2 class="title">Blood Orange Rooibos</h2>
+					<p class="price"> $14.99 | In Stock</p>
+					
+					<!-- <p class="review"> Review | Write a Review </p> -->
+
+					<a href="#review" class="review">Review</a> <p class="breaker">|</p>
+
+					<a href="#review" class="review"> Write a Review</a>
+			
+
+					<p class="grams">50g</p>
+					<p class="description">The blood orange is a culinary favorite, with its deep vibrant color and sweet, tangy flavor.
+						A perfect ingredient for a refreshing herbal blend! Our Blood Orange tea pairs blood orange peels with hibiscus
+						flowers and rose hips for a naturally sweet, caffeine-free flavor. Rich, hearty and tangy, with a good balance of
 					orange peel dryness and fruit juiciness.</p>
 					<a class="cart-button-nav" href="my-cart.html">Add to Cart</a>
 				</div> <!-- div for box-item-text -->
@@ -73,8 +80,104 @@
 			</div> <!-- div for box -->
 		</div> <!-- div for container-->
 
+		<!-- REVIEW ------->
+
+		<div class="container">
+		<div>
+			<h2 class="reviews">REVIEWS</h2>
+			<a class="write-review" href="#">Write a Review</a>
+		</div>
+	</div>
+
+		<div class="container">
+
+			<div class="review-container">
+
+				<div class="review-box-username">
+					<h2 class="review-username">TeaLover</h2>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+				</div>
+
+				<div class="review-box-comment">
+					<h3 class="review-comments-title">Fantastic Tea!</h3>
+					<p class="review-comments">I've been drinking this tea for the past 4 years and absolutelly love it! I usually add a slice of lemon per cup (tastes great and boosts the antioxidants benefits). I love that it is certified organic and fair trade.</p>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="container">
+
+			<div class="review-container">
+
+				<div class="review-box-username">
+					<h2 class="review-username">Sally H.</h2>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+				</div>
+
+				<div class="review-box-comment">
+					<h3 class="review-comments-title">Good for flu</h3>
+					<p class="review-comments">A friend of mine recommended this tea during the cold and flu season. It's truly a miracle worker! I've been battling a cold for a few days now and this tea has eased all of my symptoms, such as congestion, runny nose, and a sore throat. Will definitely keep spreading the word about this to my friends and family. Prior to purchasing this I was a sucker for the medicine ball from Starbucks....but no more!! Blood Orange Rooibos is AMAZING!</p>
+				</div>
+				
+			</div>
+		</div>
+
+		<section id="review">
+
+		<div class="container">
+
+			<div class="review-container">
+
+				<div class="review-box-username">
+					<h2 class="review-username">Mike L.</h2>
+					<!-- <p class="review-location">Vancouver, BC. </p> -->
+
+					<!-- https://www.w3schools.com/howto/howto_css_star_rating.asp -->
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+
+				</div>
+
+				<div class="review-box-comment">
+					<h3 class="review-comments-title">Very delicious</h3>
+					<p class="review-comments">This tea is a staple in my tea collection. I find it perfect first cup of tea after my morning coffee. Try adding a bit of coconut agave to it, I don't normally sweeten my teas but it's delicious! Blood Orange Rooibos is bold and rich, yet smooth and creamy. The fact it's organic is a bonus!</p>
+				</div>
+				
+			</div>
+		</div>
+	</section>
 
 
-	</body>
 
-	</html>
+
+		<div class="container">
+			<div class="footer-container">
+				<div class="footer-box">
+					<div class="footer-text">
+						<h3>Contact us</h3>
+						<p>company@gmail.com</p>
+						<p>607-1234-5678</p>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+
+		</body>
+
+		</html>
