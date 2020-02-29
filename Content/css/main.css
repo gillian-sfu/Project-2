@@ -225,7 +225,9 @@ content: :"";
 /*-------------PRODUCT LISTING ----------*/
 
 /*PRODUCT LISTING*/
-
+.product-empty-container {
+  width:282px;
+}
 
 .product-image{
   margin-bottom: 1em;
