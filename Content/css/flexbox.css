@@ -59,7 +59,7 @@ Used this tutorial to learn out how to create flexbox website grid
 }
 
 .sale-promotion-box {
-	background-image: url(../img/tea5.jpg); /* https://www.youtube.com/watch?v=33IinMVJf-M*/
+	background-image: url(../img/Tea5.jpg); /* https://www.youtube.com/watch?v=33IinMVJf-M*/
 	background-size:cover;
 	width:100%;
 	height:35em;
@@ -420,8 +420,12 @@ Used lecture code for grid structure
     padding-bottom: 1rem;
     justify-content: center;
 	}
-	.main-nav-option{
-		padding:
+	.main-nav, .nav-content{
+		display:flex;
+		justify-content: space-around;
+	}
+	a.main-nav-option{
+		margin-right: 0;
 	}
 	.basket {
 		justify-content: flex-start;
@@ -440,7 +444,12 @@ Used lecture code for grid structure
 
 
 @media (max-width: 479px){
-
+	/* .product-cardholder{
+		width: 220px;
+	} */
+	/* .product-img {
+		width: 78%;
+	} */
 	.box-item-text{
 		width: 100%;
 		order: 2;
@@ -459,6 +468,9 @@ Used lecture code for grid structure
 	.cart-text{
 		padding: 0.5em 0;
 		text-align: center;
+	}
+	.user-icon {
+		margin-left: 1em;
 	}
 	.order-summary {
 		width: 100%;
