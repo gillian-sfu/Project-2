@@ -173,37 +173,34 @@ How to center text over image
 
 
 /*PRODUCT LISTING ---*/
-.product-list, .product-heading{
+
+.product-list {
 	display:flex;
 	flex-wrap: wrap;
+	justify-content: left;
+
+}
+.product-cardholder {
+	/* flex-direction: column; */
+	width: 31.333%;
+	margin: 0 1% 1.2em 1%;/*https://developer.mozilla.org/en-US/docs/Web/CSS/margin*/
 }
 
-.product-list{
-	flex-direction: row;
+.product-image {
+	display:flex;
 	justify-content: center;
-	flex-basis: 34%;
+	align-items: center;
 }
-.product-cardholder{
-	flex-direction: column;
-
-}
-.product-price{
+.product-price {
 	display: flex;
 	justify-content: space-between;
 }
 
-/*referred to lab 5*/
-.product-description-holder{
-	position: relative;
-}
-
 .add-to-cart-icon {
-	position: absolute;
-	right: 0;
 	top:1.5em;
 }
 
-/*REVIEW UNDER PRODUCTS ------------ */
+/* REVIEWUNDER PRODUCTS ------------ */
 
 .reviews {
 	margin-top:2.5em;
@@ -324,7 +321,7 @@ Used lecture code for grid structure
   transition: background-color 0.2s ease-out;
   border: 2px solid #008080;
 }
-.subsum {
+.subsum, .price-icon {
   display: flex;
   justify-content: space-between;
 }
@@ -345,9 +342,8 @@ Used lecture code for grid structure
 }
 
 @media (max-width: 1125px) {
-	.title, .price, .review, .description {
-/*		flex: 1 1 11em;
-		line-height: 1.5em;*/
+	.product-cardholder {
+		width: 48%;
 	}
 	.review{
 		padding: 0;
@@ -402,6 +398,9 @@ Used lecture code for grid structure
 	body{
 		background-color: yellow;
 	}
+	.product-cardholder {
+		width: 100%;
+	}
 	.product-menu{
 		display: block;
 	}
@@ -418,11 +417,10 @@ Used lecture code for grid structure
     width: 100%;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    justify-content: center;
 	}
 	.main-nav, .nav-content{
 		display:flex;
-		justify-content: space-around;
+		justify-content: space-between;
 	}
 	a.main-nav-option{
 		margin-right: 0;
@@ -444,12 +442,6 @@ Used lecture code for grid structure
 
 
 @media (max-width: 479px){
-	/* .product-cardholder{
-		width: 220px;
-	} */
-	/* .product-img {
-		width: 78%;
-	} */
 	.box-item-text{
 		width: 100%;
 		order: 2;
