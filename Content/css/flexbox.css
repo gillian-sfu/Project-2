@@ -186,43 +186,55 @@ How to center text over image
 
 
 /*PRODUCT LISTING ---*/
-.product-list, .product-heading{
+
+.product-list {
 	display:flex;
 	flex-wrap: wrap;
+	justify-content: left;
+
+}
+.product-cardholder {
+	/* flex-direction: column; */
+	width: 31.333%;
+	margin: 0 1% 1.2em 1%;/*https://developer.mozilla.org/en-US/docs/Web/CSS/margin*/
 }
 
-.product-list{
-	flex-direction: row;
+.product-image {
+	display:flex;
 	justify-content: center;
-	flex-basis: 34%;
-}
-.product-cardholder{
-	flex-direction: column;
-
+	align-items: center;
 }
 .product-price{
 	display: flex;
 	justify-content: space-between;
 }
 
-/*referred to lab 5*/
-.product-description-holder{
-	position: relative;
-}
-
 .add-to-cart-icon {
-	position: absolute;
-	right: 0;
 	top:1.5em;
 }
 
-/*REVIEW UNDER PRODUCTS ------------ */
+.price-icon{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.prices-duo {
+	display: flex;
+	justify-content: flex-start;
+}
+.sale-price {
+  color: red;
+	padding-right: 0.3em;
+}
+
+
+/* REVIEWUNDER PRODUCTS ------------ */
 
 .reviews {
 	margin-top:2.5em;
 }
 
-.review-container div {
+/* .review-container div {
 	border: 1px solid lightgrey;
 	border-left:none;
 	border-right:none;
@@ -230,26 +242,34 @@ How to center text over image
 	margin-top:0em;
 
 
-}
+} */
 
 .review-container {
 	display:flex;
-
-
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 .review-box-username {
-	display:block;
-	width:20%
+	display:flex;
+	/* display: block; */
+	flex-direction: column;
+	width:14%;
+	justify-content: flex-start;
 
 }
 
 .review-box-comment {
-	display:block;
-	width:80%;
+	display:flex;
+	flex-direction: column;
+	width:84%;
 
 }
-
+.stars div {
+	display: flex;
+	flex-direction: row;
+}
 .review-username {
 	text-align:left;
 	font-size:1.2em;
@@ -270,6 +290,8 @@ How to center text over image
 .review-comments {
 	font-weight:300;
 	font-size:1em;
+	width:100%;
+	margin:0;
 }
 
 .write-review {
@@ -278,8 +300,16 @@ How to center text over image
 	margin-bottom:0.2em;
 }
 
+.same-line {
+  display: flex;
+	flex-direction: row;
+}
 
-
+.line {
+  margin-bottom: 1em 0;
+  padding: 0.5em 0;
+  border-bottom: 1px dotted #333; /*https://www.w3schools.com/cssref/pr_border-top.asp*/
+}
 
 
 /* INDIVIDUAL PRODUCT PAGE */
@@ -317,7 +347,7 @@ Used lecture code for grid structure
   width:100%;
 }
 .order-summary{
-  background-color: lightgrey;
+  background-color: rgb(240, 240, 240);
 	width: 17em;
 }
 .order-textinside {
@@ -344,26 +374,18 @@ Used lecture code for grid structure
 
 
 
-
 /*MEDIA QUERIES
 
 /*https://stackoverflow.com/questions/40600728/trying-to-align-text-under-an-image-using-flexbox*/
 @media(max-width: 1260px) {
-	.cart-button-nav{
-		bottom:0.5rem;
-	}
-	body{
+	/* body{
 		background-color: red;
-	}
+	} */
 }
 
 @media (max-width: 1125px) {
-	.title, .price, .review, .description {
-/*		flex: 1 1 11em;
-		line-height: 1.5em;*/
-	}
-	.review{
-		padding: 0;
+	.product-cardholder {
+		width: 48%;
 	}
 	.product-buttons{
 		bottom:6rem;
@@ -384,11 +406,11 @@ Used lecture code for grid structure
 
 	.box-item-text, .box-item-image, .basket-description{
 		width:100%;
+		padding:0;
 	}
 
 	.basket-description {
 		flex-direction: column;
-		width:25%;
 	}
 	.order-summary{
 		width:30%;
@@ -415,6 +437,9 @@ Used lecture code for grid structure
 	body{
 		background-color: yellow;
 	}
+	.product-cardholder {
+		width: 100%;
+	}
 	.product-menu{
 		display: block;
 	}
@@ -431,11 +456,10 @@ Used lecture code for grid structure
     width: 100%;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    justify-content: center;
 	}
 	.main-nav, .nav-content{
 		display:flex;
-		justify-content: space-around;
+		justify-content: space-between;
 	}
 	a.main-nav-option{
 		margin-right: 0;
@@ -453,16 +477,24 @@ Used lecture code for grid structure
 	.checkout {
 		margin:0;
 	}
+
+	.review-box-comment {
+		width:100%;
+
+	}
+
+	.review-box-username {
+		display: flex;
+		width:100%;
+	}
+	.review-username {
+		margin-bottom: 0;
+	}
+
 }
 
 
 @media (max-width: 479px){
-	/* .product-cardholder{
-		width: 220px;
-	} */
-	/* .product-img {
-		width: 78%;
-	} */
 	.box-item-text{
 		width: 100%;
 		order: 2;

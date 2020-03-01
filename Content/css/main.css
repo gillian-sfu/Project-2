@@ -171,9 +171,6 @@ a.main-nav-option a::before {
 /*-------------PRODUCT LISTING ----------*/
 
 /*PRODUCT LISTING*/
-.product-empty-container {
-  width:282px;
-}
 
 .product-image{
   margin-bottom: 1em;
@@ -189,14 +186,19 @@ a.main-nav-option a::before {
   line-height: 1em;
 }
 
-.product-price{
+.product-price, .sale-price, .strikeout-price{
   font-size: 1em;
 }
-.product-cardholder{
-  width:100%
-  width: 282px;
-  margin: 2em 2.5em;
+.strikeout-price {
+  text-decoration: line-through; /*https://www.w3schools.com/cssref/pr_text_text-decoration.asp*/
+  padding-right:0.4em;
 }
+
+.product-image-thumb {
+  width:100%;
+  height:auto;
+}
+
 
 /*-----------BLOOD ORANGE PRODUCT PAGE ---------*/
 
@@ -255,7 +257,12 @@ a.main-nav-option a::before {
   display:inline;
 }
 
+<<<<<<< HEAD
 /*MODAL POPUP FOR REVIEW ------------*/
+=======
+
+/*MODAL FOR REVIEW*/
+>>>>>>> master
 
 /* USED https://www.w3schools.com/howto/howto_css_modals.asp FOR MODAL CODES */
 
@@ -351,11 +358,12 @@ Referenced Lecture Week 2 + 3 Code Example for buttons
   font-weight: 600;
   line-height: 1em;
   display:inline;
+  padding-left: 0.2em;
 }
 
 .grams{
   padding:0.8em;
-  width: 4em;
+  width: 5em;
   text-align:center;
   border: 2px solid #f1f1f1;
 }
@@ -396,7 +404,7 @@ input[type=text], input[type=password] {
 }
 
 .login, .create-button {
-  width: 30%;
+  width: auto;
   padding: 0.5em 1.25em;
   margin: 2px 0;
   border: none;
