@@ -240,9 +240,14 @@ content: :"";
   line-height: 1em;
 }
 
-.product-price{
+.product-price, .sale-price, .strikeout-price{
   font-size: 1em;
 }
+.strikeout-price {
+  text-decoration: line-through; /*https://www.w3schools.com/cssref/pr_text_text-decoration.asp*/
+  padding-right:0.4em;
+}
+
 .product-image-thumb {
   width:100%;
   height:auto;
@@ -305,6 +310,7 @@ content: :"";
 .breaker {
   display:inline;
 }
+
 
 /*MODAL FOR REVIEW*/
 
@@ -418,6 +424,7 @@ Referenced Lecture Week 2 + 3 Code Example for buttons
   font-weight: 600;
   line-height: 1em;
   display:inline;
+  padding-left: 0.2em;
 }
 
 .grams{
@@ -463,7 +470,7 @@ input[type=text], input[type=password] {
 }
 
 .login, .create-button {
-  width: 30%;
+  width: auto;
   padding: 0.5em 1.25em;
   margin: 2px 0;
   border: none;

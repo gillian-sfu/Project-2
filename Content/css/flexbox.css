@@ -191,7 +191,7 @@ How to center text over image
 	justify-content: center;
 	align-items: center;
 }
-.product-price {
+.product-price{
 	display: flex;
 	justify-content: space-between;
 }
@@ -200,13 +200,28 @@ How to center text over image
 	top:1.5em;
 }
 
+.price-icon{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.prices-duo {
+	display: flex;
+	justify-content: flex-start;
+}
+.sale-price {
+  color: red;
+	padding-right: 0.3em;
+}
+
+
 /* REVIEWUNDER PRODUCTS ------------ */
 
 .reviews {
 	margin-top:2.5em;
 }
 
-.review-container div {
+/* .review-container div {
 	border: 1px solid lightgrey;
 	border-left:none;
 	border-right:none;
@@ -214,26 +229,34 @@ How to center text over image
 	margin-top:0em;
 
 
-}
+} */
 
 .review-container {
 	display:flex;
-
-
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 .review-box-username {
-	display:block;
-	width:20%
+	display:flex;
+	/* display: block; */
+	flex-direction: column;
+	width:14%;
+	justify-content: flex-start;
 
 }
 
 .review-box-comment {
-	display:block;
-	width:80%;
+	display:flex;
+	flex-direction: column;
+	width:84%;
 
 }
-
+.stars div {
+	display: flex;
+	flex-direction: row;
+}
 .review-username {
 	text-align:left;
 	font-size:1.2em;
@@ -254,6 +277,8 @@ How to center text over image
 .review-comments {
 	font-weight:300;
 	font-size:1em;
+	width:100%;
+	margin:0;
 }
 
 .write-review {
@@ -262,8 +287,16 @@ How to center text over image
 	margin-bottom:0.2em;
 }
 
+.same-line {
+  display: flex;
+	flex-direction: row;
+}
 
-
+.line {
+  margin-bottom: 1em 0;
+  padding: 0.5em 0;
+  border-bottom: 1px dotted #333; /*https://www.w3schools.com/cssref/pr_border-top.asp*/
+}
 
 
 /* INDIVIDUAL PRODUCT PAGE */
@@ -301,7 +334,7 @@ Used lecture code for grid structure
   width:100%;
 }
 .order-summary{
-  background-color: lightgrey;
+  background-color: rgb(240, 240, 240);
 	width: 17em;
 }
 .order-textinside {
@@ -321,11 +354,10 @@ Used lecture code for grid structure
   transition: background-color 0.2s ease-out;
   border: 2px solid #008080;
 }
-.subsum, .price-icon {
+.subsum {
   display: flex;
   justify-content: space-between;
 }
-
 
 
 
@@ -333,20 +365,14 @@ Used lecture code for grid structure
 
 /*https://stackoverflow.com/questions/40600728/trying-to-align-text-under-an-image-using-flexbox*/
 @media(max-width: 1260px) {
-	.cart-button-nav{
-		bottom:0.5rem;
-	}
-	body{
+	/* body{
 		background-color: red;
-	}
+	} */
 }
 
 @media (max-width: 1125px) {
 	.product-cardholder {
 		width: 48%;
-	}
-	.review{
-		padding: 0;
 	}
 	.product-buttons{
 		bottom:6rem;
@@ -367,11 +393,11 @@ Used lecture code for grid structure
 
 	.box-item-text, .box-item-image, .basket-description{
 		width:100%;
+		padding:0;
 	}
 
 	.basket-description {
 		flex-direction: column;
-		width:25%;
 	}
 	.order-summary{
 		width:30%;
@@ -438,6 +464,20 @@ Used lecture code for grid structure
 	.checkout {
 		margin:0;
 	}
+
+	.review-box-comment {
+		width:100%;
+
+	}
+
+	.review-box-username {
+		display: flex;
+		width:100%;
+	}
+	.review-username {
+		margin-bottom: 0;
+	}
+
 }
 
 
