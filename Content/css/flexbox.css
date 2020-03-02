@@ -66,7 +66,7 @@ Used this tutorial to learn out how to create flexbox website grid
 	background-position:bottom;*/
 
 	background-repeat: no-repeat;
-	 background-position:0% 80%;
+	background-position:0% 75%; /*https://www.w3schools.com/cssref/pr_background-position.asp*/
 
 	width:100%;
 	height:35em;
@@ -83,13 +83,14 @@ Used this tutorial to learn out how to create flexbox website grid
   font-weight: 600;
   font-size: 1.2em;
 
-  text-align: center;
-  padding: 11em 0em 0em 0em;
+  text-align: left;
+  padding: 16em 0em 0em 3em;
 
 }
 
 .whats-on-sale {
 	color:black;
+	text-align: left;
 }
 
 
@@ -147,14 +148,19 @@ How to center text over image
 }
 
 .image-card-box-1 {
-	background-image: url(../img/tea5.jpg)   ;
+	background-image: url(../img/tea5.jpg);
 
 	background-size:cover;
+	background-position:90% 0%;
 
 	display:table;
 	width:48.5%;
 	height:30em;
 }
+
+/*.image-card-box-1:hover {
+	opacity:0.5;
+}*/
 
 .image-card-box-2 {
 	background-image: url(../img/teasets.jpg);
@@ -162,21 +168,23 @@ How to center text over image
 	display:table;
 	width:48.5%;
 	height:30em;
-
 }
+
 
 
 .image-text-container {
 
-  text-align: center;
-  padding: 11em 0em 0em 0em;
+  text-align: left;
+  padding: 12em 0em 0em 3em;
   color:black;
-
-
-
 
 }
 
+.tea-collection {
+	color:black;
+	text-align: left;
+
+}
 /*--------------END OF HOMEPAGE*/
 
 
