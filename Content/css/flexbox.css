@@ -258,11 +258,11 @@ How to center text over image
 
 .header-box {
 	flex:1;
-	border: 0.05em solid #006666;
+	border: 0.05em solid #cecece;
 	border-right:none;
 	border-left:none;
 
-	height:15em;
+	height:10em;
 
 	/*background-position:0% 75%;*/
 }
@@ -380,6 +380,10 @@ How to center text over image
 		width:100%;
 		margin:0;
 	}
+	
+	.lastcomment{
+		margin-bottom:3em;
+	}
 
 	.write-review {
 		display:flex;
@@ -387,6 +391,7 @@ How to center text over image
 		margin-bottom:0.2em;
 	}
 
+	
 	.same-line {
 		display: flex;
 		flex-direction: row;
