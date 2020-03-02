@@ -15,8 +15,10 @@ div{
 }
 
 .page-heading{
-  font-size: 2em;
+  font-size: 3em;
   text-align: center;
+  color: #006666;
+  margin-top:1.9em;
 }
 
 h1, h2{

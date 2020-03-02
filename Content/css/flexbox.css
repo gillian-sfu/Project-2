@@ -244,6 +244,28 @@ How to center text over image
 
 }
 
+/*--------PAGE HEADERS ---------*/
+.loose-leaf-container div {
+	
+	margin-bottom:2em;
+
+}
+.header-container{
+	display:flex;
+	justify-content: center;
+	
+}
+
+.header-box {
+	flex:1;
+	border: 0.05em solid #006666;
+	border-right:none;
+	border-left:none;
+
+	height:15em;
+
+	/*background-position:0% 75%;*/
+}
 
 
 
