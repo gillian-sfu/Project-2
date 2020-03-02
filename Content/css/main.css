@@ -70,42 +70,7 @@ a.logo {
   text-decoration: none;
   font-size: 2em;
 
-
 }
-
-
-
-/*.main-nav ul {
-margin: 0;
-padding:0;
-list-style: none;
-text-align: right;
-font-weight: 700;
-
-
-}
-
-.main-nav ul li{
-float: none;
-display: inline-block;
-margin: 2.5em 2.5em;
-position: relative;
-}
-
-.main-nav ul li:nth-child(1){
-float: left;
-
-}
-
-.main-nav ul li:nth-child(2){
-float: left;
-
-}
-
-.main-nav ul li:nth-child(3){
-float: left;
-
-}*/
 
 .user-icon {
   margin-left: 2.5em;
@@ -147,6 +112,11 @@ a.main-nav-option a::before {
 
 }
 
+a.tea, a.sales, a.teasets{
+  color: #66b2b2;
+  font-weight: 600;
+}
+
 /*LOGO --------------- */
 /*#header-container {
 width:100%;
@@ -180,7 +150,7 @@ content: :"";
   display: inline-block;
   padding: 0.3em 0.75em;
   width: 9em;
-  
+
   font-weight: 600;
   text-align: center;
   text-decoration: none;
