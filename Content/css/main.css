@@ -67,7 +67,7 @@ a.logo {
   color: #66B2B2;
   text-decoration: none;
   font-size: 2em;
-  
+
 
 }
 
@@ -195,32 +195,19 @@ content: :"";
   border-color: #008080
 }
 
-.sale-text-container {
-  font-weight: 600;
-  font-size: 1.3em;
-
-  text-align: center;
-  padding: 11em 0em 0em 0em;
 
 
-
-}
-
-.image-text-container {
-
-  text-align: center;
-  padding: 11em 0em 0em 0em;
-  color:white;
-
-
-
-
-}
 
 /*-------------ABOUT PAGE ----------*/
 
 .about-text-section{
-  margin: 0 6em;
+  margin: 3em 4em 4em 4em;
+  padding:0 15em;
+}
+
+.about-para{
+  line-height: 2em;
+  margin-bottom:3em;
 }
 
 /*-------------PRODUCT LISTING ----------*/
