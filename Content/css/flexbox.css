@@ -18,9 +18,9 @@ Used this tutorial to learn out how to create flexbox website grid
 }
 
 .nav-content{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .main-nav {
@@ -37,9 +37,9 @@ Used this tutorial to learn out how to create flexbox website grid
 
 
 .utility-nav{
-  display: flex;
+	display: flex;
 	width: 33.333%;
-  justify-content: flex-end;
+	justify-content: flex-end;
 }
 
 
@@ -60,10 +60,13 @@ Used this tutorial to learn out how to create flexbox website grid
 
 .sale-promotion-box {
 	
-	background-image: url(../img/browntea.jpg); /* https://www.youtube.com/watch?v=33IinMVJf-M*/
+	background-image: url(../img/browntea3.jpg); /* https://www.youtube.com/watch?v=33IinMVJf-M*/
 
-	background-size:cover;
-	background-position:bottom;
+	/*background-size:cover;
+	background-position:bottom;*/
+
+	background-repeat: no-repeat;
+	 background-position:0% 80%;
 
 
 
@@ -103,23 +106,24 @@ How to center text over image
 
 .category-box {
 
-  border: 0.05em solid #cecece;
-  border-right:none;
-  border-left:none;
+	border: 0.05em solid #cecece;
+	border-right:none;
+	border-left:none;
 	height:10em;
 
 }
 
 .category-container {
-  font-weight:700;
-  font-size: 1em;
-  padding-top:2.5em;
+	font-weight:700;
+	font-size: 1em;
+	padding-top:2.9em;
+	color: #66B2B2;
 
 }
 
 .image-card-container div {
 
-	margin:0em 0em 3em 0em;
+	margin:0em 0em 0.5em 0em;
 }
 
 .image-card-container {
@@ -131,6 +135,7 @@ How to center text over image
 
 .image-card-box-1 {
 	background-image: url(../img/tea5.jpg)   ;
+
 	background-size:cover;
 
 	display:table;
@@ -153,27 +158,61 @@ How to center text over image
 /*FOOTER ---------------*/
 
 .footer-container div {
-	margin-top:1em;
-	margin-bottom: 1em;
+	margin: 1em 0em 3em 0em;
+	padding:1em 3em 0em 0em;
+	/*	border: 1px solid black;*/
+	border-top: 1.5px solid lightgrey;
+	
 }
 
 .footer-container {
 	display: flex;
 }
 
-.footer-box {
-
-	flex:1;
-	height:4em;
-
-	/*line*/
-	border-top: 1px solid #008080;
+.footer-logo{
+	/*width:50%;*/
+	flex:2;
 }
 
-.footer-text {
-	flex:1;
+
+.footer-contact {
+	/*width:50%;*/
+	flex:3;
+}
+
+.logo-foot {
+	font-family: 'lobster';
+	color:#66B2B2;
+	text-decoration: none;
+	font-size: 1.4em;
+}
+
+.footer-title {
+	font-size: 1.2em;	
+}
+
+.about-text{
+	font-weight: 300;
+}
+
+
+.about-link{
+	color: black;
+}
+
+.about-link:hover, .about-link:active, .about-link:focus {
+	color: #66b2b2
+}
+
+.contact-text{
+	font-size:1em;
+	display:inline-block;
+	padding-right:5em;
 
 }
+
+
+
 
 /*-----------END OF FOOTER */
 
@@ -216,7 +255,7 @@ How to center text over image
 	justify-content: flex-start;
 }
 .sale-price {
-  color: red;
+	color: red;
 	padding-right: 0.3em;
 }
 
@@ -235,77 +274,77 @@ How to center text over image
 	margin-top:0em;
 
 
-} */
+	} */
 
-.review-container {
-	display:flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: space-between;
-}
+	.review-container {
+		display:flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: space-between;
+	}
 
-.review-box-username {
-	display:flex;
-	/* display: block; */
-	flex-direction: column;
-	width:14%;
-	justify-content: flex-start;
+	.review-box-username {
+		display:flex;
+		/* display: block; */
+		flex-direction: column;
+		width:14%;
+		justify-content: flex-start;
 
-}
+	}
 
-.review-box-comment {
-	display:flex;
-	flex-direction: column;
-	width:84%;
+	.review-box-comment {
+		display:flex;
+		flex-direction: column;
+		width:84%;
 
-}
-.stars div {
-	display: flex;
-	flex-direction: row;
-}
-.review-username {
-	text-align:left;
-	font-size:1.2em;
-	margin-top:1em;
-	color:#008080;
-}
+	}
+	.stars div {
+		display: flex;
+		flex-direction: row;
+	}
+	.review-username {
+		text-align:left;
+		font-size:1.2em;
+		margin-top:1em;
+		color:#008080;
+	}
 
-.review-location {
-	text-align:left;
-	font-size:0.8em;
-	margin-top:1.5em;
-}
-.review-comments-title {
-	margin-top:1em;
-	text-align:left;
-}
+	.review-location {
+		text-align:left;
+		font-size:0.8em;
+		margin-top:1.5em;
+	}
+	.review-comments-title {
+		margin-top:1em;
+		text-align:left;
+	}
 
-.review-comments {
-	font-weight:300;
-	font-size:1em;
-	width:100%;
-	margin:0;
-}
+	.review-comments {
+		font-weight:300;
+		font-size:1em;
+		width:100%;
+		margin:0;
+	}
 
-.write-review {
-	display:flex;
-	justify-content: flex-end;
-	margin-bottom:0.2em;
-}
+	.write-review {
+		display:flex;
+		justify-content: flex-end;
+		margin-bottom:0.2em;
+	}
 
-.same-line {
-  display: flex;
-	flex-direction: row;
-}
+	.same-line {
+		display: flex;
+		flex-direction: row;
+	}
 
-.line {
-  margin-bottom: 1em 0;
-  padding: 0.5em 0;
-  border-bottom: 1px dotted #333; /*https://www.w3schools.com/cssref/pr_border-top.asp*/
-}
+	.line {
+		margin-bottom: 1em 0;
+		padding: 0.5em 0;
+		border-bottom: 1px dotted #333; /*https://www.w3schools.com/cssref/pr_border-top.asp*/
+	}
 
 
-/* INDIVIDUAL PRODUCT PAGE */
+	/* INDIVIDUAL PRODUCT PAGE */
 /*
 Referenced: Week 3 Lecture Code
 Used lecture code for grid structure
@@ -336,11 +375,11 @@ Used lecture code for grid structure
 	justify-content: flex-start;
 }
 .cart-text{
-  padding:1em;
-  width:100%;
+	padding:1em;
+	width:100%;
 }
 .order-summary{
-  background-color: rgb(240, 240, 240);
+	background-color: rgb(240, 240, 240);
 	width: 17em;
 }
 .order-textinside {
@@ -348,21 +387,21 @@ Used lecture code for grid structure
 }
 .checkout{
 	margin-top: 1.9em;
-  padding: 0.6em 0.75em;
-  width: 100%;
-  color: white;
-  background-color: #008080;
-  font-weight: 600;
-  font-size: 1em;
-  text-align: center;
-  text-decoration: none;
-  -webkit-transition: background-color 0.2s ease-out;
-  transition: background-color 0.2s ease-out;
-  border: 2px solid #008080;
+	padding: 0.6em 0.75em;
+	width: 100%;
+	color: white;
+	background-color: #008080;
+	font-weight: 600;
+	font-size: 1em;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: background-color 0.2s ease-out;
+	transition: background-color 0.2s ease-out;
+	border: 2px solid #008080;
 }
 .subsum {
-  display: flex;
-  justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 
 
@@ -373,147 +412,147 @@ Used lecture code for grid structure
 @media(max-width: 1260px) {
 	/* body{
 		background-color: red;
-	} */
-}
-
-@media (max-width: 1125px) {
-	.product-cardholder {
-		width: 48%;
-	}
-	.product-buttons{
-		bottom:6rem;
-	}
-	.basket-description {
-		width:auto;
-	}
-	body{
-		background-color: blue;
-	}
-}
-
-@media (max-width: 990px){
-
-	.box{
-		flex-direction: column;
+		} */
 	}
 
-	.box-item-text, .box-item-image, .basket-description{
-		width:100%;
-		padding:0;
+	@media (max-width: 1125px) {
+		.product-cardholder {
+			width: 48%;
+		}
+		.product-buttons{
+			bottom:6rem;
+		}
+		.basket-description {
+			width:auto;
+		}
+		body{
+			background-color: blue;
+		}
 	}
 
-	.basket-description {
-		flex-direction: column;
-	}
-	.order-summary{
-		width:30%;
-	}
-	.cart-text{
-		margin:0;
+	@media (max-width: 990px){
+
+		.box{
+			flex-direction: column;
+		}
+
+		.box-item-text, .box-item-image, .basket-description{
+			width:100%;
+			padding:0;
+		}
+
+		.basket-description {
+			flex-direction: column;
+		}
+		.order-summary{
+			width:30%;
+		}
+		.cart-text{
+			margin:0;
+		}
+
+		.image-card-container{
+			flex-direction:column;
+		}
+
+		.image-card-box-1, .image-card-box-2 {
+			width:100%;
+
+		}
+		body{
+			background-color: green;
+		}
 	}
 
-	.image-card-container{
-		flex-direction:column;
-	}
 
-	.image-card-box-1, .image-card-box-2 {
-		width:100%;
+	@media (max-width: 767px) {
+		body{
+			background-color: yellow;
+		}
+		.product-cardholder {
+			width: 100%;
+		}
+		.product-menu{
+			display: block;
+		}
+		.nav-content{
+			position: relative;
+			padding-bottom: 3rem;
+			justify-content: center;
+		}
 
-	}
-	body{
-		background-color: green;
-	}
-}
+		.main-nav{
+			position: absolute;
+			bottom: 0em;
+			display: flex;
+			width: 100%;
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+		}
+		.main-nav, .nav-content{
+			display:flex;
+			justify-content: space-between;
+		}
+		a.main-nav-option{
+			margin-right: 0;
+		}
+		.basket {
+			justify-content: flex-start;
+		}
+		.basket-description {
+			width:35%;
+			margin-left: 1em;
+		}
+		.order-summary{
+			width: 100%;
+		}
+		.checkout {
+			margin:0;
+		}
 
+		.review-box-comment {
+			width:100%;
 
-@media (max-width: 767px) {
-	body{
-		background-color: yellow;
-	}
-	.product-cardholder {
-		width: 100%;
-	}
-	.product-menu{
-		display: block;
-	}
-	.nav-content{
-		position: relative;
-    padding-bottom: 3rem;
-    justify-content: center;
-	}
+		}
 
-	.main-nav{
-		position: absolute;
-    bottom: 0em;
-    display: flex;
-    width: 100%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-	}
-	.main-nav, .nav-content{
-		display:flex;
-		justify-content: space-between;
-	}
-	a.main-nav-option{
-		margin-right: 0;
-	}
-	.basket {
-		justify-content: flex-start;
-	}
-	.basket-description {
-		width:35%;
-		margin-left: 1em;
-	}
-	.order-summary{
-		width: 100%;
-	}
-	.checkout {
-		margin:0;
-	}
-
-	.review-box-comment {
-		width:100%;
+		.review-box-username {
+			display: flex;
+			width:100%;
+		}
+		.review-username {
+			margin-bottom: 0;
+		}
 
 	}
 
-	.review-box-username {
-		display: flex;
-		width:100%;
-	}
-	.review-username {
-		margin-bottom: 0;
-	}
 
-}
-
-
-@media (max-width: 479px){
-	.box-item-text{
-		width: 100%;
-		order: 2;
-		flex:0 0 100%;
+	@media (max-width: 479px){
+		.box-item-text{
+			width: 100%;
+			order: 2;
+			flex:0 0 100%;
+		}
+		.basket{
+			display: block;
+		}
+		.basket-description {
+			width:100%;
+			margin: 1em 0;
+		}
+		.basket-item {
+			width:100%;
+		}
+		.cart-text{
+			padding: 0.5em 0;
+			text-align: center;
+		}
+		.user-icon {
+			margin-left: 1em;
+		}
+		.order-summary {
+			width: 100%;
+		}
+		body{
+			background-color: orange;
+		}
 	}
-	.basket{
-		display: block;
-	}
-	.basket-description {
-		width:100%;
-		margin: 1em 0;
-	}
-	.basket-item {
-		width:100%;
-	}
-	.cart-text{
-		padding: 0.5em 0;
-		text-align: center;
-	}
-	.user-icon {
-		margin-left: 1em;
-	}
-	.order-summary {
-		width: 100%;
-	}
-	body{
-		background-color: orange;
-	}
-}
