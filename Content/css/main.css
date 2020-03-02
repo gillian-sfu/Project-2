@@ -15,8 +15,10 @@ div{
 }
 
 .page-heading{
-  font-size: 2em;
+  font-size: 3em;
   text-align: center;
+  color: #006666;
+  margin-top:1.1em;
 }
 
 h1, h2{
@@ -64,9 +66,10 @@ a.main-nav-option {
 
 a.logo {
   font-family: 'lobster';
-  color: rgb(48,48,48);
+  color: #66B2B2;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 2em;
+
 
 }
 
@@ -177,8 +180,7 @@ content: :"";
   display: inline-block;
   padding: 0.3em 0.75em;
   width: 9em;
-  color: white;
-  background-color: #008080;
+  
   font-weight: 600;
   text-align: center;
   text-decoration: none;
@@ -186,40 +188,34 @@ content: :"";
   transition: background-color 0.2s ease-out;
   border: 0.125em solid #008080;
 
-}
-
-.shop-now-button:hover, .shop-now-button:focus {
   background-color: white;
   color: #008080;
   border-color: #008080
-}
-
-.sale-text-container {
-  font-weight: 600;
-  font-size: 1.3em;
-
-  text-align: center;
-  padding: 11em 0em 0em 0em;
-
-
 
 }
 
-.image-text-container {
-
-  text-align: center;
-  padding: 11em 0em 0em 0em;
-  color:white;
-
-
-
-
+.shop-now-button:hover, .shop-now-button:focus {
+  /*background-color: white;
+  color: #008080;
+  border-color: #008080*/
+  color: white;
+  background-color: #008080;
 }
+
+
+
+
 
 /*-------------ABOUT PAGE ----------*/
 
 .about-text-section{
-  margin: 0 6em;
+  margin: 3em 4em 4em 4em;
+  padding:0 15em;
+}
+
+.about-para{
+  line-height: 2em;
+  margin-bottom:3em;
 }
 
 /*-------------PRODUCT LISTING ----------*/

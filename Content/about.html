@@ -5,12 +5,17 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us</title>
+  <title>Homepage</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
 
   <link href="css/main.css" rel="stylesheet">
   <link href="css/flexbox.css" rel="stylesheet">
+
+
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script> <!--https://www.w3schools.com/icons/fontawesome5_icons_users_people.asp -->
 
 </head>
 
@@ -18,23 +23,31 @@
 
   <header>
 
-		<div id="header-container">
-      <div class="logo-area">
-        <a class="logo" href="Homepage.html">Spill the tea</a>
-      </div>
-      <div class="main-nav">
-        <ul>
-          <li><a href="product-listing.html">Tea</a></li>
-          <li><a href="teasets.html">Teasets</a></li>
-          <li><a href="sales.html">Sale</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="sign-in.html">Sign In</a></li>
-          <li><a href="my-cart.html">Cart</a></li>
-        </ul>
-        </div>
-      </div>
+    <div class="container">
+      <div class="nav-content">
 
-		</header>
+        <div class="main-nav">
+          <a class="main-nav-option" href="product-listing.html">Tea</a>
+          <a class="main-nav-option" href="teasets.html">Teasets</a>
+          <a class="main-nav-option" href="sales.html">Sale</a>
+        </div>
+
+        <div class="logo-area">
+          <a class="logo" href="Homepage.html">Spill the Tea</a>
+        </div>
+
+          <!--https://www.youtube.com/watch?v=N1VXSl1Bpyw
+            - used this tutorial to learn how to add icons to nav bar -->
+            <div class="utility-nav">
+              <a class="user-icon" href="sign-in.html"> <i class="fas fa-user-circle"></i></a>
+              <a class="user-icon" href="my-cart.html"> <i class="fas fa-shopping-bag"></i></a>
+            </div>
+
+          <!--<li><a href="sign-in.html">Sign In</a></li>
+            <li><a href="my-cart.html">Cart</a></li> -->
+          </div>
+        </div>
+  </header>
 
     <section class="our-story">
       <div>
@@ -43,27 +56,55 @@
 
       <div class="about-text-section">
         <div class="about-section1">
-          <h3 class"subheader">Lorem Ipsum</h3>
-          <p class="about-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <!--Content from https://www.stashtea.com/pages/about-us -->
+          <p class="about-para">In the past, tea was a tool for rebellion and sparked wars. Now it's become a source of quiet and comfort. But not to us. To us, tea is an opportunity. To excite the senses. To surprise your taste buds. With a diverse range of bold flavors and bright colors. Hell, even “normal” flavors have some kind of weird or wonderful twist. No, Stash isn’t a bag of tea. It’s a little bag of crazy. And it’s about time we show it. </p>
         </div>
 
         <div class="about-section2">
-          <h3 class"subheader">Lorem Ipsum</h3>
-          <p class="about-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <!--Content from https://tealeafco.com/pages/about-us -->
+          <h3 class="subheader">WE SOURCE THE GOOD STUFF</h3>
+          <p class="about-para">Spill the Tea satiates your rampant brew desires by bringing you high grade tea, grown in healthy soil and from ethical farms. As unashamed tea-pushers, we encourage you to experiment with every possible teagasm partner without abusing your wallet, by offering tea samplers in all our products. Enjoy tea-sers of premium classics like our bold English Breakfast, hand-harvested High Mountain Fujian Oolong, or even a chocolate cinnamon black tea so decadent, it’s often mistaken for dessert. There’s a unique tea for any mood or weather for you to try. </p>
         </div>
 
         <div class="about-section3">
-          <h3 class"subheader">Lorem Ipsum</h3>
-          <p class="about-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h3 class="subheader">WE CARE ABOUT THE PLANET</h3>
+          <p class="about-para">Earth isn’t like loose leaf varieties – there’s only one. We care deeply about the health of our humble rock that we call home, so we're meticulous about where our teas and ingredients come from. Our happy, planet-loving farmers and suppliers are just as passionate about quality and the environment as we are. So, you can sleep easy at night that all your teagasms are good, clean and socially responsible ones.</p>
         </div>
       </div>
 
     </section>
 
     <!---- FOOTER ----->
-		<div class="footer-container">
-    	<div class="footer-box"> Footer</div>
-  	</div>
+		<!---- FOOTER ----->
+<div class="container">
+<div class="footer-container">
+  <div class="footer-logo">
+    <h3 class="logo-foot">Spill the Tea</h3>
+
+  <!--CONTENT FROM https://tealeafco.com/pages/about-us -->
+    <p class="about-text">Spill the Tea satiates your rampant brew desires by bringing you high grade tea, grown in healthy soil and ethical farms. We care deeply about the health of our humble rock that we call home.</p>
+
+    <a class="about-link" href="about.html">Learn More</a>
+  </div>
+  
+
+  <div class="footer-contact">
+    <h3 class="footer-title">Contact Us</h3>
+    <p class="contact-text">604-111-2222</p>
+    <p class="contact-text">CustomerService@SpilltheTea.com</p>
+    <a class="about-link" href="about.html">Styleguide</a>
+    
+  </div>
+<!-- 
+  <div class="footer-styleguide">
+    <h3 class="footer-title">Styleguide</h3>
+    <a class="about-link" href="about.html">Link to Styleguide</a>
+  </div> -->
+
+</div>
+</div>
+
+
 
 
 
