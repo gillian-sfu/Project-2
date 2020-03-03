@@ -59,9 +59,9 @@ Used this tutorial to learn out how to create flexbox website grid
 }
 
 .sale-promotion-box {
-	
+
 	background-image: url(../img/browntea3.jpg); /* https://www.youtube.com/watch?v=33IinMVJf-M*/
-	 
+
 	/*background-size:cover;
 	background-position:bottom;*/
 
@@ -79,7 +79,7 @@ Used this tutorial to learn out how to create flexbox website grid
 }
 
 .sale-text-container {
-  
+
   font-weight: 600;
   font-size: 1.2em;
 
@@ -195,7 +195,7 @@ How to center text over image
 	padding:1em 3em 0em 0em;
 	/*	border: 1px solid black;*/
 	border-top: 1.5px solid lightgrey;
-	
+
 }
 
 .footer-container {
@@ -221,7 +221,7 @@ How to center text over image
 }
 
 .footer-title {
-	font-size: 1.2em;	
+	font-size: 1.2em;
 }
 
 .about-text{
@@ -246,14 +246,14 @@ How to center text over image
 
 /*--------PAGE HEADERS ---------*/
 .loose-leaf-container div {
-	
+
 	margin-bottom:2em;
 
 }
 .header-container{
 	display:flex;
 	justify-content: center;
-	
+
 }
 
 .header-box {
@@ -380,7 +380,7 @@ How to center text over image
 		width:100%;
 		margin:0;
 	}
-	
+
 	.lastcomment{
 		margin-bottom:3em;
 	}
@@ -391,7 +391,7 @@ How to center text over image
 		margin-bottom:0.2em;
 	}
 
-	
+
 	.same-line {
 		display: flex;
 		flex-direction: row;
@@ -476,6 +476,9 @@ Used lecture code for grid structure
 	}
 
 	@media (max-width: 1125px) {
+		body{
+			background-color: blue;
+		}
 		.product-cardholder {
 			width: 48%;
 		}
@@ -485,13 +488,17 @@ Used lecture code for grid structure
 		.basket-description {
 			width:auto;
 		}
-		body{
-			background-color: blue;
+
+		.about-text-section{
+		  margin: 1em;
+			padding: 0 10em;
 		}
 	}
 
 	@media (max-width: 990px){
-
+		body{
+			background-color: green;
+		}
 		.box{
 			flex-direction: column;
 		}
@@ -500,9 +507,12 @@ Used lecture code for grid structure
 			width:100%;
 			padding:0;
 		}
-
+		.about-text-section{
+		  padding:0 5em;
+		}
 		.basket-description {
 			flex-direction: column;
+			width:30%;
 		}
 		.order-summary{
 			width:30%;
@@ -519,9 +529,7 @@ Used lecture code for grid structure
 			width:100%;
 
 		}
-		body{
-			background-color: green;
-		}
+
 	}
 
 
@@ -574,13 +582,15 @@ Used lecture code for grid structure
 			width:100%;
 
 		}
-
 		.review-box-username {
 			display: flex;
 			width:100%;
 		}
 		.review-username {
 			margin-bottom: 0;
+		}
+		.about-text-section{
+			padding:0em;
 		}
 
 	}
