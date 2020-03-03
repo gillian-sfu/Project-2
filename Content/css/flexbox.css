@@ -191,26 +191,42 @@ How to center text over image
 /*FOOTER ---------------*/
 
 .footer-container div {
-	margin: 1em 0em 3em 0em;
-	padding:1em 3em 0em 0em;
-	/*	border: 1px solid black;*/
-	border-top: 1.5px solid lightgrey;
+	margin: 0.5em 0em 3em 0em;
+	padding:0em 3em 0em 0em;
+   /* border: 1px solid black;*/
+	/*border-top: 1.5px solid lightgrey;*/
 
+}
+
+.footer-line {
+	border-top: 1.5px solid lightgrey;
+	margin-top:1em;
 }
 
 .footer-container {
 	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
 }
 
 .footer-logo{
-	/*width:50%;*/
-	flex:2;
+	width:50%;
+	/*flex:2;*/
+	flex-direction:column;
 }
 
 
 .footer-contact {
-	/*width:50%;*/
-	flex:3;
+	width:25%;
+	/*flex:1;*/
+	flex-direction:column;
+}
+
+.footer-guide {
+	/*flex:1;*/
+	width:20%;
+	flex-direction:column;
+
 }
 
 .logo-foot {
@@ -226,11 +242,13 @@ How to center text over image
 
 .about-text{
 	font-weight: 300;
+	font-size: 0.9em;
 }
 
 
 .about-link{
 	color: black;
+	
 }
 
 .about-link:hover, .about-link:active, .about-link:focus {
@@ -239,8 +257,7 @@ How to center text over image
 
 .contact-text{
 	font-size:1em;
-	display:inline-block;
-	padding-right:5em;
+
 
 }
 
@@ -493,6 +510,8 @@ Used lecture code for grid structure
 		  margin: 1em;
 			padding: 0 10em;
 		}
+
+	
 	}
 
 	@media (max-width: 990px){
@@ -591,6 +610,22 @@ Used lecture code for grid structure
 		}
 		.about-text-section{
 			padding:0em;
+		}
+
+		.footer-logo {
+			width:100%;
+			margin-bottom:0;
+			
+		}
+
+		.footer-contact {
+			width:100%;
+			margin-bottom:0;
+		}
+
+		.footer-guide {
+			width:100%;	
+			margin-bottom:0;
 		}
 
 	}

@@ -150,7 +150,8 @@ content: :"";
   display: inline-block;
   padding: 0.3em 0.75em;
   width: 9em;
-
+  color: white;
+  background-color: #008080;
   font-weight: 600;
   text-align: center;
   text-decoration: none;
@@ -158,18 +159,15 @@ content: :"";
   transition: background-color 0.2s ease-out;
   border: 0.125em solid #008080;
 
-  background-color: white;
-  color: #008080;
-  border-color: #008080
+ 
 
 }
 
 .shop-now-button:hover, .shop-now-button:focus {
-  /*background-color: white;
+  background-color: white;
   color: #008080;
-  border-color: #008080*/
-  color: white;
-  background-color: #008080;
+  border-color: #008080
+  
 }
 
 
