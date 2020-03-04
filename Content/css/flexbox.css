@@ -91,6 +91,11 @@ Used this tutorial to learn out how to create flexbox website grid
 .whats-on-sale {
 	color:black;
 	text-align: left;
+	width:30%;
+}
+
+.tea-collection {
+	width:10%;
 }
 
 
@@ -145,6 +150,7 @@ How to center text over image
 	flex-flow: wrap;
 	justify-content: space-between;
 	position:relative;
+	margin-bottom: 1.5em;
 }
 
 .image-card-box-1 {
@@ -223,7 +229,7 @@ How to center text over image
 }
 
 .footer-guide {
-	/*flex:1;*/
+	display:flex;
 	width:20%;
 	flex-direction:column;
 
@@ -248,7 +254,7 @@ How to center text over image
 
 .about-link{
 	color: black;
-	
+
 }
 
 .about-link:hover, .about-link:active, .about-link:focus {
@@ -301,6 +307,7 @@ How to center text over image
 	/* flex-direction: column; */
 	width: 31.333%;
 	margin: 0 1% 1.2em 1%;/*https://developer.mozilla.org/en-US/docs/Web/CSS/margin*/
+	padding: 0.5em 1.5em;
 }
 
 .product-image {
@@ -445,6 +452,7 @@ Used lecture code for grid structure
 	flex-direction: row;
 	justify-content: space-between;
 	flex-basis: 34%;
+
 }
 .basket-description{
 	display: flex;
@@ -511,7 +519,7 @@ Used lecture code for grid structure
 			padding: 0 10em;
 		}
 
-	
+
 	}
 
 	@media (max-width: 990px){
@@ -565,7 +573,6 @@ Used lecture code for grid structure
 		.nav-content{
 			position: relative;
 			padding-bottom: 3rem;
-			justify-content: center;
 		}
 
 		.main-nav{
@@ -576,9 +583,14 @@ Used lecture code for grid structure
 			padding-top: 1rem;
 			padding-bottom: 1rem;
 		}
-		.main-nav, .nav-content{
+		.main-nav {
 			display:flex;
-			justify-content: space-between;
+			justify-content: space-around;
+		}
+
+		.utility-nav {
+			display: flex;
+			justify-content: flex-end;
 		}
 		a.main-nav-option{
 			margin-right: 0;
@@ -612,20 +624,40 @@ Used lecture code for grid structure
 			padding:0em;
 		}
 
-		.footer-logo {
-			width:100%;
-			margin-bottom:0;
-			
+		.logo-foot {
+			margin: 0.4em 0;
 		}
 
-		.footer-contact {
+		div.footer-logo {
 			width:100%;
+			margin-bottom:0;
+			padding:0;
+		}
+		.footer-title{
+			margin-top: 2em;
+			margin-bottom: 0.5em;
+		}
+
+		.about-text{
 			margin-bottom:0;
 		}
 
-		.footer-guide {
-			width:100%;	
-			margin-bottom:0;
+		div.footer-contact {
+			width:100%;
+			margin:0;
+		}
+
+		p.contact-text{
+			margin:0.3em 0;
+		}
+
+		div.footer-guide {
+			width:100%;
+			margin-top: 0;
+			margin-bottom:0.58em;
+		}
+		.whats-on-sale {
+			width:50%;
 		}
 
 	}
@@ -654,9 +686,28 @@ Used lecture code for grid structure
 		.user-icon {
 			margin-left: 1em;
 		}
+		.main-nav {
+			display:flex;
+			justify-content: space-between;
+		}
 		.order-summary {
 			width: 100%;
 		}
+		.contact-text{
+			font-size: 0.9em;
+		}
+		.whats-on-sale {
+			width:70%;
+			font-size: 1.1em;
+		}
+		.shop-now-button {
+			width:8em;
+		}
+		.tea-collection{
+			font-size: 1.3em;
+		}
+
+
 		body{
 			background-color: orange;
 		}

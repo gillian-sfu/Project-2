@@ -1,0 +1,700 @@
+/*
+  STYLE GUIDE STYLING
+  Default styling for the style guide
+*/
+body {
+  font-family: Muli, sans-serif;
+  padding: 2rem;
+}
+
+section:not([id]) {
+  margin: 1em 0;
+  padding: 0.5em 0;
+  border-top: 2px dotted #afafaf;
+  line-height: 25px;
+}
+
+section h3 {
+  margin-bottom: 0;
+}
+
+section p {
+  margin-top: 0;
+}
+
+section code {
+  background-color: #EEE;
+  padding: 0.3em 0.75em;
+  display: inline-block;
+
+}
+
+/*
+  WIREFLOW PAGE STYLING
+*/
+
+.wireflow-list {
+  line-height: 30px;
+}
+
+/*
+  Branding Elements -------------------
+*/
+
+.branding {
+  max-width: 80rem;
+  font-size: 20px;
+}
+
+.font-bold {
+  font-size:20px;
+  font-weight: 700;
+}
+
+.font-semibold {
+  font-size:20px;
+  font-weight: 600;
+}
+
+.font-regular {
+  font-size:20px;
+  font-weight: 400;
+}
+
+.font-light {
+  font-size:20px;
+  font-weight: 300;
+}
+
+
+/*
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/*
+  DEFUALT BUTTON -------------------
+*/
+
+/*
+  Referenced: Lecture Week 2 code example
+*/
+
+.button-nav {
+  display: inline-block;
+  padding: 0.3em 0.75em;
+  width: 150px;
+  color: white;
+  background-color: #008080;
+  font-weight: 600;
+  text-align: center;
+  /*border-radius: 0.25em;*/
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+  border: 2px solid #008080;
+}
+
+.palette-box-b1 {
+	background: #E6FBFB
+}
+
+.palette-box-b2{
+  background: #66B2B2;
+}
+
+.palette-box-b3 {
+  background: #008080;
+	color: white;
+}
+
+.palette-box-b4 {
+  background: #006666;
+  color:white;
+}
+
+.palette-box-b5 {
+	background: #004C4C;
+	color:white;
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: white;
+  color: #008080;
+  border-color: #008080
+}
+
+/*
+  IN-TEXT LINK --------------------
+*/
+
+/*
+  Referenced Week 2 lecture Code
+*/
+.link-style{
+  color: black;
+}
+
+.link-style:hover, .link-style:active, .link-style:focus {
+  color: #66b2b2
+
+}
+
+/*
+  SUBMIT + RESET BUTTON ---------------
+*/
+
+/*
+  Referenced: Week 2+3 Lecture code;
+*/
+
+.button {
+  display: inline-block;
+  padding: 0.3em 0.75em;
+  margin-bottom: 5px;
+  width: 75px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+
+}
+
+.submit{
+  background-color: #008080 ;
+
+}
+
+.reset {
+
+   background-color: black;
+
+}
+
+.submit:hover, .submit:focus {
+  background-color: #109b97;
+
+}
+
+.reset:hover, .reset:focus {
+  background-color: #8b8e8e ;
+  color: white;
+
+
+}
+
+/*
+  TEXT INPUT FIELD AND LABEL ----------------------
+*/
+
+/*
+  Referenced: https://www.w3schools.com/css/css_form.asp
+  Used this to learn how to create text input field and label
+*/
+
+input {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border: 2px solid #66b2b2;
+}
+
+
+
+/*
+  TEXT ELEMENTS -------------------
+*/
+
+.heading1 {
+  font-family: Muli, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.heading2 {
+  font-family: Muli, sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.heading3 {
+  font-family: Muli, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+.para-style{
+  max-width: 35rem;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+
+ol, ul, .num-list {
+  line-height: 12px;
+  font-weight: 400;
+}
+
+
+
+/*
+  COMBINED ELEMENTS -------------------
+*/
+
+/*
+  MAIN NAVIGATION --------------------
+*/
+
+
+/*
+  Referenced: https://www.youtube.com/watch?v=FEmysQARWFU and Lecture Code Examples
+  Learned how to underline nav when cursor hovers over nav buttons
+*/
+
+.main-nav {
+  display: inline-block;
+  color: rgb(48,48,48);
+  /*padding-top: 15px;*/
+  text-decoration: none;
+  position: relative;
+  font-size: 20px;
+  margin-right: 50px;
+  padding-top:15px;
+
+}
+
+.main-nav::before {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100%;
+  position:absolute;
+
+  bottom: -8px;
+  width: 0%;
+
+  transition: 0.2s ease-out;
+
+}
+
+.main-nav:hover::before {
+  width: 100%;
+  background-color: #66b2b2;
+
+}
+
+.main-nav:hover, .main-nav:active, .main-nav:focus{
+  color: #66b2b2
+
+}
+
+
+
+/*
+  SITEMAP  --------------------
+*/
+
+.sitemap {
+  width:70rem;
+}
+
+
+
+
+/*PRODUCT  ---------------*/
+.box{
+	position: relative;
+
+}
+
+.cart-button-nav a{
+	position: absolute;
+
+	bottom: 0.5rem;
+	padding: 0 0.25;
+}
+
+img{
+  height:auto;
+  width: 85%;
+}
+
+.title {
+	font-size: 35px;
+	line-height: 1em;
+}
+
+.price {
+	font-weight: bold;
+	font-size: 18px;
+  line-height: 1em;
+}
+
+.review {
+	font-weight: 600;
+	padding-bottom: 40px;
+  line-height: 1em;
+}
+
+.description {
+  	font-size: 14px;
+  	font-weight: 300;
+  	line-height: 25px;
+  	padding-bottom: 30px;
+}
+
+/* HOMEPAGE ------------------- */
+
+
+.header {
+  width:50%;
+}
+
+.logo {
+  text-align:center;
+}
+
+
+/*WEBSITE GRID STRUCTURE--------------*/
+
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+/*
+  Referenced: https://www.youtube.com/watch?v=JJSoEo8JSnc
+  Used this tutorial to learn out how to create flexbox website grid
+*/
+
+
+
+.container-1 div, .container-2 div, .container-3 div, .container-4 div,
+.container-5 div, .container-6 div, .container-7 div, .container-8 div,
+.container-9 div, .container-10 div, .container-11 div {
+
+
+	padding:10px;
+	margin:5px;
+	background-color: lightgrey;
+
+}
+
+
+
+.container-1 {
+	display:flex;
+}
+
+.container-1-box{
+	flex:1;
+	height:100px;
+}
+
+.container-2 {
+	display:flex;
+	justify-content: center;
+}
+
+.container-2-box {
+	width:80%;
+	height: 500px;
+}
+
+
+.container-3 {
+	display:flex;
+	flex-flow: wrap;
+	justify-content: center;
+}
+
+.container-3-boxes {
+	width: 26%;
+	height:400px;
+
+}
+
+.container-4{
+	display: flex;
+}
+
+.container-4-box {
+	flex:1;
+	height:100px;
+}
+
+.container-5{
+	display:flex;
+}
+
+.container-5-box{
+	flex:1;
+	height:150px;
+}
+
+/*
+    Referenced: https://cssgr.id/
+    Used this grid generator to figure out how to create a sidebar grid structure for the product page website grid
+ */
+
+.container-6{
+	display:grid;
+	flex-flow: wrap;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.container-6-box1{
+	grid-row:span 2/auto;
+	height:800px;
+
+}
+
+.container-7 {
+	display:flex;
+}
+
+.container-7-box{
+	flex:1;
+	height:100px;
+}
+
+.container-8 {
+	display:flex;
+
+}
+
+.container-8-box{
+	flex:1;
+	height:150px;
+}
+
+.container-9{
+  display:flex;
+	flex-flow: wrap;
+}
+
+.container-9-box1{
+  width: 60%;
+  height:55em;
+}
+
+.container-9-box2{
+  flex: 1;
+  height:55em;
+}
+
+.container-10{
+  display: flex;
+  flex-direction:column;
+}
+
+.container-10-boxes{
+
+  height:30em;
+}
+
+.container-11{
+  display:flex;
+}
+
+.container-11-box{
+  flex:1;
+  height:10em;
+}
+
+
+
+/*COLOUR PALETTE ----------------*/
+.palette-box div {
+  width: 200px;
+  height: 150px;
+  margin: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.palette-box {
+	display: flex;
+}
+
+/*PRODUCT LISTING ---------------- */
+/*
+  Referenced: Week 3 Lecture Code
+  Used lecture code for grid structure
+*/
+
+.box{
+	display: flex;
+}
+
+.box-item-image {
+/*	flex: 3 1 400px;*/
+
+	flex-wrap: wrap;
+
+}
+
+.box-item-text {
+	flex: 1 1 18em;
+	padding: 0 1rem;
+	line-height: 12px;
+}
+
+/*
+  Referenced: https://www.w3schools.com/howto/howto_css_dropdown.asp
+  Used this source to code drop down button
+*/
+.dropbtn {
+  color: black;
+  padding: 10px;
+  width: 20em;
+  font-size: 16px;
+  border: 2px solid grey;
+  text-align: left;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 380px;
+  z-index: 1;
+  border: 1px solid lightgrey;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #B2D8D8;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/*
+  Referenced Lecture Week 2 + 3 Code Example for buttons
+*/
+
+.cart-button-nav {
+  margin-top: 7em;
+  display: inline-block;
+  padding: 0.6em 0.75em;
+  float:right;
+  width: 150px;
+  color: white;
+  background-color: #008080;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+  border: 2px solid #008080;
+	position: relative;
+}
+
+.cart-button-nav:hover, .cart-button-nav:focus {
+  background-color: white;
+  color: #008080;
+  border-color: #008080
+}
+
+/*https://stackoverflow.com/questions/40600728/trying-to-align-text-under-an-image-using-flexbox*/
+
+@media (max-width: 990px){
+/*	body{
+		background-color:green;
+	}*/
+	.box{
+		flex-direction: column;
+	}
+	.box-item-image{
+		min-width:700px;
+	}
+
+	.cart-button-nav{
+		float:left;
+		margin-top: 2em;
+	}
+	.container-6{
+		display: flex;
+		justify-content: center;
+
+	}
+	.container-6-box1{
+		width: 100%;
+		height: 30%;
+		grid-row: 3;
+	}
+	.container-6-boxes{
+		flex-direction: row;
+		height: 30em;
+		width:48%;
+	}
+}
+
+@media (max-width: 767px) {
+	.container-3-boxes, .container-2-box{
+		width:100%;
+	}
+	/*body{
+		background-color: blue;
+	}*/
+	figure{
+		margin:0;
+	}
+	.box-item-image{
+		min-width:500px;
+	}
+	.container-6-boxes{
+		height: 20em;
+		width:45%;
+	}
+	.container-9-box1{
+		width:100%;
+	}
+	.container-9-box2{
+		width: 100%;
+		height:20rem;
+		flex: 1 1 auto;
+	}
+}
+
+
+@media (max-width: 479px){
+/*	body{
+		background-color: red;
+	}*/
+
+	.box-item-image{
+		min-width:400px;
+	}
+
+	.box-item-text{
+		order: 2;
+		flex:0 0 100%;
+	}
+
+	.container-6-boxes{
+		width:100%;
+	}
+}
