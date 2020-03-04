@@ -696,6 +696,12 @@ Used lecture code for grid structure
 		.contact-text{
 			font-size: 0.9em;
 		}
+		.sale-text-container{
+			padding-left: 1.2em;
+		}
+		.image-text-container {
+			padding-left: 1.2em;
+		}
 		.whats-on-sale {
 			width:70%;
 			font-size: 1.1em;
