@@ -111,6 +111,10 @@ a.tea, a.sales, a.teasets{
   font-weight: 600;
 }
 
+.icon-cart, .icon-sign-in{
+  color: #66b2b2;
+}
+
 /*LOGO --------------- */
 /*#header-container {
 width:100%;
@@ -234,7 +238,7 @@ footer {
 }
 
 .checked {
-  color: #008080;
+  color: #ffde4d;
 }
 
 
