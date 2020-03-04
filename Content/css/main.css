@@ -46,9 +46,6 @@ Referenced: https://www.youtube.com/watch?v=hp-LP8Nv18s&fbclid=IwAR1u_VtFJMAI1ez
   padding: 2.3em 0em;
 }
 
-.main-nav-option{
-  list-style: none;
-}
 
 a.main-nav-option {
   margin-right: 2rem;
@@ -84,7 +81,7 @@ Used tutorial to learn how to underline nav when cursor hovers over nav buttons
 
 .main-nav-option a:hover, .fa-user-circle:hover, .fa-shopping-bag:hover {
   color: #66b2b2;
- 
+
 }
 
 a.main-nav-option a::before {
@@ -183,7 +180,7 @@ footer {
 /*PRODUCT LISTING*/
 
 .product-image{
-  margin-bottom: 1em;
+  margin-bottom: 0.7em;
 }
 .product-description-holder{
   line-height: 0.75em;
@@ -331,47 +328,6 @@ footer {
    margin-top: 2em;
 
 }
-
-.button-form{
-  display: inline-block;
-  padding: 0.3em 0.75em;
-  margin-bottom: 5px;
-  width: 75px;
-  color: white;
-  font-weight: 600;
-  text-align: center;
-  text-decoration: none;
-  -webkit-transition: background-color 0.2s ease-out;
-  transition: background-color 0.2s ease-out;
-
-}
-
-.submit{
-  background-color: #008080 ;
-
-}
-
-.reset {
-
-   background-color: black;
-
-}
-
-.submit:hover, .submit:focus {
-  background-color: #109b97;
-
-}
-
-.reset:hover, .reset:focus {
-  background-color: #8b8e8e ;
-  color: white;
-}
-
-
-/*Referenced: https://www.w3schools.com/howto/howto_css_dropdown.asp
-Used this source to code drop down button
-*/
-
 
 /*
 Referenced Lecture Week 2 + 3 Code Example for buttons

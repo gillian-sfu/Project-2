@@ -25,62 +25,67 @@
 	<header>
 
 		<div class="container">
-			<div class="nav-content">
+      <div class="nav-content">
 
-				<div class="main-nav">
-					<a class="main-nav-option" href="product-listing.html">Tea</a>
-					<a class="main-nav-option" href="teasets.html">Teasets</a>
-					<a class="main-nav-option" href="sales.html">Sale</a>
-				</div>
+        <div class="main-nav">
+          <a class="main-nav-option" href="product-listing.html">Tea</a>
+          <a class="main-nav-option" href="teasets.html">Teasets</a>
+          <a class="main-nav-option" href="sales.html">Sale</a>
+        </div>
 
-				<div class="logo-area">
-					<a class="logo" href="Homepage.html">Spill the Tea</a>
-				</div>
+        <div class="logo-area">
+          <a class="logo" href="Homepage.html">Spill the Tea</a>
+        </div>
 
-					<!--https://www.youtube.com/watch?v=N1VXSl1Bpyw
-						- used this tutorial to learn how to add icons to nav bar -->
-						<div class="utility-nav">
-							<a class="user-icon" href="sign-in.html"> <i class="fas fa-user-circle"></i></a>
-							<a class="user-icon" href="my-cart.html"> <i class="fas fa-shopping-bag"></i></a>
-						</div>
+          <!--https://www.youtube.com/watch?v=N1VXSl1Bpyw
+            - used this tutorial to learn how to add icons to nav bar -->
+            <div class="utility-nav">
+              <a class="user-icon" href="sign-in.html"> <i class="fas fa-user-circle"></i></a>
+              <a class="user-icon" href="my-cart.html"> <i class="fas fa-shopping-bag"></i></a>
+            </div>
 
-					<!--<li><a href="sign-in.html">Sign In</a></li>
-						<li><a href="my-cart.html">Cart</a></li> -->
-					</div>
-				</div>
+          <!--<li><a href="sign-in.html">Sign In</a></li>
+            <li><a href="my-cart.html">Cart</a></li> -->
+          </div>
+        </div>
 
 		</header>
 
+<div class="container">
 	<h2 class="create-an-account">Payment Information</h2>
 
 	<!-- Referenced: https://www.w3schools.com/howto/howto_css_login_form.asp -->
-	<form >
+	<form novalidate id="proceedPayment">
 		<div class="create-account-container">
 
 
 			<label for="Name"><b>Name + Last Name</b></label>
 			<input type="text" placeholder="Enter First and Last Name" name="Name" required>
 
-			<label for="CreditCard"><b>Credit Card Number</b></label>
-			<input type="text" placeholder="Enter Credit Card Number" name="CreditCard" required>
+			<label for="Address"><b>Credit Card Number</b></label>
+			<input type="text" placeholder="Enter Credit Card Number" name="Credit" required>
 
 
-			<label for="Expiry"><b>Expiry Date</b></label>
+			<label for="Postal Code"><b>Expiry</b></label>
 
-			<input type="text" placeholder="Enter MM/YY" name="expiry" required>
+			<input type="text" placeholder="Enter MM/YY" name="Expiry" required>
 
-			<label for="CVV"><b>CVV</b></label>
+			<label for="Province"><b>CVV</b></label>
 
 			<input type="text" placeholder="Enter CVV" name="CVV" required>
 
 
 			<div class="create-account-button">
 
-				<a href="confirmation.html"><button class="create-button">Confirm Order</button></a> </br>
+			<!-- 	<button class="create-button">Proceed to Payment</button> </br> -->
+
+				<a class="create-button" href="confirmation.html">Place Order</a> </br>
+
 
 			</div>
 
 		</div>
+	</div> <!--div for container-->
 
 	</form>
 

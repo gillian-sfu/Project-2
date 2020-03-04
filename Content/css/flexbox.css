@@ -159,7 +159,7 @@ How to center text over image
 	background-size:cover;
 	background-position:90% 0%;
 
-	display:table; 
+	display:table;
 	width:48.5%;
 	height:30em;
 }
@@ -301,13 +301,15 @@ How to center text over image
 	display:flex;
 	flex-wrap: wrap;
 	justify-content: left;
+	width:104%;
+	margin-left: -2%;
 
 }
 .product-cardholder {
 	/* flex-direction: column; */
-	width: 31.333%;
-	margin: 0 1% 1.2em 1%;/*https://developer.mozilla.org/en-US/docs/Web/CSS/margin*/
-	padding: 0.5em 1.5em;
+	width: 29.333%;
+	margin: 0 2% 1.6em 2%;/*https://developer.mozilla.org/en-US/docs/Web/CSS/margin*/
+	/* padding: 0.5em 1.5em; */
 }
 
 .product-image {
@@ -498,12 +500,21 @@ Used lecture code for grid structure
 	/* body{
 		background-color: red;
 		} */
+		.product-list {
+			width:102%;
+			margin:-1%;
+
+		}
+		.product-cardholder {
+			width: 31.333%;
+			margin: 0 1% 1.4em 1%;/*https://developer.mozilla.org/en-US/docs/Web/CSS/margin*/
+		}
 	}
 
 	@media (max-width: 1125px) {
-		body{
+		/* body{
 			background-color: blue;
-		}
+		} */
 		.product-cardholder {
 			width: 48%;
 		}
@@ -523,9 +534,9 @@ Used lecture code for grid structure
 	}
 
 	@media (max-width: 990px){
-		body{
+		/* body{
 			background-color: green;
-		}
+		} */
 		.box{
 			flex-direction: column;
 		}
@@ -561,11 +572,12 @@ Used lecture code for grid structure
 
 
 	@media (max-width: 767px) {
-		body{
+		/* body{
 			background-color: yellow;
-		}
+		} */
 		.product-cardholder {
 			width: 100%;
+			padding:0;
 		}
 		.product-menu{
 			display: block;
@@ -582,8 +594,6 @@ Used lecture code for grid structure
 			width: 100%;
 			padding-top: 1rem;
 			padding-bottom: 1rem;
-		}
-		.main-nav {
 			display:flex;
 			justify-content: space-around;
 		}
@@ -714,7 +724,7 @@ Used lecture code for grid structure
 		}
 
 
-		body{
+		/* body{
 			background-color: orange;
-		}
+		} */
 	}
