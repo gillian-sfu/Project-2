@@ -286,7 +286,7 @@ footer {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  padding-top:2em; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -302,7 +302,7 @@ footer {
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 50%;
 }
 
 /* The Close Button */
@@ -315,10 +315,384 @@ footer {
 
 .close:hover,
 .close:focus {
-  color: #000;
+  color: #008080;
   text-decoration: none;
   cursor: pointer;
 }
+
+.review-form {
+   border: none;
+   margin-top: 2em;
+
+}
+
+/*
+  STYLE GUIDE STYLING
+  Default styling for the style guide
+*/
+body {
+  font-family: Muli, sans-serif;
+  padding: 2rem;
+}
+
+section:not([id]) {
+  margin: 1em 0;
+  padding: 0.5em 0;
+  border-top: 2px dotted #afafaf;
+  line-height: 25px;
+}
+
+section h3 {
+  margin-bottom: 0;
+}
+
+section p {
+  margin-top: 0;
+}
+
+section code {
+  background-color: #EEE;
+  padding: 0.3em 0.75em;
+  display: inline-block;
+
+}
+
+/*
+  WIREFLOW PAGE STYLING
+*/
+
+.wireflow-list {
+  line-height: 30px;
+}
+
+/*
+  Branding Elements -------------------
+*/
+
+.branding {
+  max-width: 80rem;
+  font-size: 20px;
+}
+
+.font-bold {
+  font-size:20px;
+  font-weight: 700;
+}
+
+.font-semibold {
+  font-size:20px;
+  font-weight: 600;
+}
+
+.font-regular {
+  font-size:20px;
+  font-weight: 400;
+}
+
+.font-light {
+  font-size:20px;
+  font-weight: 300;
+}
+
+
+/*
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/*
+  DEFUALT BUTTON -------------------
+*/
+
+/*
+  Referenced: Lecture Week 2 code example
+*/
+
+.button-nav {
+  display: inline-block;
+  padding: 0.3em 0.75em;
+  width: 150px;
+  color: white;
+  background-color: #008080;
+  font-weight: 600;
+  text-align: center;
+  /*border-radius: 0.25em;*/
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+  border: 2px solid #008080;
+}
+
+.palette-box-b1 {
+  background: #E6FBFB
+}
+
+.palette-box-b2{
+  background: #66B2B2;
+}
+
+.palette-box-b3 {
+  background: #008080;
+  color: white;
+}
+
+.palette-box-b4 {
+  background: #006666;
+  color:white;
+}
+
+.palette-box-b5 {
+  background: #004C4C;
+  color:white;
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: white;
+  color: #008080;
+  border-color: #008080
+}
+
+/*
+  IN-TEXT LINK --------------------
+*/
+
+/*
+  Referenced Week 2 lecture Code
+*/
+.link-style{
+  color: black;
+}
+
+.link-style:hover, .link-style:active, .link-style:focus {
+  color: #66b2b2
+
+}
+
+/*
+  SUBMIT + RESET BUTTON ---------------
+*/
+
+/*
+  Referenced: Week 2+3 Lecture code;
+*/
+
+.button-form {
+  display: inline-block;
+  padding: 0.3em 0.75em;
+  margin-bottom: 5px;
+  width: 75px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+
+}
+
+.submit{
+  background-color: #008080 ;
+
+}
+
+.reset {
+
+   background-color: black;
+
+}
+
+.submit:hover, .submit:focus {
+  background-color: #109b97;
+
+}
+
+.reset:hover, .reset:focus {
+  background-color: #8b8e8e ;
+  color: white;
+
+
+}
+
+/*
+  TEXT INPUT FIELD AND LABEL ----------------------
+*/
+
+/*
+  Referenced: https://www.w3schools.com/css/css_form.asp
+  Used this to learn how to create text input field and label
+*/
+
+input {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border: 2px solid #66b2b2;
+}
+
+
+
+/*
+  TEXT ELEMENTS -------------------
+*/
+
+.heading1 {
+  font-family: Muli, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.heading2 {
+  font-family: Muli, sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.heading3 {
+  font-family: Muli, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+.para-style{
+  max-width: 35rem;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+
+ol, ul, .num-list {
+  line-height: 12px;
+  font-weight: 400;
+}
+
+
+
+/*
+  COMBINED ELEMENTS -------------------
+*/
+
+/*
+  MAIN NAVIGATION --------------------
+*/
+
+
+/*
+  Referenced: https://www.youtube.com/watch?v=FEmysQARWFU and Lecture Code Examples
+  Learned how to underline nav when cursor hovers over nav buttons
+*/
+
+.main-nav {
+  display: inline-block;
+  color: rgb(48,48,48);
+  /*padding-top: 15px;*/
+  text-decoration: none;
+  position: relative;
+  font-size: 20px;
+  margin-right: 50px;
+  padding-top:15px;
+
+}
+
+.main-nav::before {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100%;
+  position:absolute;
+
+  bottom: -8px;
+  width: 0%;
+
+  transition: 0.2s ease-out;
+
+}
+
+.main-nav:hover::before {
+  width: 100%;
+  background-color: #66b2b2;
+
+}
+
+.main-nav:hover, .main-nav:active, .main-nav:focus{
+  color: #66b2b2
+
+}
+
+
+
+/*
+  SITEMAP  --------------------
+*/
+
+.sitemap {
+  width:70rem;
+}
+
+
+
+
+/*PRODUCT  ---------------*/
+.box{
+  position: relative;
+
+}
+
+.cart-button-nav a{
+  position: absolute;
+
+  bottom: 0.5rem;
+  padding: 0 0.25;
+}
+
+img{
+  height:auto;
+  width: 85%;
+}
+
+.title {
+  font-size: 35px;
+  line-height: 1em;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1em;
+}
+
+.review {
+  font-weight: 600;
+  padding-bottom: 40px;
+  line-height: 1em;
+}
+
+.description {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 25px;
+    padding-bottom: 30px;
+}
+
+/* HOMEPAGE ------------------- */
+
+
+.header {
+  width:50%;
+}
+
+.logo {
+  text-align:center;
+}
+
+
+
+
 
 
 

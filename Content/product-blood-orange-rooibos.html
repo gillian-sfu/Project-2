@@ -64,37 +64,30 @@
 
 					<!-- <p class="review"> Review | Write a Review </p> -->
 
-						<div class="same-line">
-						<a href="#review" class="review">Review | </a>
+					<div class="stars">
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span> 
+					<a href="#review" class="review">Reviews   </a>
+					</div>
+
+						
+						<!-- <a href="#review" class="review">Review | </a> -->
 						<!-- <p class="breaker">|</p> -->
 
 
 					<!-- USED https://www.w3schools.com/howto/howto_css_modals.asp FOR MODAL CODES -->
 
 						<!-- Trigger/Open The Modal -->
-						<section id="myBtn">
-						<a href="#review" class="review"> Write a Review</a>
-						</section>
-						</div>
+						<!-- <section id="myBtn">
+						<a href="#review" class="review"> Write a Reviews</a>
+						</section> -->
+					
 				<!-- 	<button id="myBtn" class="button-to-text">Write a Review</button> -->
 
 					<!-- <a href id="myBtn">Write a Review</a> -->
-
-					<!-- The Modal -->
-					<div id="myModal" class="modal">
-
-						<!-- Modal content -->
-						<div class="modal-content">
-							<span class="close">&times;</span>
-							<form>
-							Email: <br>
-							<input type="text" name="email">
-							password: <br>
-							<input type="text" name="password">
-							</form>
-						</div>
-
-					</div>
 
 
 
@@ -111,41 +104,47 @@
 
 		</div> <!-- div for container-->
 
-		<!--JAVASCRIPT FOR MODAL POPUP FOR WRITING A REVIEW -->
-		<script>
-			// Get the modal
-			var modal = document.getElementById("myModal");
+		<!-- The Modal -->
+		<!-- 		USED https://www.w3schools.com/howto/howto_css_modals.asp for code -->
+		<div id="myModal" class="modal">
 
-			// Get the button that opens the modal
-			var btn = document.getElementById("myBtn");
+			<!-- Modal content -->
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<h2>Write your Review</h2>
+				
+				<form class="review-form">
+					Username:
+					<input type="text" name="username">
+					Email: 
+					<input type="text" name="email"> <br>
+					Title of Review: 
+					<input type="text" name="title">
+					Review: <br>
+					<input type="text" name="review">
 
-			// Get the <span> element that closes the modal
-			var span = document.getElementsByClassName("close")[0];
+					<a class="button-form reset" href="#">Reset</a>
+				     <a class="button-form submit" href="#">Submit</a>
+				         
 
-			// When the user clicks the button, open the modal
-			btn.onclick = function() {
-				modal.style.display = "block";
-			}
+				</form>
 
-			// When the user clicks on <span> (x), close the modal
-			span.onclick = function() {
-				modal.style.display = "none";
-			}
+			</div>
 
-			// When the user clicks anywhere outside of the modal, close it
-			window.onclick = function(event) {
-				if (event.target == modal) {
-					modal.style.display = "none";
-				}
-			}
-		</script>
+		</div>
+					
 
 <!-- REVIEW ------->
-
+<section id="review">
 <div class="container">
 	<div>
 		<h2 class="reviews">REVIEWS</h2>
-		<a class="write-review" href="#">Write a Review</a>
+
+		<!-- USED https://www.w3schools.com/howto/howto_css_modals.asp FOR MODAL CODES -->
+		<section id="myBtn">
+		<a class="write-review" href="#review">Write a Review</a>
+		<button id="myBtn" class="button-to-text">Write a Review</button>
+
 	</div>
 </div>
 
@@ -199,7 +198,6 @@
 	</div>
 </div>
 
-<section id="review">
 
 	<div class="container">
 
@@ -263,6 +261,36 @@
 </footer>
 
 <script src="js/modalpopup.js"></script>
+
+	<!--JAVASCRIPT FOR MODAL POPUP FOR WRITING A REVIEW -->
+	<!-- USED https://www.w3schools.com/howto/howto_css_modals.asp FOR jS CODES -->
+		<script>
+			// Get the modal
+			var modal = document.getElementById("myModal");
+
+			// Get the button that opens the modal
+			var btn = document.getElementById("myBtn");
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks the button, open the modal
+			btn.onclick = function() {
+				modal.style.display = "block";
+			}
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+				modal.style.display = "none";
+			}
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
+			}
+		</script>
 
 </body>
 
