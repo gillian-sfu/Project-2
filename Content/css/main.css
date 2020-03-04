@@ -329,6 +329,43 @@ footer {
 
 }
 
+.button-form {
+  display: inline-block;
+  padding: 0.3em 0.75em;
+  margin-bottom: 5px;
+  width: 75px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+
+}
+
+.submit{
+  background-color: #008080 ;
+
+}
+
+.reset {
+
+   background-color: black;
+
+}
+
+.submit:hover, .submit:focus {
+  background-color: #109b97;
+
+}
+
+.reset:hover, .reset:focus {
+  background-color: #8b8e8e ;
+  color: white;
+
+
+}
+
 /*
 Referenced Lecture Week 2 + 3 Code Example for buttons
 */
