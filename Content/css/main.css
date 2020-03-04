@@ -3,9 +3,11 @@
 body {
   font-family: Lato, sans-serif;
   margin:0;
-  min-height:100vh; /* sticky footer tutorial https://medium.com/@zerox/keep-that-damn-footer-at-the-bottom-c7a921cb9551*/
+     /* sticky footer tutorial https://medium.com/@zerox/keep-that-damn-footer-at-the-bottom-c7a921cb9551*/
+/*  min-height:100vh;
+
   position: relative;
-  padding-bottom: 13.5em;
+  padding-bottom: 13.5em;*/
 
 
 }
@@ -118,9 +120,9 @@ position:relative;
 /*--------------FOOTER -------------*/
 footer {
   /* sticky footer tutorial https://medium.com/@zerox/keep-that-damn-footer-at-the-bottom-c7a921cb9551*/
-  position: absolute;
+  /* position: absolute;
   bottom: 0;
-  width: 100%;
+  width: 100%; */
 
 }
 
