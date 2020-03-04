@@ -55,7 +55,7 @@
 	<h2 class="create-an-account">Shipping Information</h2>
 
 	<!-- Referenced: https://www.w3schools.com/howto/howto_css_login_form.asp -->
-	<form>
+	<form novalidate id="proceedPayment">
 		<div class="create-account-container">
 
 
@@ -78,13 +78,16 @@
 
 			<input type="text" placeholder="Phone Number" name="phone" required>
 
-			<label>
+			<label class="shipping-label">
 				<input type="checkbox" checked="checked" name="billing same as shipping"> My billing address is the same as my shipping address.
 			</label>
 
 			<div class="create-account-button">
 
-				<button class="create-button">Proceed to Payment</button> </br>
+			<!-- 	<button class="create-button">Proceed to Payment</button> </br> -->
+
+				<a class="create-button" href="confirmation.html">Proceed to Payment</a> </br>
+
 
 			</div>
 
@@ -92,5 +95,33 @@
 	</div> <!--div for container-->
 
 	</form>
+
+	<!---- FOOTER ----->
+<footer>
+	<div class="container">
+		<div class="footer-line"></div>
+		<div class="footer-container">
+			<div class="footer-logo">
+			<h3 class="logo-foot">Spill the Tea</h3>
+			<!--CONTENT FROM https://tealeafco.com/pages/about-us -->
+			<p class="about-text">Spill the Tea satiates your rampant brew desires by bringing you high grade tea, grown in healthy soil and ethical farms. We care deeply about the health of our humble rock that we call home.</p>
+			<a class="about-link" href="about.html">Learn More</a>
+			</div>
+
+			<div class="footer-contact">
+			<h3 class="footer-title">Contact Us</h3>
+			<p class="contact-text">604-111-2222</p>
+			<p class="contact-text">SpilltheTea@gmail.com</p>
+			</div>
+
+			<div class="footer-guide">
+			<h3 class="footer-title">Other Pages</h3>
+			<a class="about-link" href="Styleguide.html">Styleguide</a>
+			<a class="about-link" href="about.html">Citations</a>
+			</div>
+
+		</div>
+	</div>
+</footer>
 
 </html

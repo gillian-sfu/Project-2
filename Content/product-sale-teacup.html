@@ -64,34 +64,15 @@
   					<p class="price sale-price"> $5.99</p><p class="price"> | In Stock</p>
             </div>
 					<!-- <p class="review"> Review | Write a Review </p> -->
-
-						<div class="same-line">
-						<a href="#review" class="review">Review | </a>
-						<!-- <p class="breaker">|</p> -->
-
-
-					<!-- USED https://www.w3schools.com/howto/howto_css_modals.asp FOR MODAL CODES -->
-
-						<!-- Trigger/Open The Modal -->
-						<section id="myBtn">
-						<a href="#review" class="review"> Write a Review</a>
-						</section>
-						</div>
-				<!-- 	<button id="myBtn" class="button-to-text">Write a Review</button> -->
-
-					<!-- <a href id="myBtn">Write a Review</a> -->
-
-					<!-- The Modal -->
-					<div id="myModal" class="modal">
-
-						<!-- Modal content -->
-						<div class="modal-content">
-							<span class="close">&times;</span>
-							<p>Some text in the Modal..</p>
-						</div>
-
+					<div class="stars">
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span> 
+					<a href="#review" class="review">Reviews   </a>
 					</div>
-
+						
 
 
 					<p class="grams">210mL</p>
@@ -106,41 +87,47 @@
 
 		</div> <!-- div for container-->
 
-		<!--JAVASCRIPT FOR MODAL POPUP FOR WRITING A REVIEW -->
-		<script>
-			// Get the modal
-			var modal = document.getElementById("myModal");
 
-			// Get the button that opens the modal
-			var btn = document.getElementById("myBtn");
+		<!-- The Modal -->
+		<!-- 		USED https://www.w3schools.com/howto/howto_css_modals.asp for code -->
+		<div id="myModal" class="modal">
 
-			// Get the <span> element that closes the modal
-			var span = document.getElementsByClassName("close")[0];
+			<!-- Modal content -->
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<h2>Write your Review</h2>
+				
+				<form class="review-form">
+					Username:
+					<input type="text" name="username">
+					Email: 
+					<input type="text" name="email"> <br>
+					Title of Review: 
+					<input type="text" name="title">
+					Review: <br>
+					<input type="text" name="review">
 
-			// When the user clicks the button, open the modal
-			btn.onclick = function() {
-				modal.style.display = "block";
-			}
+					<a class="button-form reset" href="#">Reset</a>
+				     <a class="button-form submit" href="#">Submit</a>
+				         
 
-			// When the user clicks on <span> (x), close the modal
-			span.onclick = function() {
-				modal.style.display = "none";
-			}
+				</form>
 
-			// When the user clicks anywhere outside of the modal, close it
-			window.onclick = function(event) {
-				if (event.target == modal) {
-					modal.style.display = "none";
-				}
-			}
-		</script>
+			</div>
 
-<!-- REVIEW ------->
+		</div>
 
+		<!-- REVIEW ------->
+<section id="review">
 <div class="container">
 	<div>
 		<h2 class="reviews">REVIEWS</h2>
-		<a class="write-review" href="#">Write a Review</a>
+
+		<!-- USED https://www.w3schools.com/howto/howto_css_modals.asp FOR MODAL CODES -->
+		<section id="myBtn">
+		<a class="write-review" href="#review">Write a Review</a>
+
+
 	</div>
 </div>
 
@@ -166,8 +153,8 @@
 			<p class="review-comments">I've been drinking this tea for the past 4 years and absolutelly love it! I usually add a slice of lemon per cup (tastes great and boosts the antioxidants benefits). I love that it is certified organic and fair trade.</p>
 		</div>
 
-	</div>
-</div>
+	</div> <!--div for review-container-->
+</div> <!--div for container-->
 
 <div class="container">
 
@@ -194,7 +181,6 @@
 	</div>
 </div>
 
-<section id="review">
 
 	<div class="container">
 
@@ -219,14 +205,12 @@
 
 			<div class="review-box-comment">
 				<h3 class="review-comments-title">Very delicious</h3>
-				<p class="review-comments">This tea is a staple in my tea collection. I find it perfect first cup of tea after my morning coffee. Try adding a bit of coconut agave to it, I don't normally sweeten my teas but it's delicious! Blood Orange Rooibos is bold and rich, yet smooth and creamy. The fact it's organic is a bonus!</p>
+				<p class="review-comments lastcomment">This tea is a staple in my tea collection. I find it perfect first cup of tea after my morning coffee. Try adding a bit of coconut agave to it, I don't normally sweeten my teas but it's delicious! Blood Orange Rooibos is bold and rich, yet smooth and creamy. The fact it's organic is a bonus!</p>
 			</div>
 
 		</div>
 	</div>
 </section>
-
-
 
 
 <!---- FOOTER ----->
@@ -244,12 +228,12 @@
 			<div class="footer-contact">
 			<h3 class="footer-title">Contact Us</h3>
 			<p class="contact-text">604-111-2222</p>
-			<p class="contact-text">CustomerService@SpilltheTea.com</p>
+			<p class="contact-text">SpilltheTea@gmail.com</p>
 			</div>
 
 			<div class="footer-guide">
 			<h3 class="footer-title">Other Pages</h3>
-			<a class="about-link" href="about.html">Styleguide</a>
+			<a class="about-link" href="Styleguide.html">Styleguide</a>
 			<a class="about-link" href="about.html">Citations</a>
 			</div>
 
@@ -257,9 +241,7 @@
 	</div>
 </footer>
 
-
-
-
+<script src="js/modalpopup.js"></script>
 
 
 </body>

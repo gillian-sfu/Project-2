@@ -159,7 +159,7 @@ How to center text over image
 	background-size:cover;
 	background-position:90% 0%;
 
-	display:table;
+	display:table; 
 	width:48.5%;
 	height:30em;
 }
