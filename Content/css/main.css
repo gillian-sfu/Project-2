@@ -206,6 +206,14 @@ footer {
   height:auto;
 }
 
+.product-image-thumb:hover, .product-image-thumb:active, .product-image-thumb:focus {
+  transition: 0.2s;
+  opacity: 0.6; /*https://www.w3schools.com/css/css_image_transparency.asp*/
+}
+
+.name-of-product:hover {
+  color: #66b2b2;
+}
 
 /*-----------BLOOD ORANGE PRODUCT PAGE ---------*/
 
@@ -248,7 +256,7 @@ footer {
 }
 
 .write-review:hover, .write-review:active, .write-review:focus {
-  color: #66b2b2
+  color: #66b2b2;
 }
 
 .review{
@@ -257,7 +265,7 @@ footer {
 }
 
 .review:hover, .review:active, .review:focus {
-  color: #66b2b2
+  color: #66b2b2;
 }
 
 .breaker {
@@ -281,7 +289,7 @@ footer {
 }
 
 .button-to-text:hover, .button-to-text:active, .button-to-text:focus {
-  color: #66b2b2
+  color: #66b2b2;
 
 }
 
@@ -344,7 +352,7 @@ footer {
 }
 
 .submit{
-  background-color: #008080 ;
+  background-color: #008080;
 
 }
 
@@ -360,7 +368,7 @@ footer {
 }
 
 .reset:hover, .reset:focus {
-  background-color: #8b8e8e ;
+  background-color: #8b8e8e;
   color: white;
 
 
@@ -389,7 +397,7 @@ Referenced Lecture Week 2 + 3 Code Example for buttons
 .checkout:hover, .checkout:focus, .checkout:active {
   background-color: white;
   color: #008080;
-  border-color: #008080
+  border-color: #008080;
 }
 
 
@@ -482,7 +490,7 @@ input[type=text], input[type=password] {
 .login:hover, .login:focus, .login:active {
   background-color: white;
   color: #008080;
-  border-color: #008080
+  border-color: #008080;
 }
 
 
@@ -496,7 +504,7 @@ input[type=text], input[type=password] {
 }
 
 .password:hover, .password:active, .password:focus {
-  color: #66b2b2
+  color: #66b2b2;
 
 }
 
@@ -507,7 +515,7 @@ input[type=text], input[type=password] {
 }
 
 .create-account:hover, .create-account:active, .create-account:focus {
-  color: #66b2b2
+  color: #66b2b2;
 
 }
 
@@ -518,11 +526,11 @@ input[type=text], input[type=password] {
 .create-button:hover, .create-button:focus {
   background-color: white;
   color: #008080;
-  border-color: #008080
+  border-color: #008080;
 }
 
 .login-button:hover, .login-button:active, .login-button:focus {
-  color: #66b2b2
+  color: #66b2b2;
 
 }
 
