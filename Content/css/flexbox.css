@@ -329,7 +329,7 @@ How to center text over image
 .price-icon{
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: baseline;
 }
 .prices-duo {
 	display: flex;
