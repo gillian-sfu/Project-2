@@ -69,8 +69,8 @@ a.logo {
 
 }
 
-.fa-user-circle, .fa-shopping-bag{
-  font-size:1.5em;
+.fa-user-circle, .fa-shopping-cart{
+  font-size:1.3em;
   color: #303030;
 }
 
@@ -79,7 +79,9 @@ https://www.youtube.com/watch?v=FEmysQARWFU and Lecture Code Examples
 Used tutorial to learn how to underline nav when cursor hovers over nav buttons
 */
 
-.main-nav-option a:hover, .fa-user-circle:hover, .fa-shopping-bag:hover {
+.main-nav-option a:hover, .fa-user-circle:hover, .fa-shopping-cart:hover,
+.main-nav-option a:active, .fa-user-circle:active, .fa-shopping-cart:active,
+.main-nav-option a:focus, .fa-user-circle:focus, .fa-shopping-cart:focus {
   color: #66b2b2;
 
 }
