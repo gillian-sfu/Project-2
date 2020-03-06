@@ -81,11 +81,11 @@ Used this tutorial to learn out how to create flexbox website grid
 
 .sale-text-container {
 
-  font-weight: 600;
-  font-size: 1.2em;
+	font-weight: 600;
+	font-size: 1.2em;
 
-  text-align: left;
-  padding: 16em 0em 0em 3em;
+	text-align: left;
+	padding: 16em 0em 0em 3em;
 
 }
 
@@ -166,7 +166,7 @@ How to center text over image
 }
 
 /*.image-card-box-1:hover {
-	opacity:0.5;
+opacity:0.5;
 }*/
 
 .image-card-box-2 {
@@ -178,14 +178,10 @@ How to center text over image
 	background-position:40% 0%;
 }
 
-
-
 .image-text-container {
-
-  text-align: left;
-  padding: 12em 0em 0em 3em;
-  color:black;
-
+	text-align: left;
+	padding: 12em 0em 0em 3em;
+	color:black;
 }
 
 .tea-collection {
@@ -201,8 +197,6 @@ How to center text over image
 .footer-container div {
 	margin: 0.5em 0em 3em 0em;
 	padding:0em 3em 0em 0em;
-   /* border: 1px solid black;*/
-	/*border-top: 1.5px solid lightgrey;*/
 
 }
 
@@ -223,7 +217,6 @@ How to center text over image
 	flex-direction:column;
 }
 
-
 .footer-contact {
 	width:25%;
 	/*flex:1;*/
@@ -234,7 +227,6 @@ How to center text over image
 	display:flex;
 	width:20%;
 	flex-direction:column;
-
 }
 
 .logo-foot {
@@ -253,10 +245,8 @@ How to center text over image
 	font-size: 0.9em;
 }
 
-
 .about-link{
 	color: black;
-
 }
 
 .about-link:hover, .about-link:active, .about-link:focus {
@@ -265,7 +255,6 @@ How to center text over image
 
 .contact-text{
 	font-size:1em;
-
 
 }
 
@@ -290,11 +279,10 @@ How to center text over image
 }
 
 
-
 /*-----------END OF FOOTER */
 
 
-/*PRODUCT LISTING ---*/
+/*PRODUCT LISTING ---------*/
 
 .product-list {
 	display:flex;
@@ -338,104 +326,90 @@ How to center text over image
 	color: red;
 	padding-right: 0.3em;
 }
+.same-line {
+	display: flex;
+	flex-direction: row;
+}
 
-
-/* REVIEWUNDER PRODUCTS ------------ */
+/* RE-VIEW UNDER PRODUCTS ------------ */
 
 .reviews {
 	margin-top:2.5em;
 }
 
-/* .review-container div {
-	border: 1px solid lightgrey;
-	border-left:none;
-	border-right:none;
-	border-bottom:none;
-	margin-top:0em;
+.review-container {
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.review-box-username {
+	display:flex;
+	/* display: block; */
+	flex-direction: column;
+	width:14%;
+	justify-content: flex-start;
+
+}
+
+.review-box-comment {
+	display:flex;
+	flex-direction: column;
+	width:84%;
+
+}
+.stars div {
+	display: flex;
+	flex-direction: row;
+}
+.review-username {
+	text-align:left;
+	font-size:1.2em;
+	margin-top:1em;
+	color:#008080;
+}
+
+.review-location {
+	text-align:left;
+	font-size:0.8em;
+	margin-top:1.5em;
+}
+.review-comments-title {
+	margin-top:1em;
+	text-align:left;
+}
+
+.review-comments {
+	font-weight:300;
+	font-size:1em;
+	width:100%;
+	margin:0;
+}
+
+.lastcomment{
+	margin-bottom:3em;
+}
+
+.write-review {
+	display:flex;
+	justify-content: flex-end;
+	margin-bottom:0.2em;
+}
 
 
-	} */
-
-	.review-container {
-		display:flex;
-		flex-wrap: wrap;
-		flex-direction: row;
-		justify-content: space-between;
-	}
-
-	.review-box-username {
-		display:flex;
-		/* display: block; */
-		flex-direction: column;
-		width:14%;
-		justify-content: flex-start;
-
-	}
-
-	.review-box-comment {
-		display:flex;
-		flex-direction: column;
-		width:84%;
-
-	}
-	.stars div {
-		display: flex;
-		flex-direction: row;
-	}
-	.review-username {
-		text-align:left;
-		font-size:1.2em;
-		margin-top:1em;
-		color:#008080;
-	}
-
-	.review-location {
-		text-align:left;
-		font-size:0.8em;
-		margin-top:1.5em;
-	}
-	.review-comments-title {
-		margin-top:1em;
-		text-align:left;
-	}
-
-	.review-comments {
-		font-weight:300;
-		font-size:1em;
-		width:100%;
-		margin:0;
-	}
-
-	.lastcomment{
-		margin-bottom:3em;
-	}
-
-	.write-review {
-		display:flex;
-		justify-content: flex-end;
-		margin-bottom:0.2em;
-	}
+.line {
+	margin-bottom: 1em 0;
+	padding: 0.5em 0;
+	border-bottom: 1px dotted #333; /*https://www.w3schools.com/cssref/pr_border-top.asp*/
+}
 
 
-	.same-line {
-		display: flex;
-		flex-direction: row;
-	}
-
-	.line {
-		margin-bottom: 1em 0;
-		padding: 0.5em 0;
-		border-bottom: 1px dotted #333; /*https://www.w3schools.com/cssref/pr_border-top.asp*/
-	}
-
-
-	/* INDIVIDUAL PRODUCT PAGE */
+/* INDIVIDUAL PRODUCT PAGE --------------*/
 /*
 Referenced: Week 3 Lecture Code
 Used lecture code for grid structure
 */
-
-
 
 
 /*https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container*/
@@ -490,7 +464,7 @@ Used lecture code for grid structure
 	justify-content: space-between;
 }
 
-/*CITATIONS-----------*/
+/*CITATIONS----------------*/
 .citation-links {
 	display:flex;
 	flex-direction: column;
@@ -505,304 +479,332 @@ Used lecture code for grid structure
 /*https://stackoverflow.com/questions/40600728/trying-to-align-text-under-an-image-using-flexbox*/
 @media(max-width: 1260px) {
 	/* body{
-		background-color: red;
-		} */
-		.product-list {
-			width:102%;
-			margin:-1%;
-
-		}
-		.product-cardholder {
-			width: 31.333%;
-			margin: 0 1% 1.4em 1%;/*https://developer.mozilla.org/en-US/docs/Web/CSS/margin*/
-		}
-	}
-
-	@media (max-width: 1125px) {
-		/* body{
-			background-color: blue;
-		} */
-		.product-cardholder {
-			width: 48%;
-		}
-		.product-buttons{
-			bottom:6rem;
-		}
-		.basket-description {
-			width:auto;
-		}
-
-		.about-text-section{
-		  margin: 1em;
-			padding: 0 10em;
-		}
-
+	background-color: red;
+	} */
+	/*------------PRODUCT LISTING--------------*/
+	.product-list {
+		width:102%;
+		margin:-1%;
 
 	}
+	.product-cardholder {
+		width: 31.333%;
+		margin: 0 1% 1.4em 1%;/*https://developer.mozilla.org/en-US/docs/Web/CSS/margin*/
+	}
+}
 
-	@media (max-width: 990px){
-		/* body{
-			background-color: green;
-		} */
-		.box{
-			flex-direction: column;
-		}
-
-		.box-item-text, .box-item-image, .basket-description{
-			width:100%;
-			padding:0;
-		}
-		.about-text-section{
-		  padding:0 5em;
-		}
-		.basket-description {
-			flex-direction: column;
-			width:30%;
-		}
-		.order-summary{
-			width:30%;
-		}
-		.cart-text{
-			margin:0;
-		}
-
-		.image-card-container{
-			flex-direction:column;
-		}
-
-		.image-card-box-1, .image-card-box-2 {
-			width:100%;
-
-		}
-
-		/* --------------STYLE GUIDE --------------------*/
-		.sg-section {
-			margin: 3em;
-			padding:0 5em;
-		}
-		.box{
-			flex-direction: column;
-		}
-		.box-item-image{
-			min-width:700px;
-		}
-
-		.cart-button-nav{
-			float:left;
-			margin-top: 2em;
-		}
-		.container-6{
-			display: flex;
-			justify-content: center;
-		}
-		.container-6-box1{
-			width: 100%;
-		}
-		.container-6-boxes{
-			height: 30em;
-			width:48%;
-		}
-
+@media (max-width: 1125px) {
+	/* body{
+	background-color: blue;
+	} */
+	/*------------PRODUCT LISTING-------------*/
+	.product-cardholder {
+		width: 48%;
+	}
+	.product-buttons{
+		bottom:6rem;
+	}
+	.basket-description {
+		width:auto;
+	}
+	/*------------ABOUT-------------*/
+	.about-text-section{
+		margin: 1em;
+		padding: 0 10em;
 	}
 
 
-	@media (max-width: 767px) {
-		/* body{
-			background-color: yellow;
-		} */
-		.product-cardholder {
-			width: 100%;
-			padding:0;
-		}
-		.product-menu{
-			display: block;
-		}
-		.nav-content{
-			position: relative;
-			padding-bottom: 3rem;
-		}
+}
 
-		.main-nav{
-			position: absolute;
-			bottom: 0em;
-			display: flex;
-			width: 100%;
-			padding-top: 1rem;
-			padding-bottom: 1rem;
-			display:flex;
-			justify-content: space-around;
-		}
+@media (max-width: 990px){
+	/* body{
+	background-color: green;
+	} */
+	/*-------------PRODUCT PAGE--------------*/
+	.box{
+		flex-direction: column;
+	}
 
-		.utility-nav {
-			display: flex;
-			justify-content: flex-end;
-		}
-		a.main-nav-option{
-			margin-right: 0;
-		}
-		.basket {
-			justify-content: flex-start;
-		}
-		.basket-description {
-			width:35%;
-			margin-left: 1em;
-		}
-		.order-summary{
-			width: 100%;
-		}
-		.checkout {
-			margin:0;
-		}
+	.box-item-text, .box-item-image, .basket-description{
+		width:100%;
+		padding:0;
+	}
 
-		.review-box-comment {
-			width:100%;
+	.basket-description {
+		flex-direction: column;
+		width:30%;
+	}
 
-		}
-		.review-box-username {
-			display: flex;
-			width:100%;
-		}
-		.review-username {
-			margin-bottom: 0;
-		}
-		.about-text-section{
-			padding:0em;
-		}
+	/*------------------ABOUT---------------*/
+	.about-text-section{
+		padding:0 5em;
+	}
 
-		.logo-foot {
-			margin: 0.4em 0;
-		}
+	/*---------------MY CART-----------------*/
+	.order-summary{
+		width:30%;
+	}
+	.cart-text{
+		margin:0;
+	}
 
-		div.footer-logo {
-			width:100%;
-			margin-bottom:0;
-			padding:0;
-		}
-		.footer-title{
-			margin-top: 2em;
-			margin-bottom: 0.5em;
-		}
+	/*---------------HOMEPAGE---------------*/
+	.image-card-container{
+		flex-direction:column;
+	}
 
-		.about-text{
-			margin-bottom:0;
-		}
-
-		div.footer-contact {
-			width:100%;
-			margin:0;
-		}
-
-		p.contact-text{
-			margin:0.3em 0;
-		}
-
-		div.footer-guide {
-			width:100%;
-			margin-top: 0;
-			margin-bottom:0.58em;
-		}
-		.whats-on-sale {
-			width:50%;
-		}
-
-		/*-------------------------STYLEGUIDE -------------------*/
-		.sg-section {
-			margin: 3em 0;
-			padding:0;
-		}
-
-		.container-6{
-			display: flex;
-			justify-content: space-between;
-		}
-		.container-6-boxes, .container-3-boxes, .container-9-box1{
-			width:100%;
-		}
-		.container-9-box2{
-			width: 100%;
-			height:20rem;
-			flex: 1 1 auto;
-		}
+	.image-card-box-1, .image-card-box-2 {
+		width:100%;
 
 	}
 
-
-	@media (max-width: 479px){
-		.box-item-text{
-			width: 100%;
-			order: 2;
-			flex:0 0 100%;
-		}
-		.page-heading{
-			font-size: 2em;
-		}
-		.header-box {
-			height:7em;
-		}
-		.basket{
-			display: block;
-		}
-		.basket-description {
-			width:100%;
-			margin: 1em 0;
-		}
-		.basket-item {
-			width:100%;
-		}
-		.cart-text{
-			padding: 0.5em 0;
-			text-align: center;
-		}
-		.user-icon {
-			margin-left: 1em;
-		}
-		.main-nav {
-			display:flex;
-			justify-content: space-between;
-		}
-		.utility-nav {
-			display: flex;
-			justify-content: space-around;
-		}
-		.order-summary {
-			width: 100%;
-		}
-		.contact-text{
-			font-size: 0.9em;
-		}
-		.sale-text-container{
-			padding-left: 1.2em;
-		}
-		.image-text-container {
-			padding-left: 1.2em;
-
-		}
-		.whats-on-sale {
-			width:70%;
-			font-size: 1.1em;
-		}
-		.shop-now-button {
-			width:8em;
-		}
-		.tea-collection{
-			font-size: 1.3em;
-		}
-		/*---------------------STYLEGUIDE--------------------*/
-		.style-nav{
-			display: flex;
-			flex-direction: column;
-		}
-		.sg-nav {
-			margin-bottom: 1em;
-			display: flex;
-			justify-content: center;
-		}
-		code{
-			width: 100%;
-		}
-
-
-		/* body{
-			background-color: orange;
-		} */
+	/* --------------STYLE GUIDE --------------------*/
+	.sg-section {
+		margin: 3em;
+		padding:0 5em;
 	}
+	.box{
+		flex-direction: column;
+	}
+
+	.cart-button-nav{
+		float:left;
+		margin-top: 2em;
+	}
+	.container-6{
+		display: flex;
+		justify-content: center;
+	}
+	.container-6-box1{
+		width: 100%;
+	}
+	.container-6-boxes{
+		height: 30em;
+		width:48%;
+	}
+
+}
+
+
+@media (max-width: 767px) {
+	/* body{
+	background-color: yellow;
+	} */
+
+	/*-------------PRODUCT LISTING--------------*/
+	.product-cardholder {
+		width: 100%;
+		padding:0;
+	}
+	.product-menu{
+		display: block;
+	}
+
+
+	/*------------------NAV------------------*/
+	.nav-content{
+		position: relative;
+		padding-bottom: 3rem;
+	}
+
+	.main-nav{
+		position: absolute;
+		bottom: 0em;
+		display: flex;
+		width: 100%;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		display:flex;
+		justify-content: space-around;
+	}
+
+	.utility-nav {
+		display: flex;
+		justify-content: flex-end;
+	}
+	a.main-nav-option{
+		margin-right: 0;
+	}
+
+	/*---------------MY CART-----------------*/
+	.basket {
+		justify-content: flex-start;
+	}
+	.basket-description {
+		width:35%;
+		margin-left: 1em;
+	}
+	.order-summary{
+		width: 100%;
+	}
+	.checkout {
+		margin:0;
+	}
+
+	/*-------------PRODUCT PAGE--------------*/
+	.review-box-comment {
+		width:100%;
+
+	}
+	.review-box-username {
+		display: flex;
+		width:100%;
+	}
+	.review-username {
+		margin-bottom: 0;
+	}
+
+	/*------------------ABOUT----------------*/
+	.about-text-section{
+		padding:0em;
+	}
+	.about-text{
+		margin-bottom:0;
+	}
+
+	/*------------------FOOTER----------------*/
+	.logo-foot {
+		margin: 0.4em 0;
+	}
+
+	div.footer-logo {
+		width:100%;
+		margin-bottom:0;
+		padding:0;
+	}
+	.footer-title{
+		margin-top: 2em;
+		margin-bottom: 0.5em;
+	}
+
+	div.footer-contact {
+		width:100%;
+		margin:0;
+	}
+
+	p.contact-text{
+		margin:0.3em 0;
+	}
+
+	div.footer-guide {
+		width:100%;
+		margin-top: 0;
+		margin-bottom:0.58em;
+	}
+
+	/*--------------------HOMEPAGE---------------------*/
+	.whats-on-sale {
+		width:50%;
+	}
+
+	/*-------------------------STYLEGUIDE -------------------*/
+	.sg-section {
+		margin: 3em 0;
+		padding:0;
+	}
+
+	.container-6{
+		display: flex;
+		justify-content: space-between;
+	}
+	.container-6-boxes, .container-3-boxes, .container-9-box1{
+		width:100%;
+	}
+	.container-9-box2{
+		width: 100%;
+		height:20rem;
+		flex: 1 1 auto;
+	}
+
+}
+
+
+@media (max-width: 479px){
+	/*----------------PRODUCT PAGE-----------------*/
+	.box-item-text{
+		width: 100%;
+		order: 2;
+		flex:0 0 100%;
+	}
+
+	/*---------------PRODUCT LISTING--------------*/
+	.page-heading{
+		font-size: 2em;
+	}
+	.header-box {
+		height:7em;
+	}
+
+	/*---------------MY CART-----------------*/
+	.basket{
+		display: block;
+	}
+	.basket-description {
+		width:100%;
+		margin: 1em 0;
+	}
+	.basket-item {
+		width:100%;
+	}
+	.cart-text{
+		padding: 0.5em 0;
+		text-align: center;
+	}
+	.order-summary {
+		width: 100%;
+	}
+
+	/*------------------NAV---------------------*/
+	.user-icon {
+		margin-left: 1em;
+	}
+	.main-nav {
+		display:flex;
+		justify-content: space-between;
+	}
+	.utility-nav {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	/*----------------FOOTER---------------------*/
+	.contact-text{
+		font-size: 0.9em;
+	}
+
+	/*------------------HOMEPAGE---------------------*/
+	.sale-text-container{
+		padding-left: 1.2em;
+	}
+	.image-text-container {
+		padding-left: 1.2em;
+	}
+	.whats-on-sale {
+		width:70%;
+		font-size: 1.1em;
+	}
+	.shop-now-button {
+		width:8em;
+	}
+	.tea-collection{
+		font-size: 1.3em;
+	}
+
+	/*---------------------STYLEGUIDE--------------------*/
+	.style-nav{
+		display: flex;
+		flex-direction: column;
+	}
+	.sg-nav {
+		margin-bottom: 1em;
+		display: flex;
+		justify-content: center;
+	}
+	code{
+		width: 100%;
+	}
+
+	/* body{
+	background-color: orange;
+	} */
+}
