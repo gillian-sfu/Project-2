@@ -764,9 +764,16 @@ code {
 /*https://stackoverflow.com/questions/40600728/trying-to-align-text-under-an-image-using-flexbox*/
 
 
-
+/*-------OUR STORY PAGE----------------*/
+.subheader {
+  text-align: center;
+}
 
 /*-------- CITATIONS PAGE --------------*/
 .citation-title {
   text-align: left;
+}
+
+.citation-links {
+  
 }
