@@ -1,7 +1,8 @@
+
+
 //USED https://www.w3schools.com/howto/howto_css_modals.asp FOR MODAL JAVASCRIPT CODES + TO LEARN-->
 
-
-'use strict'; /*something about making clean script so that it won't break*/
+'use strict'; 
 
 /*ensure that its working*/
 console.log('JavaScript is running.');

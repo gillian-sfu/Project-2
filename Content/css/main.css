@@ -3,13 +3,7 @@
 body {
   font-family: Lato, sans-serif;
   margin:0;
-     /* sticky footer tutorial https://medium.com/@zerox/keep-that-damn-footer-at-the-bottom-c7a921cb9551*/
-/*  min-height:100vh;
-
-  position: relative;
-  padding-bottom: 13.5em;*/
-
-
+  /* sticky footer tutorial https://medium.com/@zerox/keep-that-damn-footer-at-the-bottom-c7a921cb9551*/
 }
 
 div{
@@ -17,10 +11,10 @@ div{
 }
 
 .page-heading{
-  font-size: 3em;
+  font-size: 2.5em;
   text-align: center;
   color: #006666;
-  margin-top:1.1em;
+  margin-top:1.4em;
 }
 
 h1, h2{
@@ -29,16 +23,11 @@ h1, h2{
 
 
 
-/* --------- HEADER ----------- */
-
-
-
-/* MAIN NAVIGATION */
+/* ------------- HEADER ------------- */
 
 /*
-Referenced: https://www.youtube.com/watch?v=hp-LP8Nv18s&fbclid=IwAR1u_VtFJMAI1ezISo4Nl2L9Tovp0eyJw5W7o6DT8erYzQwn8AavL_wIyhI
-
---> Used this tutorial to learn how to put nav on right and left side with the logo in the middle
+  Referenced: https://www.youtube.com/watch?v=hp-LP8Nv18s&fbclid=IwAR1u_VtFJMAI1ezISo4Nl2L9Tovp0eyJw5W7o6DT8erYzQwn8AavL_wIyhI
+  - Used this tutorial to learn how to put nav on right and left side with the logo in the middle
 */
 
 /* https://stackoverflow.com/questions/885691/how-to-make-a-ul-display-in-a-horizontal-row*/
@@ -118,11 +107,6 @@ a.tea, a.sales, a.teasets{
   color: #66b2b2;
 }
 
-/*LOGO --------------- */
-/*#header-container {
-width:100%;
-position:relative;
-}*/
 
 /*--------------FOOTER -------------*/
 footer {
@@ -130,13 +114,44 @@ footer {
   /* position: absolute;
   bottom: 0;
   width: 100%; */
+}
+
+.footer-line {
+  border-top: 1.5px solid lightgrey;
+  margin-top:1em;
+}
+
+.logo-foot {
+  font-family: 'lobster';
+  color:#66B2B2;
+  text-decoration: none;
+  font-size: 1.4em;
+}
+
+.footer-title {
+  font-size: 1.2em;
+}
+
+.about-text{
+  font-weight: 300;
+  font-size: 0.9em;
+}
+
+.about-link{
+  color: black;
+}
+
+.about-link:hover, .about-link:active, .about-link:focus {
+  color: #66b2b2
+}
+
+.contact-text{
+  font-size:1em;
 
 }
 
 
-
 /*--------------HOMEPAGE -------------*/
-
 
 
 .shop-now-button {
@@ -152,8 +167,6 @@ footer {
   transition: background-color 0.2s ease-out;
   border: 0.125em solid #008080;
 
-
-
 }
 
 .shop-now-button:hover, .shop-now-button:focus {
@@ -163,11 +176,88 @@ footer {
 
 }
 
+.sale-promotion-box {
+  background-image: url(../img/browntea3.jpg); /* https://www.youtube.com/watch?v=33IinMVJf-M*/
+  background-repeat: no-repeat;
+  background-position:0% 75%;  /*https://www.w3schools.com/cssref/pr_background-position.asp*/
+  width:100%;
+  height:35em;
+  position: relative;
+  text-align: center;
+  color: black;
+  position:relative;
+}
+
+.sale-text-container {
+  font-weight: 600;
+  font-size: 1.2em;
+  text-align: left;
+  padding: 16em 0em 0em 3em;
+}
+
+.whats-on-sale {
+  color:black;
+  text-align: left;
+  width:30%;
+}
+
+.tea-collection {
+  width:10%;
+}
+
+.category-box {
+  border: 0.05em solid #cecece;
+  border-right:none;
+  border-left:none;
+  height:10em;
+}
+
+.category-container {
+  font-weight:700;
+  font-size: 1em;
+  padding-top:2.9em;
+  color: #66B2B2;
+}
+
+.image-card-container {
+  display:flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  position:relative;
+  margin-bottom: 1.5em;
+}
+
+.image-card-box-1 {
+  background-image: url(../img/tea8.jpg);
+  background-size:cover;
+  background-position:90% 0%;
+  display:table;
+  width:48.5%;
+  height:30em;
+}
+
+.image-card-box-2 {
+  background-image: url(../img/teasets.jpg);
+  background-size:cover;
+  display:table;
+  width:48.5%;
+  height:30em;
+  background-position:40% 0%;
+}
+
+.image-text-container {
+  text-align: left;
+  padding: 12em 0em 0em 3em;
+  color:black;
+}
+
+.tea-collection {
+  color:black;
+  text-align: left;
+}
 
 
-
-
-/*-------------ABOUT PAGE ----------*/
+/*-------------OUR STORY PAGE ----------*/
 
 .about-text-section{
   margin: 3em;
@@ -180,8 +270,19 @@ footer {
 }
 
 /*-------------PRODUCT LISTING ----------*/
+.add-to-cart-icon {
+  top:1.5em;
+}
 
-/*PRODUCT LISTING*/
+.sale-price {
+  color: red;
+  padding-right: 0.3em;
+}
+
+.same-line {
+  display: flex;
+  flex-direction: row;
+}
 
 .product-image{
   margin-bottom: 0.7em;
@@ -273,8 +374,48 @@ footer {
   padding-bottom: 3em;
 }
 
+/*----------- REVIEW UNDER PRODUCTS -------------*/
+.reviews {
+  margin-top:2.5em;
+}
 
-/*INTEXT LINKS------- */
+.review-username {
+  text-align:left;
+  font-size:1.2em;
+  margin-top:1em;
+  color:#008080;
+}
+
+.review-location {
+  text-align:left;
+  font-size:0.8em;
+  margin-top:1.5em;
+}
+.review-comments-title {
+  margin-top:1em;
+  text-align:left;
+}
+
+.review-comments {
+  font-weight:300;
+  font-size:1em;
+  width:100%;
+  margin:0;
+}
+
+.lastcomment{
+  margin-bottom:3em;
+}
+
+.line {
+  margin-bottom: 1em 0;
+  padding: 0.5em 0;
+  border-bottom: 1px dotted #333; /*https://www.w3schools.com/cssref/pr_border-top.asp*/
+}
+
+
+
+/*------------ INTEXT LINKS-------------- */
 
 .write-review, .link-style{
   color: black;
@@ -299,11 +440,9 @@ footer {
 }
 
 
-/*MODAL FOR REVIEW*/
+/*---------- MODAL FOR REVIEW ------------*/
 
 /* USED https://www.w3schools.com/howto/howto_css_modals.asp FOR MODAL CODES */
-/* The Modal (background) */
-
 .button-to-text {
   border: none;
   background-color: inherit;
@@ -311,7 +450,6 @@ footer {
   color:black;
   font-size:1em;
   font-weight: 600;
-
 }
 
 .button-to-text:hover, .button-to-text:active, .button-to-text:focus {
@@ -400,9 +538,7 @@ footer {
 
 }
 
-/*
-Referenced Lecture Week 2 + 3 Code Example for buttons
-*/
+/* Referenced Lecture Week 2 + 3 Code Example for buttons*/
 .cart-button-nav {
   position: absolute;
   bottom:0rem;
@@ -447,6 +583,41 @@ Referenced Lecture Week 2 + 3 Code Example for buttons
 .low-stock{
   padding-left: 0.4em;
   color:#008080;
+}
+
+/* ------------ YOUR CART PAGE ---------------*/
+
+span{
+  padding: 0.3em 0;
+}
+
+.cart-text{
+  padding:1em;
+  width:100%;
+}
+
+.order-summary{
+  background-color: rgb(240, 240, 240);
+  width: 17em;
+}
+
+.order-textinside {
+  padding: 1em;
+}
+
+.checkout{
+  margin-top: 1.9em;
+  padding: 0.6em 0.75em;
+  width: 100%;
+  color: white;
+  background-color: #008080;
+  font-weight: 600;
+  font-size: 1em;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+  border: 2px solid #008080;
 }
 
 
@@ -534,7 +705,7 @@ input[type=text], input[type=password] {
 
 
 
-/*CREATE ACCOUNT PAGE LINK --------- */
+/*----------CREATE ACCOUNT PAGE LINK --------- */
 
 .create-button:hover, .create-button:focus {
   background-color: white;
@@ -557,16 +728,19 @@ input[type=text], input[type=password] {
 }
 
 
-
-/*-----------MY CART ---------------*/
-
-span{
-  padding: 0.3em 0;
-}
-
-/*-----------CONFIRMATION-------------*/
+/*-----------CONFIRMATION PAGE -------------*/
 .order-confirm {
   padding:8em 0em 15em 0em;
+}
+
+/*-------OUR STORY PAGE----------------*/
+.subheader {
+  text-align: center;
+}
+
+/*-------- CITATIONS PAGE --------------*/
+.citation-title {
+  text-align: left;
 }
 
 
@@ -636,6 +810,11 @@ span{
   font-weight: 300;
 }
 
+.lobster-font {
+  font-family: 'lobster';
+  font-size: 1.5em;
+}
+
 code {
   background-color: #EEE;
   display: inline-block;
@@ -678,6 +857,7 @@ code {
 .link-style {
   text-decoration: none;
 }
+
 /*
   Referenced: https://www.youtube.com/watch?v=JJSoEo8JSnc
   Used this tutorial to learn out how to create flexbox website grid
@@ -764,16 +944,3 @@ code {
 /*https://stackoverflow.com/questions/40600728/trying-to-align-text-under-an-image-using-flexbox*/
 
 
-/*-------OUR STORY PAGE----------------*/
-.subheader {
-  text-align: center;
-}
-
-/*-------- CITATIONS PAGE --------------*/
-.citation-title {
-  text-align: left;
-}
-
-.citation-links {
-  
-}

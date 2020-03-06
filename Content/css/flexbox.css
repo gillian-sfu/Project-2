@@ -12,7 +12,7 @@ Used this tutorial to learn out how to create flexbox website grid
 */
 
 
-/*HEADER -----------*/
+/*------------- HEADER -------------*/
 .header-container div {
 	margin:0em 0em 1.5em 0em;
 }
@@ -28,13 +28,13 @@ Used this tutorial to learn out how to create flexbox website grid
 	width:33.333%;
 	justify-content: flex-start;
 }
+
 .logo-area{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
-
 
 .utility-nav{
 	display: flex;
@@ -44,10 +44,7 @@ Used this tutorial to learn out how to create flexbox website grid
 }
 
 
-/*-------------END OF HEADER*/
-
-
-/* HOMEPAGE ---------- */
+/* ------------- HOMEPAGE ------------ */
 
 .sale-promotion-container div {
 	/*margin-bottom: 1.5em;*/
@@ -59,52 +56,13 @@ Used this tutorial to learn out how to create flexbox website grid
 	justify-content: center;
 }
 
-.sale-promotion-box {
 
-	background-image: url(../img/browntea3.jpg); /* https://www.youtube.com/watch?v=33IinMVJf-M*/
-
-	/*background-size:cover;
-	background-position:bottom;*/
-
-	background-repeat: no-repeat;
-	background-position:0% 75%; /*https://www.w3schools.com/cssref/pr_background-position.asp*/
-
-	width:100%;
-	height:35em;
-
-	position: relative;
-	text-align: center;
-	color: black;
-	position:relative;
-
-}
-
-.sale-text-container {
-
-	font-weight: 600;
-	font-size: 1.2em;
-
-	text-align: left;
-	padding: 16em 0em 0em 3em;
-
-}
-
-.whats-on-sale {
-	color:black;
-	text-align: left;
-	width:30%;
-}
-
-.tea-collection {
-	width:10%;
-}
-
-
-/*Reference: https://www.w3schools.com/howto/howto_css_image_text.asp
-How to center text over image
+/*
+  Reference: https://www.w3schools.com/howto/howto_css_image_text.asp
+  How to center text over image
 */
 
-.shop-our-sale {
+/*.shop-our-sale {
 	position:absolute;
 	top: 8em;
 	left: 50%;
@@ -112,97 +70,26 @@ How to center text over image
 	font-weight: 600;
 	font-size: 2.5em;
 }
-
+*/
 .category-text-container div {
-
 	margin:0em 0em 1.5em 0em;
 }
 
 .category-box, .category-container{
 	display:flex;
 	justify-content: center;
-
-}
-
-.category-box {
-
-	border: 0.05em solid #cecece;
-	border-right:none;
-	border-left:none;
-	height:10em;
-
-}
-
-.category-container {
-	font-weight:700;
-	font-size: 1em;
-	padding-top:2.9em;
-	color: #66B2B2;
-
 }
 
 .image-card-container div {
-
 	margin:0em 0em 0.5em 0em;
 }
 
-.image-card-container {
-	display:flex;
-	flex-flow: wrap;
-	justify-content: space-between;
-	position:relative;
-	margin-bottom: 1.5em;
-}
 
-.image-card-box-1 {
-	background-image: url(../img/tea8.jpg);
-
-	background-size:cover;
-	background-position:90% 0%;
-
-	display:table;
-	width:48.5%;
-	height:30em;
-}
-
-/*.image-card-box-1:hover {
-opacity:0.5;
-}*/
-
-.image-card-box-2 {
-	background-image: url(../img/teasets.jpg);
-	background-size:cover;
-	display:table;
-	width:48.5%;
-	height:30em;
-	background-position:40% 0%;
-}
-
-.image-text-container {
-	text-align: left;
-	padding: 12em 0em 0em 3em;
-	color:black;
-}
-
-.tea-collection {
-	color:black;
-	text-align: left;
-
-}
-/*--------------END OF HOMEPAGE*/
-
-
-/*FOOTER ---------------*/
+/*-------------- FOOTER ---------------*/
 
 .footer-container div {
 	margin: 0.5em 0em 3em 0em;
 	padding:0em 3em 0em 0em;
-
-}
-
-.footer-line {
-	border-top: 1.5px solid lightgrey;
-	margin-top:1em;
 }
 
 .footer-container {
@@ -213,13 +100,11 @@ opacity:0.5;
 
 .footer-logo{
 	width:50%;
-	/*flex:2;*/
 	flex-direction:column;
 }
 
 .footer-contact {
 	width:25%;
-	/*flex:1;*/
 	flex-direction:column;
 }
 
@@ -229,45 +114,15 @@ opacity:0.5;
 	flex-direction:column;
 }
 
-.logo-foot {
-	font-family: 'lobster';
-	color:#66B2B2;
-	text-decoration: none;
-	font-size: 1.4em;
-}
 
-.footer-title {
-	font-size: 1.2em;
-}
-
-.about-text{
-	font-weight: 300;
-	font-size: 0.9em;
-}
-
-.about-link{
-	color: black;
-}
-
-.about-link:hover, .about-link:active, .about-link:focus {
-	color: #66b2b2
-}
-
-.contact-text{
-	font-size:1em;
-
-}
-
-/*--------PAGE HEADERS ---------*/
+/*----------- NAV PAGE HEADERS -------------*/
 .loose-leaf-container div {
-
 	margin-bottom:2em;
-
 }
+
 .header-container{
 	display:flex;
 	justify-content: center;
-
 }
 
 .header-box {
@@ -279,10 +134,7 @@ opacity:0.5;
 }
 
 
-/*-----------END OF FOOTER */
-
-
-/*PRODUCT LISTING ---------*/
+/*---------- PRODUCT LISTINGS ---------*/
 
 .product-list {
 	display:flex;
@@ -293,10 +145,8 @@ opacity:0.5;
 
 }
 .product-cardholder {
-	/* flex-direction: column; */
 	width: 29.333%;
 	margin: 0 2% 1.6em 2%;/*https://developer.mozilla.org/en-US/docs/Web/CSS/margin*/
-	/* padding: 0.5em 1.5em; */
 }
 
 .product-image {
@@ -309,10 +159,6 @@ opacity:0.5;
 	justify-content: space-between;
 }
 
-.add-to-cart-icon {
-	top:1.5em;
-}
-
 .price-icon{
 	display: flex;
 	justify-content: space-between;
@@ -322,20 +168,9 @@ opacity:0.5;
 	display: flex;
 	justify-content: flex-start;
 }
-.sale-price {
-	color: red;
-	padding-right: 0.3em;
-}
-.same-line {
-	display: flex;
-	flex-direction: row;
-}
 
-/* RE-VIEW UNDER PRODUCTS ------------ */
 
-.reviews {
-	margin-top:2.5em;
-}
+/* -------------- REVIEW UNDER PRODUCTS ------------ */
 
 .review-container {
 	display:flex;
@@ -346,11 +181,9 @@ opacity:0.5;
 
 .review-box-username {
 	display:flex;
-	/* display: block; */
 	flex-direction: column;
 	width:14%;
 	justify-content: flex-start;
-
 }
 
 .review-box-comment {
@@ -363,33 +196,6 @@ opacity:0.5;
 	display: flex;
 	flex-direction: row;
 }
-.review-username {
-	text-align:left;
-	font-size:1.2em;
-	margin-top:1em;
-	color:#008080;
-}
-
-.review-location {
-	text-align:left;
-	font-size:0.8em;
-	margin-top:1.5em;
-}
-.review-comments-title {
-	margin-top:1em;
-	text-align:left;
-}
-
-.review-comments {
-	font-weight:300;
-	font-size:1em;
-	width:100%;
-	margin:0;
-}
-
-.lastcomment{
-	margin-bottom:3em;
-}
 
 .write-review {
 	display:flex;
@@ -398,19 +204,11 @@ opacity:0.5;
 }
 
 
-.line {
-	margin-bottom: 1em 0;
-	padding: 0.5em 0;
-	border-bottom: 1px dotted #333; /*https://www.w3schools.com/cssref/pr_border-top.asp*/
-}
-
-
-/* INDIVIDUAL PRODUCT PAGE --------------*/
+/* ---------------- INDIVIDUAL PRODUCT PAGE --------------*/
 /*
-Referenced: Week 3 Lecture Code
-Used lecture code for grid structure
+  Referenced: Week 3 Lecture Code
+  Used lecture code for grid structure
 */
-
 
 /*https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container*/
 .box{
@@ -419,7 +217,7 @@ Used lecture code for grid structure
 	justify-content: center;
 }
 
-/*YOUR CART PAGE--------------*/
+/*------------------ YOUR CART PAGE --------------*/
 
 .basket{
 	display:flex;
@@ -427,54 +225,29 @@ Used lecture code for grid structure
 	flex-direction: row;
 	justify-content: space-between;
 	flex-basis: 34%;
-
 }
+
 .basket-description{
 	display: flex;
 	width:45%;
 	justify-content: flex-start;
 }
-.cart-text{
-	padding:1em;
-	width:100%;
-}
-.order-summary{
-	background-color: rgb(240, 240, 240);
-	width: 17em;
-}
-.order-textinside {
-	padding: 1em;
-}
-.checkout{
-	margin-top: 1.9em;
-	padding: 0.6em 0.75em;
-	width: 100%;
-	color: white;
-	background-color: #008080;
-	font-weight: 600;
-	font-size: 1em;
-	text-align: center;
-	text-decoration: none;
-	-webkit-transition: background-color 0.2s ease-out;
-	transition: background-color 0.2s ease-out;
-	border: 2px solid #008080;
-}
+
 .subsum {
 	display: flex;
 	justify-content: space-between;
 }
 
-/*CITATIONS----------------*/
+/*---------------- CITATIONS ------------------*/
 .citation-links {
 	display:flex;
 	flex-direction: column;
-	line-height: 1.5em;
-
+	line-height: 1.8em;
 }
 
 
 
-/*MEDIA QUERIES
+/*-------------- MEDIA QUERIES -------------*/
 
 /*https://stackoverflow.com/questions/40600728/trying-to-align-text-under-an-image-using-flexbox*/
 @media(max-width: 1260px) {
@@ -535,12 +308,12 @@ Used lecture code for grid structure
 		width:30%;
 	}
 
-	/*------------------ABOUT---------------*/
+	/*------------ABOUT------------*/
 	.about-text-section{
 		padding:0 5em;
 	}
 
-	/*---------------MY CART-----------------*/
+	/*-----------MY CART-----------*/
 	.order-summary{
 		width:30%;
 	}
@@ -548,7 +321,7 @@ Used lecture code for grid structure
 		margin:0;
 	}
 
-	/*---------------HOMEPAGE---------------*/
+	/*-----------HOMEPAGE-------------*/
 	.image-card-container{
 		flex-direction:column;
 	}
@@ -558,7 +331,7 @@ Used lecture code for grid structure
 
 	}
 
-	/* --------------STYLE GUIDE --------------------*/
+	/* ----------- STYLE GUIDE -------------*/
 	.sg-section {
 		margin: 3em;
 		padding:0 5em;
@@ -591,7 +364,7 @@ Used lecture code for grid structure
 	background-color: yellow;
 	} */
 
-	/*-------------PRODUCT LISTING--------------*/
+	/*----------PRODUCT LISTING------------*/
 	.product-cardholder {
 		width: 100%;
 		padding:0;
@@ -601,7 +374,7 @@ Used lecture code for grid structure
 	}
 
 
-	/*------------------NAV------------------*/
+	/*------------NAV----------*/
 	.nav-content{
 		position: relative;
 		padding-bottom: 3rem;
@@ -626,7 +399,7 @@ Used lecture code for grid structure
 		margin-right: 0;
 	}
 
-	/*---------------MY CART-----------------*/
+	/*------------MY CART------------*/
 	.basket {
 		justify-content: flex-start;
 	}
@@ -692,12 +465,12 @@ Used lecture code for grid structure
 		margin-bottom:0.58em;
 	}
 
-	/*--------------------HOMEPAGE---------------------*/
+	/*-------------HOMEPAGE---------------*/
 	.whats-on-sale {
 		width:50%;
 	}
 
-	/*-------------------------STYLEGUIDE -------------------*/
+	/*------------STYLEGUIDE --------------*/
 	.sg-section {
 		margin: 3em 0;
 		padding:0;
@@ -720,14 +493,14 @@ Used lecture code for grid structure
 
 
 @media (max-width: 479px){
-	/*----------------PRODUCT PAGE-----------------*/
+	/*----------PRODUCT PAGE------------*/
 	.box-item-text{
 		width: 100%;
 		order: 2;
 		flex:0 0 100%;
 	}
 
-	/*---------------PRODUCT LISTING--------------*/
+	/*----------PRODUCT LISTING------------*/
 	.page-heading{
 		font-size: 2em;
 	}
@@ -754,7 +527,7 @@ Used lecture code for grid structure
 		width: 100%;
 	}
 
-	/*------------------NAV---------------------*/
+	/*------------NAV------------*/
 	.user-icon {
 		margin-left: 1em;
 	}
@@ -767,12 +540,12 @@ Used lecture code for grid structure
 		justify-content: space-around;
 	}
 
-	/*----------------FOOTER---------------------*/
+	/*------------FOOTER-------------*/
 	.contact-text{
 		font-size: 0.9em;
 	}
 
-	/*------------------HOMEPAGE---------------------*/
+	/*-----------HOMEPAGE---------------*/
 	.sale-text-container{
 		padding-left: 1.2em;
 	}
@@ -790,7 +563,7 @@ Used lecture code for grid structure
 		font-size: 1.3em;
 	}
 
-	/*---------------------STYLEGUIDE--------------------*/
+	/*--------------STYLEGUIDE--------------*/
 	.style-nav{
 		display: flex;
 		flex-direction: column;
