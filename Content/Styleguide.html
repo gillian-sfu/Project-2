@@ -5,7 +5,7 @@
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Product Listing</title>
+	<title>Styleguide</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
 
@@ -27,7 +27,7 @@
       <div class="nav-content">
 
         <div class="main-nav">
-          <a class="main-nav-option tea" href="product-listing.html">Tea</a>
+          <a class="main-nav-option" href="product-listing.html">Tea</a>
           <a class="main-nav-option" href="teasets.html">Teasets</a>
           <a class="main-nav-option" href="sales.html">Sale</a>
         </div>
@@ -50,95 +50,105 @@
 	</header>
 
 <div class="container">
-  <h1>Style Guide Template</h1>
+  <div class="header-container">
+    <div class="header-box">
+    <h2 class="page-heading">Styleguide</h2>
+    </div> <!--div for header-box-->
+  </div> <!--div for head-container-->
 
-  <nav>
-
-    <p>
-      Go to:
-      <a href="#branding_elements">Branding Elements</a>,
-      <a href="#interactive_elements">Interactive Elements</a>,
-      <a href="#text_elements">Text Elements</a>,
-      <a href="#combined_elements">Combined Elements</a>,
-    </p>
-
+  <div class="sg-section">
+  <nav class="style-nav">
+      <a class="sg-nav" href="#branding_elements">Branding Elements</a>
+      <a class="sg-nav" href="#interactive_elements">Interactive Elements</a>
+      <a class="sg-nav" href="#text_elements">Text Elements</a>
+      <a class="sg-nav" href="#combined_elements">Combined Elements</a>
   </nav>
+  </div>
 
 
   <!-- BRANDING COMPONENTS // -->
   <section id="branding_elements">
     <section>
-
-      <h2>Branding</h2>
-
-      <p class="branding">The company sells a wide range of teas as well as teawares such as mugs, tea infuser, kettles, etc. They are a one stop shop for tea enthusiasts who are looking to expand their taste with selections of teas that are not normally sold in supermarkets. They provide detailed information on their teas which include caffeine levels, health benefits, ingredients and ways it can be made. </p>
-
+      <div class="sg-section">
+      <h2 class="title">Branding</h2>
+      <p>The company sells a wide range of teas as well as teawares such as mugs, tea infuser, kettles, etc. They are a one stop shop for tea enthusiasts who are looking to expand their taste with selections of teas that are not normally sold in supermarkets. They provide detailed information on their teas which include caffeine levels, health benefits, ingredients and ways it can be made. </p>
+      </div>
     </section>
 
     <section>
-      <h2>Colour Palette</h2>
+
+      <div class="sg-section">
+      <h2 class="sg-h2">Colour Palette</h2>
 
       <h3>Primary colour of the website will be green, with variation of its shade</h3>
 
       <div class="palette-box">
-        <div class="palette-box-b1 palette">
-          <p class="palette-text">#E6FBFB</p>
-        </div>
-        <div class="palette-box-b2 palette">
+
+          <div class="palette-box-b2 palette">
           <p class="palette-text">#66B2B2</p>
-        </div>
-        <div class="palette-box-b3 palette">
+          </div>
+          <div class="palette-box-b3 palette">
           <p class="palette-text">#008080</p>
-        </div>
-        <div class="palette-box-b4 palette">
+          </div>
+          <div class="palette-box-b4 palette">
           <p class="palette-text">#006666</p>
-        </div>
-        <div class="palette-box-b5">
-          <p class="palette-text">#004C4C</p>
-        </div>
-      </div> <!--div for palette-box-->
+          </div>
+
+        </div> <!--div for palette-box-->
+      </div>
 
     </section>
 
     <section>
-      <h2>Typography</h2>
-      <p class="font-bold">Muli-Bold</p>
-      <p class="font-semibold">Muli-Semibold</p>
-      <p class="font-regular">Muli-Regular</p>
-      <p class="font-light">Muli-light</p>
+      <div class="sg-section">
+      <h2 class="sg-h2">Typography</h2>
+      <p class="font-bold">Lato-Bold</p>
+      <p class="font-regular">Lato-Regular</p>
+      <p class="font-light">Lato-light</p>
+      </div>
     </section>
 
 
-  </section>
+  </section> <!-- section for branding elements-->
 
   <!-- INTERACTIVE ELEMENTS SECTION // -->
 
 
   <section id="interactive_elements">
 
+    <div class="sg-section">
+    <h2 class="title">Interactive Elements</h2>
+    </div>
+
     <!-- Default Button styling section -->
 
     <section>
-
-      <h2>Navigation Button</h2>
+      <div class="sg-section">
+      <h2 class="sg-h2">Navigation Button</h2>
 
       <h3>CSS selector:</h3>
       <p>.button-nav</p>
 
       <h3>Sample code:</h3>
-      <code>&lt;a class="button-nav" href="#"&gt;Default Button&lt;/a&gt;</code>
+      <code>&lt;a class="button" href="#"&gt;Default Button&lt;/a&gt;</code>
 
       <!-- Referenced: Lecture Week 2 code example -->
 
       <h3>Rendered element:</h3>
-      <a class="button-nav" href="#">Default Button</a>
+      <nav class="button">
+       <div>
+         <a class="button submit" href="#">Default Button</a>
+       </div>
+     </nav>
+      </div>
 
     </section>
 
 
 
     <section>
-      <h2>In-text link</h2>
+      <div class="sg-section">
+      <h2 class="sg-h2">In-text link</h2>
 
       <h3>CSS selector:</h3>
       <p>.link-style</p>
@@ -150,12 +160,13 @@
 
       <h3>Rendered element:</h3>
       <a class="link-style" href="#">In-text link</a>
-
+      </div>
     </section>
 
 
 
     <section>
+      <div class="sg-section">
       <h2>Submit + Reset Buttons</h2>
 
       <h3>CSS selector:</h3>
@@ -163,7 +174,7 @@
 
       <h3>Sample code:</h3>
       <code>
-       &lt;nav class="button"&gt; <br>
+       &lt;nav class="button-nav"&gt; <br>
        &lt;div&gt;<br>
        &lt;a class="button submit" href="#">Submit&lt;/a&gt;<br>
        &lt;/div&gt;<br>
@@ -185,12 +196,13 @@
         <a class="button reset" href="#">Reset</a>
       </div>
     </nav>
-
+    </div>
   </section>
 
 
   <section>
-    <h2>Text Input Field</h2>
+    <div class="sg-section">
+    <h2 class="sg-h2">Text Input Field</h2>
 
     <h3>CSS Selector</h3>
     <p>input </p>
@@ -211,12 +223,15 @@
 
     <h3>Rendered Element</h3>
     <form>
+      <div class="create-account-container">
       Email:<br>
       <input type="text" name="email">
       <br>
       password:<br>
       <input type="text" name="password">
+      </div>
     </form>
+    </div>
 
   </section>
 
@@ -228,8 +243,13 @@
 <!-- TEXT ELEMENTS SECTION -->
 <section id="text_elements">
 
+  <div class="sg-section">
+  <h2 class="title">Text Elements</h2>
+  </div>
+
   <section>
-    <h2>Headings</h2>
+    <div class="sg-section">
+    <h2 class="sg-h2">Headings</h2>
 
     <h3>CSS selector:</h3>
     <p>.heading1, .heading2, .heading3</p>
@@ -239,15 +259,16 @@
 
     <h3>Rendered element:</h3>
 
-    <h1 class="heading1">Heading 1</h1>
-    <h2 class="heading2">Heading 2</h2>
-    <h3 class="heading3">Heading 3</h3>
-
+    <h1 class="title">Heading 1</h1>
+    <h2 class="sg-h2">Heading 2</h2>
+    <h3>Heading 3</h3>
+    </div>
   </section>
 
 
   <section>
-    <h2>Paragraphs</h2>
+    <div class="sg-section">
+    <h2 class="sg-h2">Paragraphs</h2>
 
     <h3>CSS selector:</h3>
     <p>.para-style</p>
@@ -258,11 +279,12 @@
     <h3>Rendered element:</h3>
 
     <p class="para-style">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+    </div>
   </section>
 
   <section>
-    <h2>Bulleted Lists</h2>
+    <div class="sg-section">
+    <h2 class="sg-h2">Bulleted Lists</h2>
 
     <h3>CSS selector:</h3>
     <p>.ul, .num-list</p>
@@ -275,59 +297,65 @@
     <ul>
       <li>
        <p class="num-list"> Number 1</p>
-     </li>
-     <li>
+      </li>
+      <li>
       <p class="num-list"> Number 2</p>
-    </li>
-    <li>
+      </li>
+      <li>
       <p class="num-list"> Number 3</p>
-    </li>
-  </ul>
+      </li>
+    </ul>
+    </div>
 
-
-</section>
-
-<section>
-
-  <h2>Numbered Lists</h2>
-
-  <h3>CSS selector:</h3>
-  <p>.ol, .num-list</p>
-
-  <h3>Sample code:</h3>
-  <code>
-    &lt;ol&gt;<br>
-    &lt;li&gt; <br>
-    &lt;p class="num-list"&gt; Number 1 &lt;/p&gt; <br>
-    &lt;li&gt; <br>
-    &lt;ol&gt;
-  </code>
-
-  <h3>Rendered element:</h3>
-
-  <ol>
-    <li>
-     <p class="num-list"> Number 1</p>
-   </li>
-   <li>
-    <p class="num-list"> Number 2</p>
-  </li>
-  <li>
-    <p class="num-list"> Number 3</p>
-  </li>
-</ol>
-</section>
-
-</section>
-<!-- // TEXT ELEMENTS SECTION -->
-
-
-
-<!-- COMBINED ELEMENTS SECTION // -->
-<section id="combined_elements">
+  </section>
 
   <section>
-    <h2>Main Navigation</h2>
+    <div class="sg-section">
+
+    <h2 class="sg-h2">Numbered Lists</h2>
+
+    <h3>CSS selector:</h3>
+    <p>.ol, .num-list</p>
+
+    <h3>Sample code:</h3>
+    <code>
+      &lt;ol&gt;<br>
+      &lt;li&gt; <br>
+      &lt;p class="num-list"&gt; Number 1 &lt;/p&gt; <br>
+      &lt;li&gt; <br>
+      &lt;ol&gt;
+    </code>
+
+    <h3>Rendered element:</h3>
+
+    <ol>
+      <li>
+       <p class="num-list"> Number 1</p>
+      </li>
+      <li>
+      <p class="num-list"> Number 2</p>
+      </li>
+      <li>
+      <p class="num-list"> Number 3</p>
+      </li>
+    </ol>
+    </div>
+  </section>
+
+  </section>
+  <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+  <!-- COMBINED ELEMENTS SECTION // -->
+  <section id="combined_elements">
+
+    <div class="sg-section">
+    <h2 class="title">Combined Elements</h2>
+    </div>
+  <section>
+    <div class="sg-section">
+    <h2 class="sg-h2">Main Navigation</h2>
 
     <h3>CSS selector:</h3>
     <p>.button-nav</p>
@@ -338,27 +366,27 @@
       &lt;a class="main-nav" href="#"&gt;Tea&lt;/a&gt; <br>
       &lt;a class="main-nav" href="#"&gt;Teasets&lt;/a&gt; <br>
       &lt;a class="main-nav" href="#"&gt;Sale&lt;/a&gt; <br>
-      &lt;a class="main-nav" href="#"&gt;Contact&lt;/a&gt; <br>
-      &lt;a class="main-nav" href="#"&gt;Sign In&lt;/a&gt; <br>
+      &lt;a class="main-nav" href="#"&gt;Login&lt;/a&gt; <br>
       &lt;a class="main-nav" href="#"&gt;Cart&lt;/a&gt; <br>
 
     </code>
 
     <!-- Referenced: https://www.youtube.com/watch?v=FEmysQARWFU -->
     <h3>Rendered element:</h3>
-    <a class="main-nav" href="#">Tea</a>
-    <a class="main-nav" href="#">Teasets</a>
-    <a class="main-nav" href="#">Sale</a>
-    <a class="main-nav" href="#">About Us</a>
-    <a class="main-nav" href="#">Contact</a>
-    <a class="main-nav" href="#">Sign In</a>
-    <a class="main-nav" href="#">Cart</a>
+    <nav class="main-nav">
+    <a class="main-nav-option" href="#">Tea</a>
+    <a class="main-nav-option" href="#">Teasets</a>
+    <a class="main-nav-option" href="#">Sale</a>
+    <a class="main-nav-option" href="#">Login</a>
+    <a class="main-nav-option" href="#">Cart</a>
+    </nav>
 
-
+  </div>
   </section>
 
   <section>
-    <h2>Product Listing</h2>
+    <div class="sg-section">
+    <h2 class="sg-h2">Product Listing</h2>
 
     <h3>CSS Selector:</h3>
     <p>.box, .box-item-image, .box-item-text, .title, .price, .review, .description, <br>
@@ -407,44 +435,57 @@
 
     <!-- Referenced: Week 3 Lecture Code for grid structure -->
     <h3>Rendered element:</h3>
-    <div class="box">
+  </div>
+  <div class="box">
 
-      <div class="box-item-image">
-       <figure>
-        <img src="img/tea3.jpg" alt="Sencha Tea" class="reponsive-image">
-        <figcaption>Figure 1.</figcaption>
-      </figure>
+    <div class="box-item-image">
+      <img src="img/products/product-blood-orange.jpg" alt="Blood Orange Rooibos" class="reponsive-product-image">
     </div>
 
     <div class="box-item-text">
 
-      <h2 class="title">Loose Leaf Sencha</h2>
-
+      <h2 class="title">Blood Orange Rooibos</h2>
       <p class="price"> $14.99 | In Stock</p>
 
-      <p class="review"> Review | Write a Review </p>
+      <!-- <p class="review"> Review | Write a Review </p> -->
 
-      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum malesu augue, vitae pulvinar ex accumsan et. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-
-
-      <!-- Referenced: https://www.w3schools.com/howto/howto_css_dropdown.asp -->
-
-      <div class="dropdown">
-        <button class="dropbtn">50g</button>
-        <div class="dropdown-content">
-          <a href="#">100g</a>
-          <a href="#">150g</a>
-          <a href="#">200g</a>
-          <a href="#">250g</a>
-        </div>
+      <div class="stars">
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <a href="#review" class="review">Reviews   </a>
       </div>
 
-      <div>
-        <a class="cart-button-nav" href="#">Add to Cart</a>
-      </div>
 
-    </div>
-  </div>
+        <!-- <a href="#review" class="review">Review | </a> -->
+        <!-- <p class="breaker">|</p> -->
+
+
+      <!-- USED https://www.w3schools.com/howto/howto_css_modals.asp FOR MODAL CODES -->
+
+        <!-- Trigger/Open The Modal -->
+        <!-- <section id="myBtn">
+        <a href="#review" class="review"> Write a Reviews</a>
+        </section> -->
+
+    <!-- 	<button id="myBtn" class="button-to-text">Write a Review</button> -->
+
+      <!-- <a href id="myBtn">Write a Review</a> -->
+
+
+
+      <p class="grams">50g</p>
+      <p class="description">The blood orange is a culinary favorite, with its deep vibrant color and sweet, tangy flavor.
+        A perfect ingredient for a refreshing herbal blend! Our Blood Orange tea pairs blood orange peels with hibiscus
+        flowers and rose hips for a naturally sweet, caffeine-free flavor. Rich, hearty and tangy, with a good balance of
+      orange peel dryness and fruit juiciness.</p>
+      <a class="cart-button-nav" href="my-cart.html">Add to Cart</a>
+    </div> <!-- div for box-item-text -->
+
+  </div> <!-- div for box -->
+
 
 
 </section>
@@ -527,7 +568,7 @@
 			<div class="footer-logo">
 			<h3 class="logo-foot">Spill the Tea</h3>
 			<!--CONTENT FROM https://tealeafco.com/pages/about-us -->
-			<p class="about-text">Spill the Tea satiates your rampant brew desires by bringing you high grade tea, grown in healthy soil and ethical farms. We care deeply about the health of our humble rock that we call home.</p>
+			<p class="sg">Spill the Tea satiates your rampant brew desires by bringing you high grade tea, grown in healthy soil and ethical farms. We care deeply about the health of our humble rock that we call home.</p>
 			<a class="about-link" href="about.html">Learn More</a>
 			</div>
 

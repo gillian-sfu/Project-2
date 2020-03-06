@@ -174,14 +174,11 @@ section code {
 
 .submit:hover, .submit:focus {
   background-color: #109b97;
-
 }
 
 .reset:hover, .reset:focus {
   background-color: #8b8e8e ;
   color: white;
-
-
 }
 
 /*

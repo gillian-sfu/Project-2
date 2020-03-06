@@ -253,11 +253,12 @@ footer {
 
 /*INTEXT LINKS------- */
 
-.write-review{
+.write-review, .link-style{
   color: black;
 }
 
-.write-review:hover, .write-review:active, .write-review:focus {
+.write-review:hover, .write-review:active, .write-review:focus,
+.link-style:hover, .link-style:active, .link-style:focus {
   color: #66b2b2;
 }
 
@@ -556,4 +557,112 @@ span{
 /*-----------CONFIRMATION-------------*/
 .order-confirm {
   padding:8em 0em 15em 0em;
+}
+
+
+/*-----------STYLEGUIDE-------------*/
+.style-nav {
+  display:flex;
+  justify-content: space-between;
+}
+.sg-nav{
+  color: #303030;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.sg-nav:hover, .sg-nav:active, .sg-nav:focus{
+  color: #66b2b2;
+}
+
+.sg-section{
+  margin: 3em;
+  padding:0 10em;
+}
+
+.palette-box div {
+  width: 200px;
+  height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.palette-box {
+	display: flex;
+  justify-content: space-between;
+}
+
+.palette-box-b2{
+  background: #66B2B2;
+}
+
+.palette-box-b3 {
+  background: #008080;
+	color: white;
+}
+
+.palette-box-b4 {
+  background: #006666;
+  color:white;
+}
+
+.sg-h2{
+  text-align: left;
+}
+
+.font-bold {
+  font-size:1.2em;
+  font-weight: 700;
+}
+
+.font-regular {
+  font-size:1.2em;
+  font-weight: 400;
+}
+
+.font-light {
+  font-size:1.2em;
+  font-weight: 300;
+}
+
+code {
+  background-color: #EEE;
+  display: inline-block;
+  padding: 1em 0;
+
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5em 1.25em;
+  width: 10em;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+}
+
+.submit{
+  background-color: #008080;
+  margin-bottom: 0.5em;
+}
+
+.reset {
+   background-color: black;
+}
+
+.submit:hover, .submit:focus {
+  background-color: #109b97;
+}
+
+.reset:hover, .reset:focus {
+  background-color: #8b8e8e ;
+  color: white;
+}
+
+.link-style {
+  text-decoration: none;
 }
