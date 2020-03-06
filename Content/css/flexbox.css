@@ -492,6 +492,14 @@ Used lecture code for grid structure
 	justify-content: space-between;
 }
 
+/*CITATIONS-----------*/
+.citation-links {
+	display:flex;
+	flex-direction: column;
+	line-height: 1.5em;
+
+}
+
 
 
 /*MEDIA QUERIES
