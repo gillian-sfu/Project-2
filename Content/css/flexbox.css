@@ -174,6 +174,7 @@ How to center text over image
 	display:table;
 	width:48.5%;
 	height:30em;
+	background-position:40% 0%;
 }
 
 
@@ -491,6 +492,14 @@ Used lecture code for grid structure
 	justify-content: space-between;
 }
 
+/*CITATIONS-----------*/
+.citation-links {
+	display:flex;
+	flex-direction: column;
+	line-height: 1.5em;
+
+}
+
 
 
 /*MEDIA QUERIES
@@ -711,6 +720,7 @@ Used lecture code for grid structure
 		}
 		.image-text-container {
 			padding-left: 1.2em;
+
 		}
 		.whats-on-sale {
 			width:70%;
@@ -721,6 +731,7 @@ Used lecture code for grid structure
 		}
 		.tea-collection{
 			font-size: 1.3em;
+
 		}
 
 
