@@ -53,7 +53,6 @@ a.main-nav-option {
   font-size: 1em;
   text-transform: uppercase;
   text-decoration: none;
-
 }
 
 a.logo {
@@ -61,7 +60,6 @@ a.logo {
   color: #66B2B2;
   text-decoration: none;
   font-size: 2em;
-
 }
 
 .user-icon {
@@ -69,8 +67,12 @@ a.logo {
 
 }
 
-.fa-user-circle, .fa-shopping-cart{
-  font-size:1.3em;
+.fa-user-circle{
+  font-size:1.4em;
+  color: #303030;
+}
+.fa-shopping-cart {
+  font-size: 1.3em;
   color: #303030;
 }
 
@@ -435,10 +437,10 @@ Referenced Lecture Week 2 + 3 Code Example for buttons
 }
 
 .description {
-  font-size: 14px;
+  font-size: 0.9em;
   font-weight: 300;
-  line-height: 25px;
-  padding-bottom: 30px;
+  line-height: 1.8em;
+  padding-bottom: 3em;
 }
 
 /* ----------- SIGN IN + CREATE ACCOUNT PAGE ------- */
@@ -629,7 +631,7 @@ span{
 code {
   background-color: #EEE;
   display: inline-block;
-  padding: 1em 0;
+  padding: 1em 0.75em;
 
 }
 
@@ -646,7 +648,7 @@ code {
 }
 
 .submit{
-  background-color: #008080;
+  border-color: #008080;
   margin-bottom: 0.5em;
 }
 
@@ -654,11 +656,13 @@ code {
    background-color: black;
 }
 
-.submit:hover, .submit:focus {
-  background-color: #109b97;
+.submit:hover, .submit:active, .submit:focus {
+  background-color: white;
+  color: #008080;
+  border-color: #008080;
 }
 
-.reset:hover, .reset:focus {
+.reset:hover, .reset:active, .reset:focus {
   background-color: #8b8e8e ;
   color: white;
 }
@@ -666,6 +670,91 @@ code {
 .link-style {
   text-decoration: none;
 }
+/*
+  Referenced: https://www.youtube.com/watch?v=JJSoEo8JSnc
+  Used this tutorial to learn out how to create flexbox website grid
+*/
+
+.main-nav-option-sg {
+  margin-right: 2rem;
+  color: #303030;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.main-nav-sg:hover, .main-nav-sg:active, .main-nav-sg:focus{
+  color:#66B2B2;
+}
+
+.container-1 div, .container-2 div, .container-3 div,
+.container-6 div, .container-9 div {
+	margin:0.3em;
+	background-color: lightgrey;
+}
+
+.container-1{
+  display:flex;
+}
+
+.container-1-box{
+	width:100%;
+	height:8em;
+}
+.container-2 {
+  display: flex;
+}
+.container-2-box {
+
+	width:100%;
+	height: 30em;
+}
+
+.container-3 {
+	display:flex;
+  flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.container-3-boxes {
+	width: 47%;
+	height:25em;
+}
+
+.container-6{
+	display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container-6-box1{
+  width:100%;
+	height:10em;
+
+}
+.container-6-boxes {
+  width: 31.333%;
+  height:20em;
+  justify-content: center;
+}
+
+.container-9{
+  display:flex;
+	flex-flow: wrap;
+}
+
+.container-9-box1{
+  width: 60%;
+  height:40em;
+}
+
+.container-9-box2{
+  flex: 1;
+  height:40em;
+}
+
+/*https://stackoverflow.com/questions/40600728/trying-to-align-text-under-an-image-using-flexbox*/
+
 
 
 
@@ -673,4 +762,3 @@ code {
 .citation-title {
   text-align: left;
 }
-

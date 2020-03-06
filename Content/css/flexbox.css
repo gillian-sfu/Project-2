@@ -40,6 +40,7 @@ Used this tutorial to learn out how to create flexbox website grid
 	display: flex;
 	width: 33.333%;
 	justify-content: flex-end;
+	align-items: baseline;
 }
 
 
@@ -285,10 +286,7 @@ How to center text over image
 	border: 0.05em solid #cecece;
 	border-right:none;
 	border-left:none;
-
 	height:10em;
-
-	/*background-position:0% 75%;*/
 }
 
 
@@ -577,6 +575,34 @@ Used lecture code for grid structure
 
 		}
 
+		/* --------------STYLE GUIDE --------------------*/
+		.sg-section {
+			margin: 3em;
+			padding:0 5em;
+		}
+		.box{
+			flex-direction: column;
+		}
+		.box-item-image{
+			min-width:700px;
+		}
+
+		.cart-button-nav{
+			float:left;
+			margin-top: 2em;
+		}
+		.container-6{
+			display: flex;
+			justify-content: center;
+		}
+		.container-6-box1{
+			width: 100%;
+		}
+		.container-6-boxes{
+			height: 30em;
+			width:48%;
+		}
+
 	}
 
 
@@ -679,6 +705,25 @@ Used lecture code for grid structure
 			width:50%;
 		}
 
+		/*-------------------------STYLEGUIDE -------------------*/
+		.sg-section {
+			margin: 3em 0;
+			padding:0;
+		}
+
+		.container-6{
+			display: flex;
+			justify-content: space-between;
+		}
+		.container-6-boxes, .container-3-boxes, .container-9-box1{
+			width:100%;
+		}
+		.container-9-box2{
+			width: 100%;
+			height:20rem;
+			flex: 1 1 auto;
+		}
+
 	}
 
 
@@ -687,6 +732,12 @@ Used lecture code for grid structure
 			width: 100%;
 			order: 2;
 			flex:0 0 100%;
+		}
+		.page-heading{
+			font-size: 2em;
+		}
+		.header-box {
+			height:7em;
 		}
 		.basket{
 			display: block;
@@ -708,6 +759,10 @@ Used lecture code for grid structure
 		.main-nav {
 			display:flex;
 			justify-content: space-between;
+		}
+		.utility-nav {
+			display: flex;
+			justify-content: space-around;
 		}
 		.order-summary {
 			width: 100%;
@@ -731,7 +786,19 @@ Used lecture code for grid structure
 		}
 		.tea-collection{
 			font-size: 1.3em;
-
+		}
+		/*---------------------STYLEGUIDE--------------------*/
+		.style-nav{
+			display: flex;
+			flex-direction: column;
+		}
+		.sg-nav {
+			margin-bottom: 1em;
+			display: flex;
+			justify-content: center;
+		}
+		code{
+			width: 100%;
 		}
 
 
